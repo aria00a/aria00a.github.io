@@ -1,107 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aria Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS VARIABLES (Tempat Warna Disimpan) --- */
+        :root {
+            --primary: #006D5B; /* Default: Data Analyst */
+            --accent: #FFBF00;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --border-radius: 12px;
+            --padding: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.4s ease; /* Efek transisi halus saat ganti warna */
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-light);
+            height: 100vh; /* Memaksa tinggi seukuran layar */
+            width: 100vw;
+            overflow: hidden; /* Mencegah scroll global */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vh 1vw;
+        }
+
+        /* --- MAIN CONTAINER (Grid 5 Baris) --- */
+        .main-container {
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-rows: 50px 2.5fr 1fr 0.8fr 2fr; /* Pembagian tinggi baris */
+            gap: 10px;
+        }
+
+        /* --- UMUM: STYLE UNTUK SETIAP KOTAK --- */
+        .box {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--border-radius);
+            padding: var(--padding);
+            overflow: hidden; /* Agar konten tidak tumpah */
+        }
+
+        h2, h3, h4 { margin-bottom: 5px; color: var(--accent); }
+        p, li { font-size: 0.9rem; line-height: 1.3; }
+        ul { list-style: none; }
+
+        /* --- ROW 1: MENU BAR --- */
+        .row-1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+        }
+        .nav-buttons button {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--text-light);
+            padding: 5px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .nav-buttons button.active, .nav-buttons button:hover {
+            background: var(--accent);
+            color: var(--primary); /* Teks jadi warna background utama */
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .lang-btn {
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.5;
+            background: none; border: none;
+        }
+        .lang-btn.active { opacity: 1; transform: scale(1.2); }
+
+        /* --- ROW 2: PROFILE & INFO --- */
+        .row-2 {
+            display: grid;
+            grid-template-columns: 300px 1fr; /* Foto fixed width, sisa konten */
+            gap: 10px;
+        }
+        
+        /* Kolom 1: Foto */
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            border: 3px solid var(--accent);
+        }
+
+        /* Kolom 2: Split 3 Row (About, Edu, Contact) */
+        .info-col {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+        }
+        .info-section {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 8px;
+            flex: 1; /* Membagi tinggi rata */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* Tombol CV */
+        .cv-buttons { margin-top: 5px; }
+        .btn-cv {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        .contact-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+        .contact-item i { color: var(--accent); width: 20px; text-align: center;}
+
+        /* --- ROW 3: SKILLS --- */
+        .row-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .tech-icons {
+            font-size: 2rem;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .tech-icons i { color: #fff; }
+
+        /* --- ROW 4: CERTIFICATIONS --- */
+        .row-4 {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto; /* Scroll samping kalau kepanjangan */
+        }
+        .cert-card {
+            flex: 1;
+            background: rgba(255,255,255,0.05);
+            padding: 5px 10px;
+            border-left: 3px solid var(--accent);
+            min-width: 200px;
+        }
+
+        /* --- ROW 5: PROJECTS (Scrollable Internal) --- */
+        .row-5 {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Container luar diam */
+        }
+        .project-scroll-area {
+            overflow-y: auto; /* Scroll hanya di sini */
+            padding-right: 5px;
+            height: 100%;
+        }
+        /* Custom Scrollbar */
+        .project-scroll-area::-webkit-scrollbar { width: 6px; }
+        .project-scroll-area::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+        
+        .project-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed rgba(255,255,255,0.3);
+        }
+        .project-item:last-child { border: none; }
+
+        /* --- RESPONSIVE UNTUK HP (Layar Kecil) --- */
+        @media (max-width: 768px) {
+            body { height: auto; overflow-y: auto; display: block; }
+            .main-container { display: flex; flex-direction: column; height: auto; }
+            .row-1 { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+            .lang-switch { justify-content: center; }
+            .row-2 { grid-template-columns: 1fr; }
+            .profile-pic { height: 300px; width: 300px; margin: 0 auto; display: block; }
+            .row-3 { grid-template-columns: 1fr; }
+            .row-4 { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="main-container">
 
-    <!-- ROW 1 - NAVBAR -->
-    <div class="navbar">
-        <div class="profession-buttons">
-            <button onclick="switchProfession('da')">Data Analyst</button>
-            <button onclick="switchProfession('qa')">Quality Assurance</button>
-            <button onclick="switchProfession('other')">Other</button>
+        <div class="box row-1">
+            <div class="nav-buttons">
+                <button onclick="setProfession('dataAnalyst')" id="btn-da" class="active">Data Analyst</button>
+                <button onclick="setProfession('qa')" id="btn-qa">Quality Assurance</button>
+                <button onclick="setProfession('other')" id="btn-other">Other</button>
+            </div>
+            <div class="lang-switch">
+                <button onclick="setLanguage('en')" class="lang-btn" id="lang-en">🇬🇧</button>
+                <button onclick="setLanguage('id')" class="lang-btn active" id="lang-id">🇮🇩</button>
+            </div>
         </div>
 
-        <div class="language-buttons">
-            <button onclick="switchLanguage('en')">EN</button>
-            <button onclick="switchLanguage('id')">ID</button>
-        </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-
-        <!-- ROW 2 -->
-        <div class="row row-2">
-            <div class="photo">
-                <img src="your-photo.jpg" alt="Profile Photo">
+        <div class="row-2">
+            <div class="box" style="padding:0; border:none;">
+                <img src="https://via.placeholder.com/400x400" alt="Profile Picture" class="profile-pic">
             </div>
 
-            <div class="info">
-                <div class="about">
-                    <h2 id="about-title">About Me</h2>
-                    <p id="about-text">Your about me text here...</p>
+            <div class="info-col">
+                <div class="info-section">
+                    <h3 id="txt-about-title">About Me</h3>
+                    <p id="txt-about">Loading...</p>
                     <div class="cv-buttons">
-                        <button>Download CV Design</button>
-                        <button>Download CV ATS</button>
+                        <a href="#" class="btn-cv">Download CV Design</a>
+                        <a href="#" class="btn-cv">Download CV ATS</a>
                     </div>
                 </div>
-
-                <div class="education">
-                    <h3 id="education-title">Education</h3>
-                    <p id="education-text">Your education here...</p>
+                <div class="info-section">
+                    <h3 id="txt-edu-title">Education</h3>
+                    <p id="txt-edu">Loading...</p>
                 </div>
-
-                <div class="contact">
-                    <h3 id="contact-title">Contact</h3>
-                    <p>📍 <span id="domicile">South Tangerang</span></p>
-                    <p>🔗 LinkedIn</p>
-                    <p>📸 Instagram</p>
-                    <p>✉ Email</p>
+                <div class="info-section">
+                    <div class="contact-grid">
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span id="txt-loc">Jakarta, Indonesia</span></div>
+                        <div class="contact-item"><i class="fab fa-linkedin"></i> <span>linkedin.com/in/username</span></div>
+                        <div class="contact-item"><i class="fab fa-instagram"></i> <span>@username</span></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i> <span>email@domain.com</span></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- ROW 3 -->
-        <div class="row row-3">
-            <div class="technical">
-                <h3 id="tech-title">Technical Skills</h3>
-                <div class="skills-icons">
-                    <span>Excel</span>
-                    <span>SQL</span>
-                    <span>Python</span>
-                    <span>Tableau</span>
+        <div class="box row-3">
+            <div>
+                <h3 id="txt-hard-title">Technical Skills</h3>
+                <div class="tech-icons" id="tech-icons-container">
+                    </div>
+            </div>
+            <div>
+                <h3 id="txt-soft-title">Soft Skills</h3>
+                <ul id="soft-skills-list" style="list-style: disc; margin-left: 20px;">
+                    </ul>
+            </div>
+        </div>
+
+        <div class="box row-4" id="cert-container">
+            </div>
+
+        <div class="box row-5">
+            <h3 id="txt-proj-title" style="position: sticky; top:0; background: inherit; padding-bottom: 5px;">Project Experience</h3>
+            <div class="project-scroll-area" id="project-container">
                 </div>
-            </div>
-
-            <div class="soft">
-                <h3 id="soft-title">Soft Skills</h3>
-                <ul id="soft-list">
-                    <li>Critical Thinking</li>
-                    <li>Communication</li>
-                    <li>Problem Solving</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- ROW 4 -->
-        <div class="row row-4">
-            <h3 id="cert-title">Certification</h3>
-            <div class="cert-grid">
-                <div class="cert-box">Certification 1</div>
-                <div class="cert-box">Certification 2</div>
-                <div class="cert-box">Certification 3</div>
-                <div class="cert-box">Certification 4</div>
-            </div>
-        </div>
-
-        <!-- ROW 5 -->
-        <div class="row row-5">
-            <h3 id="project-title">Project Experience</h3>
-            <div id="project-content">
-                <p>Project description here...</p>
-            </div>
         </div>
 
     </div>
-</div>
 
-<script src="script.js"></script>
+    <script>
+        // --- 1. KONFIGURASI DATA (DATABASE KONTEN) ---
+        // Kamu cukup edit di dalam variable 'data' ini saja.
+        
+        const data = {
+            // DATA UNTUK PROFESI: DATA ANALYST
+            dataAnalyst: {
+                theme: { bg: '#006D5B', accent: '#FFBF00' },
+                techIcons: ['fa-file-excel', 'fa-database', 'fa-python', 'fa-chart-bar'], // FontAwesome class names
+                id: {
+                    about: "Saya adalah Data Analyst yang gemar mengubah data mentah menjadi wawasan bisnis yang berharga.",
+                    edu: "S1 Statistika, Universitas Indonesia (2018-2022)",
+                    softSkills: ["Pemecahan Masalah", "Komunikasi Data", "Berpikir Kritis"],
+                    certs: ["Google Data Analytics", "SQL Advanced", "Tableau Certified", "Python for Data Science"],
+                    projects: [
+                        { title: "Analisis Penjualan Retail", desc: "Menganalisis tren penjualan menggunakan Python dan membuat dashboard interaktif." },
+                        { title: "Prediksi Churn Pelanggan", desc: "Membuat model Machine Learning untuk memprediksi pelanggan yang akan berhenti berlangganan." },
+                        { title: "Automasi Laporan Harian", desc: "Menggunakan Python Script untuk mengirim laporan email otomatis." },
+                        { title: "Optimasi Stok Gudang", desc: "Menggunakan metode forecasting untuk mengurangi overstock hingga 20%." }
+                    ]
+                },
+                en: {
+                    about: "I am a Data Analyst passionate about turning raw data into valuable business insights.",
+                    edu: "B.Sc Statistics, University of Indonesia (2018-2022)",
+                    softSkills: ["Problem Solving", "Data Communication", "Critical Thinking"],
+                    certs: ["Google Data Analytics", "SQL Advanced", "Tableau Certified", "Python for Data Science"],
+                    projects: [
+                        { title: "Retail Sales Analysis", desc: "Analyzed sales trends using Python and created interactive dashboards." },
+                        { title: "Customer Churn Prediction", desc: "Built ML models to predict customer attrition." },
+                        { title: "Daily Report Automation", desc: "Used Python Scripts to send automated email reports." },
+                        { title: "Warehouse Stock Optimization", desc: "Used forecasting methods to reduce overstock by 20%." }
+                    ]
+                }
+            },
+
+            // DATA UNTUK PROFESI: QUALITY ASSURANCE
+            qa: {
+                theme: { bg: '#192841', accent: '#B87333' },
+                techIcons: ['fa-bug', 'fa-vial', 'fa-robot', 'fa-jira'],
+                id: {
+                    about: "QA Engineer dengan mata yang jeli terhadap detail, memastikan software bebas bug sebelum rilis.",
+                    edu: "S1 Teknik Informatika, ITB (2018-2022)",
+                    softSkills: ["Ketelitian", "Manajemen Waktu", "Kerjasama Tim"],
+                    certs: ["ISTQB Foundation", "Selenium Automation", "Katalon Studio", "JIRA Master"],
+                    projects: [
+                        { title: "Automasi Testing E-Commerce", desc: "Membuat script automasi menggunakan Selenium untuk fitur checkout." },
+                        { title: "Load Testing Aplikasi Bank", desc: "Menguji ketahanan server saat traffic tinggi menggunakan JMeter." },
+                        { title: "Mobile App Testing", desc: "Melakukan manual testing untuk aplikasi Android dan iOS." }
+                    ]
+                },
+                en: {
+                    about: "QA Engineer with a keen eye for detail, ensuring bug-free software before release.",
+                    edu: "B.Sc Informatics, ITB (2018-2022)",
+                    softSkills: ["Attention to Detail", "Time Management", "Teamwork"],
+                    certs: ["ISTQB Foundation", "Selenium Automation", "Katalon Studio", "JIRA Master"],
+                    projects: [
+                        { title: "E-Commerce Automation Testing", desc: "Created automation scripts using Selenium for checkout features." },
+                        { title: "Banking App Load Testing", desc: "Tested server resilience under high traffic using JMeter." },
+                        { title: "Mobile App Testing", desc: "Conducted manual testing for Android and iOS apps." }
+                    ]
+                }
+            },
+
+            // DATA UNTUK PROFESI: OTHER
+            other: {
+                theme: { bg: '#36454F', accent: '#CCFF00' },
+                techIcons: ['fa-camera', 'fa-pen-nib', 'fa-video', 'fa-music'],
+                id: {
+                    about: "Seorang Freelancer kreatif yang mengerjakan fotografi dan konten digital.",
+                    edu: "Kursus Fotografi Professional (2023)",
+                    softSkills: ["Kreativitas", "Adaptabilitas", "Negosiasi"],
+                    certs: ["Adobe Photoshop Expert", "Video Editing Pro", "Content Marketing", "SEO Basics"],
+                    projects: [
+                        { title: "Fotografi Pernikahan", desc: "Mendokumentasikan 10+ acara pernikahan dengan gaya cinematic." },
+                        { title: "Video Promosi UMKM", desc: "Membuat video pendek untuk meningkatkan penjualan produk lokal." }
+                    ]
+                },
+                en: {
+                    about: "A creative freelancer working on photography and digital content.",
+                    edu: "Professional Photography Course (2023)",
+                    softSkills: ["Creativity", "Adaptability", "Negotiation"],
+                    certs: ["Adobe Photoshop Expert", "Video Editing Pro", "Content Marketing", "SEO Basics"],
+                    projects: [
+                        { title: "Wedding Photography", desc: "Documented 10+ weddings with a cinematic style." },
+                        { title: "SME Promo Video", desc: "Created short videos to boost local product sales." }
+                    ]
+                }
+            }
+        };
+
+        // --- 2. LOGIC JAVASCRIPT ---
+        
+        let currentProfession = 'dataAnalyst'; // Default
+        let currentLang = 'id'; // Default Bahasa Indonesia
+
+        function setTheme(profession) {
+            currentProfession = profession;
+            
+            // 1. Update CSS Variable (Ganti Warna)
+            const theme = data[profession].theme;
+            document.documentElement.style.setProperty('--primary', theme.bg);
+            document.documentElement.style.setProperty('--accent', theme.accent);
+
+            // 2. Update Tombol Active
+            document.querySelectorAll('.nav-buttons button').forEach(btn => btn.classList.remove('active'));
+            
+            let btnId = 'btn-da';
+            if(profession === 'qa') btnId = 'btn-qa';
+            if(profession === 'other') btnId = 'btn-other';
+            document.getElementById(btnId).classList.add('active');
+
+            // 3. Update Isi Konten
+            updateContent();
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update Tombol Bendera Active
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`lang-${lang}`).classList.add('active');
+
+            updateContent();
+        }
+
+        function updateContent() {
+            const content = data[currentProfession][currentLang];
+            const icons = data[currentProfession].techIcons;
+
+            // Update Label Statis (Jika ingin full bilingual, label "About Me" dll juga harus di variable)
+            // Untuk simplifikasi, saya hardcode labelnya atau bisa dibuat dinamis juga.
+            
+            // Text Content
+            document.getElementById('txt-about').innerText = content.about;
+            document.getElementById('txt-edu').innerText = content.edu;
+
+            // Tech Icons (Generate Icon HTML)
+            const iconContainer = document.getElementById('tech-icons-container');
+            iconContainer.innerHTML = '';
+            icons.forEach(iconClass => {
+                iconContainer.innerHTML += `<i class="fas ${iconClass}"></i>`; // Menggunakan FontAwesome
+            });
+
+            // Soft Skills (Generate List)
+            const softList = document.getElementById('soft-skills-list');
+            softList.innerHTML = '';
+            content.softSkills.forEach(skill => {
+                softList.innerHTML += `<li>${skill}</li>`;
+            });
+
+            // Certifications
+            const certContainer = document.getElementById('cert-container');
+            certContainer.innerHTML = '';
+            content.certs.forEach(cert => {
+                certContainer.innerHTML += `
+                    <div class="cert-card">
+                        <h4>${cert}</h4>
+                        <small>${currentLang === 'id' ? 'Tersertifikasi' : 'Certified'}</small>
+                    </div>
+                `;
+            });
+
+            // Projects
+            const projContainer = document.getElementById('project-container');
+            projContainer.innerHTML = '';
+            content.projects.forEach(proj => {
+                projContainer.innerHTML += `
+                    <div class="project-item">
+                        <h4>${proj.title}</h4>
+                        <p>${proj.desc}</p>
+                    </div>
+                `;
+            });
+        }
+
+        // Jalankan saat pertama kali load
+        updateContent();
+
+    </script>
 </body>
 </html>
