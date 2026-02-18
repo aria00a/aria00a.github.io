@@ -11,26 +11,26 @@ const LANG = {
   
       // ── DATA ANALYST ───────────────────────────
       da_role: "Data Analyst",
-      da_name: "Your Full Name",
-      da_about: "Passionate Data Analyst with experience in transforming raw data into meaningful insights. Skilled in exploratory data analysis, statistical modeling, and building interactive dashboards that drive data-driven decisions.",
+      da_name: "Aria Bimantara",
+      da_about: "I am a detail-oriented professional transitioning into a Data Analyst role, guided by accuracy, responsibility, and a strong commitment to quality in my work. With a background in Quality Assurance, I have gained extensive experience in application testing within the banking sector, focusing on managing testing data and preparing structured documentation in accordance with established standards. My primary responsibilities included conducting comprehensive application testing, analyzing results, and identifying potential risks prior to production release, which significantly minimized post-release issues. I have also developed skills in processing SQL queries and am currently enhancing my capabilities in data analysis using Python and data visualization with Tableau. My unique combination of quality assurance experience, technical skills, and a commitment to continuous learning positions me as an ideal candidate for a Data Analyst role.",
       da_cv_design: "Download CV Design",
       da_cv_ats: "Download CV ATS",
       da_cv_design_url: "#",   // Ganti dengan URL file CV Design kamu
       da_cv_ats_url: "#",      // Ganti dengan URL file CV ATS kamu
       da_edu_title: "Education",
       da_edu: [
-        { degree: "Bachelor of Informatics", school: "University Name", year: "2019 – 2023" },
-        { degree: "Data Science Bootcamp", school: "Bootcamp Institution", year: "2023" }
+        { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023" },
+        { degree: "Full-stack Data Analytics", school: "RevoU", year: "Oct, 2025 - Feb, 2026" }
       ],
       da_contact_title: "Contact",
       da_contact: {
-        location: "City, Province",
-        linkedin: "linkedin.com/in/yourprofile",
-        instagram: "@yourhandle",
-        email: "your@email.com"
+        location: "South Tangerang, Banten",
+        linkedin: "https://www.linkedin.com/in/aria-bimantara00a/",
+        instagram: "@aria.00a",
+        email: "aria.00a@gmail.com"
       },
       da_tech_title: "Technical Skills",
-      da_tech: ["Spreadsheet", "Excel", "SQL", "Python", "Tableau"],
+      da_tech: ["Excel", "Spreadsheet", "SQL", "Python", "Tableau"],
       da_soft_title: "Soft Skills",
       da_soft: ["Analytical Thinking", "Problem Solving", "Data Storytelling", "Attention to Detail", "Team Collaboration", "Critical Thinking"],
       da_cert_title: "Certifications",
@@ -247,7 +247,7 @@ const LANG = {
      TECH SKILL ICON MAP
   ====================================================== */
   const TECH_ICONS = {
-    "Spreadsheet": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
+    "Spreadsheet": "https://img.icons8.com/color/48/google-sheets.png",
     "Excel":       "https://img.icons8.com/color/48/microsoft-excel-2019.png",
     "SQL":         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     "Python":      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",

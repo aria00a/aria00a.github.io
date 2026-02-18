@@ -4,7 +4,7 @@
 :root {
     --primary:   #006D5B;
     --accent:    #FFBF00;
-    --bg:        #f0f6f4;
+    --bg:        #006D5B;
     --surface:   #ffffff;
     --text:      #0a1f1c;
     --muted:     #3a5c56;
@@ -13,9 +13,9 @@
     --tag-bg:    rgba(0,109,91,0.10);
   }
   [data-theme="qa"] {
-    --primary:   #192841;
-    --accent:    #B87333;
-    --bg:        #eef1f5;
+    --primary:   #123774;
+    --accent:    #eb903c;
+    --bg:        #123774;
     --surface:   #ffffff;
     --text:      #0d1b2a;
     --muted:     #3a4f6b;
@@ -25,7 +25,7 @@
   }
   [data-theme="other"] {
     --primary:   #36454F;
-    --accent:    #CCFF00;
+    --accent:    #8eb100;
     --bg:        #f0f2f3;
     --surface:   #ffffff;
     --text:      #1a252b;
@@ -240,18 +240,14 @@
     transition: all 0.25s;
   }
   .cv-btn-primary {
+    background: var(--tag-bg);
+    border: 1.5px solid var(--primary);
+}
+  .cv-btn-primary:hover   {
     background: var(--primary);
     color: var(--accent);
     border: 1.5px solid var(--primary);
   }
-  .cv-btn-primary:hover { opacity: 0.85; }
-  .cv-btn-outline {
-    background: transparent;
-    color: var(--primary);
-    border: 1.5px solid var(--primary);
-  }
-  .cv-btn-outline:hover { background: var(--tag-bg); }
-  
   /* ======================================================
      EDUCATION
   ====================================================== */
