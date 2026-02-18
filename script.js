@@ -364,7 +364,7 @@ const LANG = {
   
     // Profile photo placeholder per theme
     const photoMap = {
-      da:    'https://placehold.co/200x300/e0ede9/006D5B?text=Photo',
+      da:    'img/Pas-Foto.jpg',
       qa:    'https://placehold.co/200x300/e6eaf0/192841?text=Photo',
       other: 'https://placehold.co/200x300/eaecee/36454F?text=Photo',
     };
