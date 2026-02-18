@@ -15,8 +15,8 @@ const LANG = {
       da_about: "I am a detail-oriented professional transitioning into a Data Analyst role, guided by accuracy, responsibility, and a strong commitment to quality in my work. With a background in Quality Assurance, I have gained extensive experience in application testing within the banking sector, focusing on managing testing data and preparing structured documentation in accordance with established standards. My primary responsibilities included conducting comprehensive application testing, analyzing results, and identifying potential risks prior to production release, which significantly minimized post-release issues. I have also developed skills in processing SQL queries and am currently enhancing my capabilities in data analysis using Python and data visualization with Tableau. My unique combination of quality assurance experience, technical skills, and a commitment to continuous learning positions me as an ideal candidate for a Data Analyst role.",
       da_cv_design: "Download CV Design",
       da_cv_ats: "Download CV ATS",
-      da_cv_design_url: "#",   // Ganti dengan URL file CV Design kamu
-      da_cv_ats_url: "#",      // Ganti dengan URL file CV ATS kamu
+      da_cv_design_url: "#",
+      da_cv_ats_url: "#",
       da_edu_title: "Education",
       da_edu: [
         { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023" },
@@ -280,7 +280,7 @@ const LANG = {
   ====================================================== */
   function render() {
     const L = LANG[currentLang];
-    const p = currentProf; // 'da', 'qa', 'other'
+    const p = currentProf;
   
     // Theme
     document.documentElement.setAttribute('data-theme', p === 'da' ? '' : p);
@@ -316,7 +316,7 @@ const LANG = {
     contactRow.innerHTML = '';
     const contactItems = [
       { icon: 'icon-location', text: c.location, href: `https://maps.google.com?q=${c.location}` },
-      { icon: 'icon-linkedin', text: 'LinkedIn', href: `https://${c.linkedin}` },
+      { icon: 'icon-linkedin', text: 'LinkedIn', href: c.linkedin.startsWith('http') ? c.linkedin : `https://${c.linkedin}` },
       { icon: 'icon-instagram', text: c.instagram, href: `https://instagram.com/${c.instagram.replace('@', '')}` },
       { icon: 'icon-email', text: c.email, href: `mailto:${c.email}` },
     ];
@@ -362,7 +362,7 @@ const LANG = {
         <div class="project-tags">${proj.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
       </div>`).join('');
   
-    // Profile photo placeholder per theme
+    // Profile photo
     const photoMap = {
       da:    'img/Pas-Foto.jpg',
       qa:    'https://placehold.co/200x300/e6eaf0/192841?text=Photo',

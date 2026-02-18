@@ -38,15 +38,14 @@
   <div class="row-hero">
 
     <!-- Foto Profil -->
-    <!-- GANTI src dengan nama file foto kamu, contoh: src="foto.jpg" -->
     <div class="photo-col">
-      <img id="profile-photo" alt="Profile Photo" /> <!-- GANTI di script.js -->
+      <img id="profile-photo" alt="Profile Photo" />
     </div>
 
-    <!-- Info (About, Education, Contact) -->
+    <!-- Info Column: About Me (atas) + Contact & Education (bawah, 2 kolom) -->
     <div class="info-col">
 
-      <!-- About Me -->
+      <!-- b1: About Me -->
       <div class="card">
         <div class="card-title" id="label-about">About Me</div>
         <div class="about-name" id="about-name"></div>
@@ -58,18 +57,22 @@
         </div>
       </div>
 
-      <!-- Education -->
-      <div class="card">
-        <div class="card-title" id="label-edu">Education</div>
-        <div class="edu-grid" id="edu-grid"></div>
-      </div>
+      <!-- b2: Contact (kiri) + Education (kanan) -->
+      <div class="info-bottom">
 
-      <!-- Contact -->
-      <div class="card">
-        <div class="card-title" id="label-contact">Contact</div>
-        <div class="contact-row" id="contact-row"></div>
-      </div>
+        <!-- b2.1: Contact -->
+        <div class="card">
+          <div class="card-title" id="label-contact">Contact</div>
+          <div class="contact-col" id="contact-row"></div>
+        </div>
 
+        <!-- b2.2: Education -->
+        <div class="card">
+          <div class="card-title" id="label-edu">Education</div>
+          <div class="edu-grid" id="edu-grid"></div>
+        </div>
+
+      </div>
     </div>
   </div>
 

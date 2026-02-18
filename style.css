@@ -165,10 +165,17 @@
     border-radius: 14px;
   }
   
-  /* Info column (3 sub-rows) */
+  /* Info column: 2 rows — About Me (atas) + info-bottom (bawah) */
   .info-col {
     display: grid;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr auto;
+    gap: 8px;
+  }
+  
+  /* info-bottom: Contact (kiri) + Education (kanan) — 2 kolom berdampingan */
+  .info-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
   
@@ -221,6 +228,11 @@
     line-height: 1.65;
     color: var(--muted);
     transition: color 0.4s;
+    /* Batasi teks agar tidak overflow, tampilkan ellipsis jika terlalu panjang */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .cv-btns {
     display: flex;
@@ -242,19 +254,21 @@
   .cv-btn-primary {
     background: var(--tag-bg);
     border: 1.5px solid var(--primary);
-}
-  .cv-btn-primary:hover   {
+    color: var(--primary);
+  }
+  .cv-btn-primary:hover {
     background: var(--primary);
     color: var(--accent);
     border: 1.5px solid var(--primary);
   }
+  
   /* ======================================================
      EDUCATION
   ====================================================== */
   .edu-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
   .edu-degree {
     font-weight: 600;
@@ -277,24 +291,28 @@
   /* ======================================================
      CONTACT
   ====================================================== */
-  .contact-row {
+  /* Layout kontak vertikal (karena card-nya lebih sempit) */
+  .contact-col {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 6px;
     flex-wrap: wrap;
-    align-items: center;
   }
   .contact-item {
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 13.5px;
+    gap: 6px;
+    font-size: 12.5px;
     color: var(--muted);
     background: var(--tag-bg);
     border: 1px solid var(--border);
-    padding: 4px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .contact-item:hover { background: var(--primary); color: var(--accent); }
   .contact-item:hover svg path, .contact-item:hover svg circle,
