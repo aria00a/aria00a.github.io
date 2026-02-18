@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aria's Portofolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aria Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-            <h1>Mohon Izin.<br>Portofolio sedang proses dibuat. Hehehe..</h1>
-            <p style="
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            margin: 0;">&copy; 2026 Aria Bimantara. All rights reserved</p>
-    </body>
+
+<div class="container">
+
+    <!-- ROW 1 - NAVBAR -->
+    <div class="navbar">
+        <div class="profession-buttons">
+            <button onclick="switchProfession('da')">Data Analyst</button>
+            <button onclick="switchProfession('qa')">Quality Assurance</button>
+            <button onclick="switchProfession('other')">Other</button>
+        </div>
+
+        <div class="language-buttons">
+            <button onclick="switchLanguage('en')">EN</button>
+            <button onclick="switchLanguage('id')">ID</button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- ROW 2 -->
+        <div class="row row-2">
+            <div class="photo">
+                <img src="your-photo.jpg" alt="Profile Photo">
+            </div>
+
+            <div class="info">
+                <div class="about">
+                    <h2 id="about-title">About Me</h2>
+                    <p id="about-text">Your about me text here...</p>
+                    <div class="cv-buttons">
+                        <button>Download CV Design</button>
+                        <button>Download CV ATS</button>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h3 id="education-title">Education</h3>
+                    <p id="education-text">Your education here...</p>
+                </div>
+
+                <div class="contact">
+                    <h3 id="contact-title">Contact</h3>
+                    <p>📍 <span id="domicile">South Tangerang</span></p>
+                    <p>🔗 LinkedIn</p>
+                    <p>📸 Instagram</p>
+                    <p>✉ Email</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="row row-3">
+            <div class="technical">
+                <h3 id="tech-title">Technical Skills</h3>
+                <div class="skills-icons">
+                    <span>Excel</span>
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Tableau</span>
+                </div>
+            </div>
+
+            <div class="soft">
+                <h3 id="soft-title">Soft Skills</h3>
+                <ul id="soft-list">
+                    <li>Critical Thinking</li>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ROW 4 -->
+        <div class="row row-4">
+            <h3 id="cert-title">Certification</h3>
+            <div class="cert-grid">
+                <div class="cert-box">Certification 1</div>
+                <div class="cert-box">Certification 2</div>
+                <div class="cert-box">Certification 3</div>
+                <div class="cert-box">Certification 4</div>
+            </div>
+        </div>
+
+        <!-- ROW 5 -->
+        <div class="row row-5">
+            <h3 id="project-title">Project Experience</h3>
+            <div id="project-content">
+                <p>Project description here...</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
