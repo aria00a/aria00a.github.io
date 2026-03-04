@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<!-- COPYRIGHT: diluar .portfolio, tidak ikut scroll -->
+<div class="copyright">Copyright &copy; 2025 Aria Bimantara. All rights reserved.</div>
+
 <div class="portfolio">
 
   <!-- ROW 1: NAVBAR -->
@@ -32,8 +35,6 @@
       <img id="profile-photo" alt="Profile Photo" />
     </div>
     <div class="info-col">
-
-      <!-- About Me -->
       <div class="card about-card">
         <div class="about-header">
           <div class="about-header-left">
@@ -47,8 +48,6 @@
         </div>
         <div class="about-text" id="about-text"></div>
       </div>
-
-      <!-- Contact + Education + Certification -->
       <div class="info-bottom">
         <div class="card">
           <div class="card-title" id="label-contact">Contact</div>
@@ -88,7 +87,7 @@
 
 </div>
 
-<!-- EDUCATION POPUP MODAL -->
+<!-- ===== EDUCATION POPUP ===== -->
 <div class="modal-overlay" id="edu-modal">
   <div class="modal-card">
     <button class="modal-close" id="modal-close-btn">✕</button>
@@ -103,18 +102,48 @@
   </div>
 </div>
 
-<!-- PROJECT POPUP MODAL -->
-<div class="modal-overlay" id="proj-modal">
+<!-- ===== CERTIFICATION POPUP ===== -->
+<div class="modal-overlay" id="cert-modal">
   <div class="modal-card">
-    <button class="modal-close" id="proj-close-btn">✕</button>
+    <button class="modal-close" id="cert-close-btn">✕</button>
     <div class="modal-header">
-      <div class="modal-logo" id="proj-modal-logo"></div>
-      <div class="modal-judul" id="proj-modal-judul"></div>
+      <div class="modal-logo" id="cert-modal-logo"></div>
+      <div class="modal-judul" id="cert-modal-judul"></div>
     </div>
-    <div class="modal-prodi" id="proj-modal-role"></div>
-    <div class="modal-tanggal" id="proj-modal-tags"></div>
+    <div class="modal-prodi" id="cert-modal-issuer"></div>
+    <div class="modal-tanggal" id="cert-modal-year"></div>
     <div class="modal-divider"></div>
-    <div class="modal-isi" id="proj-modal-desc"></div>
+    <div class="modal-isi" id="cert-modal-desc"></div>
+    <a class="cv-btn cv-btn-primary cert-view-btn" id="cert-view-btn" href="#" target="_blank">View Certification</a>
+  </div>
+</div>
+
+<!-- ===== PROJECT POPUP (WIDE) ===== -->
+<div class="modal-overlay" id="proj-modal">
+  <div class="modal-card proj-modal-card">
+    <button class="modal-close" id="proj-close-btn">✕</button>
+
+    <!-- Cover image 16:9 -->
+    <div class="proj-cover" id="proj-cover">
+      <img id="proj-cover-img" alt="Project Cover" style="display:none" />
+      <div class="proj-cover-placeholder" id="proj-cover-placeholder"></div>
+    </div>
+
+    <div class="proj-modal-body">
+      <!-- Judul -->
+      <div class="proj-modal-title" id="proj-modal-title"></div>
+
+      <!-- View Deck (kiri) + Tags (kanan) -->
+      <div class="proj-modal-meta">
+        <a class="cv-btn cv-btn-primary" id="proj-deck-btn" href="#" target="_blank">View Deck</a>
+        <div class="proj-modal-tags" id="proj-modal-tags"></div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <!-- Executive Summary: 2 kolom -->
+      <div class="proj-sections" id="proj-sections"></div>
+    </div>
   </div>
 </div>
 
@@ -144,6 +173,12 @@
     <line x1="16" y1="2" x2="16" y2="6"/>
     <line x1="8" y1="2" x2="8" y2="6"/>
     <line x1="3" y1="10" x2="21" y2="10"/>
+  </svg>
+</template>
+<template id="icon-award">
+  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="6"/>
+    <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
   </svg>
 </template>
 <template id="icon-tag">
