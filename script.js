@@ -9,7 +9,7 @@ const LANG = {
 
     // ── DATA ANALYST ───────────────────────────
     da_role: "Data Analyst",
-    da_name: "Aria Bimantara",
+    da_name: "xxAria Bimantara",
     da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
     da_cv_ats_url: "#",
@@ -534,7 +534,7 @@ function render() {
 
   // Profile photo
   const photoMap = {
-    da: 'img/Pas-Foto.jpg',
+    da: 'https://drive.google.com/uc?export=view&id=1MPbCmSQAaT9h9b8GKOXZsaVk_aHnrvP8',
     qa: 'https://placehold.co/200x300/e6eaf0/192841?text=Photo',
   };
   document.getElementById('profile-photo').src = photoMap[p];
