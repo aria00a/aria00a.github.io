@@ -92,25 +92,29 @@
 <div class="modal-overlay" id="edu-modal">
   <div class="modal-card">
     <button class="modal-close" id="modal-close-btn">✕</button>
-
-    <!-- Header: Logo (kiri) + Judul (kanan) -->
     <div class="modal-header">
-      <div class="modal-logo" id="modal-logo">
-        <!-- Diisi oleh script.js: img atau placeholder circle -->
-      </div>
+      <div class="modal-logo" id="modal-logo"></div>
       <div class="modal-judul" id="modal-judul"></div>
     </div>
-
-    <!-- Prodi -->
     <div class="modal-prodi" id="modal-prodi"></div>
-
-    <!-- Tanggal dengan ikon kalender -->
     <div class="modal-tanggal" id="modal-tanggal"></div>
-
     <div class="modal-divider"></div>
-
-    <!-- Isi / Deskripsi -->
     <div class="modal-isi" id="modal-isi"></div>
+  </div>
+</div>
+
+<!-- PROJECT POPUP MODAL -->
+<div class="modal-overlay" id="proj-modal">
+  <div class="modal-card">
+    <button class="modal-close" id="proj-close-btn">✕</button>
+    <div class="modal-header">
+      <div class="modal-logo" id="proj-modal-logo"></div>
+      <div class="modal-judul" id="proj-modal-judul"></div>
+    </div>
+    <div class="modal-prodi" id="proj-modal-role"></div>
+    <div class="modal-tanggal" id="proj-modal-tags"></div>
+    <div class="modal-divider"></div>
+    <div class="modal-isi" id="proj-modal-desc"></div>
   </div>
 </div>
 
@@ -140,6 +144,12 @@
     <line x1="16" y1="2" x2="16" y2="6"/>
     <line x1="8" y1="2" x2="8" y2="6"/>
     <line x1="3" y1="10" x2="21" y2="10"/>
+  </svg>
+</template>
+<template id="icon-tag">
+  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
+    <line x1="7" y1="7" x2="7.01" y2="7"/>
   </svg>
 </template>
 

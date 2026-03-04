@@ -45,7 +45,7 @@ a { color: inherit; text-decoration: none; }
 ====================================================== */
 .portfolio {
   display: grid;
-  grid-template-rows: 52px 1fr 110px 1fr;
+  grid-template-rows: 52px 1fr 130px 1fr;
   height: 100vh;
   padding: 10px 14px 8px;
   gap: 8px;
@@ -358,7 +358,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ======================================================
-   EDUCATION POPUP MODAL — Redesigned
+   EDUCATION & PROJECT POPUP MODAL — Shared styles
 ====================================================== */
 .modal-overlay {
   position: fixed;
@@ -414,8 +414,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--accent);
   border-color: var(--primary);
 }
-
-/* Header: logo bulat + judul sejajar */
 .modal-header {
   display: flex;
   align-items: center;
@@ -439,7 +437,6 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   object-fit: cover;
 }
-/* Placeholder circle jika belum ada foto */
 .modal-logo-placeholder {
   width: 100%;
   height: 100%;
@@ -461,8 +458,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.2;
   flex: 1;
 }
-
-/* Prodi */
 .modal-prodi {
   font-size: 15px;
   font-weight: 700;
@@ -470,8 +465,6 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 10px;
   line-height: 1.4;
 }
-
-/* Tanggal — pill seperti contact, tapi no hover */
 .modal-tanggal {
   display: inline-flex;
   align-items: center;
@@ -492,14 +485,37 @@ a { color: inherit; text-decoration: none; }
   stroke: var(--muted);
 }
 
-/* Divider */
+/* Project popup: tags tampil sebagai beberapa pill berjajar */
+.modal-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.modal-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.modal-tag-pill svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  stroke: var(--muted);
+}
+
 .modal-divider {
   height: 1px;
   background: var(--border);
   margin-bottom: 14px;
 }
-
-/* Isi — teks paragraf atau bullet */
 .modal-isi {
   font-size: 14px;
   color: var(--muted);
@@ -527,15 +543,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ======================================================
-   ROW 3 — SKILLS (40:60 split)
+   ROW 3 — SKILLS (30:70 split)
 ====================================================== */
 .row-skills {
   display: grid;
   grid-template-columns: 30fr 70fr;
   gap: 10px;
 }
-
-/* Technical Skills: logo tersebar rata */
 .skill-logos {
   display: flex;
   justify-content: space-between;
@@ -569,8 +583,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--primary);
   font-weight: 600;
 }
-
-/* Soft Skills: 3 kolom, pill-style, bold, no hover */
 .soft-list {
   list-style: none;
   display: grid;
@@ -613,17 +625,22 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
+
+/* Project card — tampilan tetap sama, tapi kini bisa diklik */
 .project-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 10px 12px;
   box-shadow: 0 1px 8px var(--shadow);
-  transition: all 0.25s;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-family: 'Jost', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-card:hover {
   transform: translateY(-2px);
-  border-color: var(--accent);
   box-shadow: 0 4px 16px var(--shadow);
 }
 .project-role {

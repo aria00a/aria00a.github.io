@@ -19,19 +19,17 @@ const LANG = {
         degree: "Bachelor of Informatics",
         school: "Pamulang University",
         year: "Sep, 2016 – Apr, 2023",
-        // LOGO: ganti dengan path file logo setelah upload, contoh: logo: "img/logo-pamulang.png"
-        logo: "",
+        logo: "img/Unpam.png",
         prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00",
         tanggal: "Sep, 2016 – Apr, 2023",
         isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)",
-        isiType: "text"  // "text" atau "bullets"
+        isiType: "text"
       },
       {
         degree: "Full-stack Data Analytics",
         school: "RevoU",
         year: "Oct, 2025 – Feb, 2026",
-        // LOGO: ganti dengan path file logo setelah upload, contoh: logo: "img/logo-revou.png"
-        logo: "",
+        logo: "img/RevoU.png",
         prodi: "Full-stack Data Analytics",
         tanggal: "Oct, 2025 – Feb, 2026",
         isi: [
@@ -63,9 +61,24 @@ const LANG = {
     ],
     da_proj_title: "Project Experience",
     da_projects: [
-      { role: "Personal Project", title: "Sales Performance Dashboard", desc: "Built an interactive Tableau dashboard to visualize monthly sales KPIs, regional performance, and customer segmentation for a retail dataset.", tags: ["Tableau", "SQL", "Excel"] },
-      { role: "Freelance", title: "Customer Churn Analysis", desc: "Performed EDA and predictive modeling using Python (Pandas, Sklearn) to identify key drivers of customer churn with 82% model accuracy.", tags: ["Python", "Pandas", "Scikit-learn"] },
-      { role: "Academic Project", title: "Market Basket Analysis", desc: "Applied Apriori algorithm on transactional data to discover product association rules, aiding cross-selling strategy for a local retailer.", tags: ["Python", "MLxtend", "Jupyter"] }
+      {
+        role: "Personal Project",
+        title: "Sales Performance Dashboard",
+        desc: "Built an interactive Tableau dashboard to visualize monthly sales KPIs, regional performance, and customer segmentation for a retail dataset.",
+        tags: ["Tableau", "SQL", "Excel"]
+      },
+      {
+        role: "Freelance",
+        title: "Customer Churn Analysis",
+        desc: "Performed EDA and predictive modeling using Python (Pandas, Sklearn) to identify key drivers of customer churn with 82% model accuracy.",
+        tags: ["Python", "Pandas", "Scikit-learn"]
+      },
+      {
+        role: "Academic Project",
+        title: "Market Basket Analysis",
+        desc: "Applied Apriori algorithm on transactional data to discover product association rules, aiding cross-selling strategy for a local retailer.",
+        tags: ["Python", "MLxtend", "Jupyter"]
+      }
     ],
 
     // ── QUALITY ASSURANCE ──────────────────────
@@ -121,9 +134,24 @@ const LANG = {
     ],
     qa_proj_title: "Project Experience",
     qa_projects: [
-      { role: "Internship", title: "E-commerce Platform Testing", desc: "Designed and executed 200+ test cases for a B2C e-commerce platform, documented bugs in Jira, and performed regression testing before each sprint release.", tags: ["Jira", "Manual Testing", "Regression"] },
-      { role: "Freelance", title: "API Testing for Fintech App", desc: "Created automated API test scripts using Postman and Newman, integrated into CI/CD pipeline reducing manual QA time by 40%.", tags: ["Postman", "Newman", "CI/CD"] },
-      { role: "Personal Project", title: "Web Automation Framework", desc: "Built a Selenium + TestNG page-object-model framework for automated UI testing across 3 browsers with HTML test reports.", tags: ["Selenium", "TestNG", "Java"] }
+      {
+        role: "Internship",
+        title: "E-commerce Platform Testing",
+        desc: "Designed and executed 200+ test cases for a B2C e-commerce platform, documented bugs in Jira, and performed regression testing before each sprint release.",
+        tags: ["Jira", "Manual Testing", "Regression"]
+      },
+      {
+        role: "Freelance",
+        title: "API Testing for Fintech App",
+        desc: "Created automated API test scripts using Postman and Newman, integrated into CI/CD pipeline reducing manual QA time by 40%.",
+        tags: ["Postman", "Newman", "CI/CD"]
+      },
+      {
+        role: "Personal Project",
+        title: "Web Automation Framework",
+        desc: "Built a Selenium + TestNG page-object-model framework for automated UI testing across 3 browsers with HTML test reports.",
+        tags: ["Selenium", "TestNG", "Java"]
+      }
     ],
   },
 
@@ -143,7 +171,7 @@ const LANG = {
         degree: "S1 Teknik Informatika",
         school: "Universitas Pamulang",
         year: "Sep, 2016 – Apr, 2023",
-        logo: "",
+        logo: "img/Unpam.png",
         prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00",
         tanggal: "Sep, 2016 – Apr, 2023",
         isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)",
@@ -153,7 +181,7 @@ const LANG = {
         degree: "Full-stack Data Analytics",
         school: "RevoU",
         year: "Okt, 2025 – Feb, 2026",
-        logo: "",
+        logo: "img/RevoU.png",
         prodi: "Full-stack Data Analytics",
         tanggal: "Okt, 2025 – Feb, 2026",
         isi: [
@@ -185,9 +213,24 @@ const LANG = {
     ],
     da_proj_title: "Pengalaman Proyek",
     da_projects: [
-      { role: "Proyek Pribadi", title: "Dashboard Performa Penjualan", desc: "Membangun dashboard Tableau interaktif untuk memvisualisasikan KPI penjualan bulanan, performa regional, dan segmentasi pelanggan dari dataset ritel.", tags: ["Tableau", "SQL", "Excel"] },
-      { role: "Freelance", title: "Analisis Churn Pelanggan", desc: "Melakukan EDA dan pemodelan prediktif menggunakan Python (Pandas, Sklearn) untuk mengidentifikasi faktor utama churn dengan akurasi model 82%.", tags: ["Python", "Pandas", "Scikit-learn"] },
-      { role: "Proyek Akademik", title: "Market Basket Analysis", desc: "Menerapkan algoritma Apriori pada data transaksi untuk menemukan aturan asosiasi produk, membantu strategi cross-selling retailer lokal.", tags: ["Python", "MLxtend", "Jupyter"] }
+      {
+        role: "Proyek Pribadi",
+        title: "Dashboard Performa Penjualan",
+        desc: "Membangun dashboard Tableau interaktif untuk memvisualisasikan KPI penjualan bulanan, performa regional, dan segmentasi pelanggan dari dataset ritel.",
+        tags: ["Tableau", "SQL", "Excel"]
+      },
+      {
+        role: "Freelance",
+        title: "Analisis Churn Pelanggan",
+        desc: "Melakukan EDA dan pemodelan prediktif menggunakan Python (Pandas, Sklearn) untuk mengidentifikasi faktor utama churn dengan akurasi model 82%.",
+        tags: ["Python", "Pandas", "Scikit-learn"]
+      },
+      {
+        role: "Proyek Akademik",
+        title: "Market Basket Analysis",
+        desc: "Menerapkan algoritma Apriori pada data transaksi untuk menemukan aturan asosiasi produk, membantu strategi cross-selling retailer lokal.",
+        tags: ["Python", "MLxtend", "Jupyter"]
+      }
     ],
 
     qa_role: "Quality Assurance Engineer",
@@ -242,9 +285,24 @@ const LANG = {
     ],
     qa_proj_title: "Pengalaman Proyek",
     qa_projects: [
-      { role: "Magang", title: "Pengujian Platform E-commerce", desc: "Merancang dan mengeksekusi 200+ test case untuk platform e-commerce B2C, mendokumentasikan bug di Jira, dan melakukan regression testing setiap sprint.", tags: ["Jira", "Manual Testing", "Regression"] },
-      { role: "Freelance", title: "API Testing Aplikasi Fintech", desc: "Membuat skrip otomasi API menggunakan Postman dan Newman, diintegrasikan ke CI/CD pipeline sehingga mengurangi waktu QA manual sebesar 40%.", tags: ["Postman", "Newman", "CI/CD"] },
-      { role: "Proyek Pribadi", title: "Framework Otomasi Web", desc: "Membangun framework Selenium + TestNG dengan page-object-model untuk pengujian UI otomatis di 3 browser beserta laporan HTML.", tags: ["Selenium", "TestNG", "Java"] }
+      {
+        role: "Magang",
+        title: "Pengujian Platform E-commerce",
+        desc: "Merancang dan mengeksekusi 200+ test case untuk platform e-commerce B2C, mendokumentasikan bug di Jira, dan melakukan regression testing setiap sprint.",
+        tags: ["Jira", "Manual Testing", "Regression"]
+      },
+      {
+        role: "Freelance",
+        title: "API Testing Aplikasi Fintech",
+        desc: "Membuat skrip otomasi API menggunakan Postman dan Newman, diintegrasikan ke CI/CD pipeline sehingga mengurangi waktu QA manual sebesar 40%.",
+        tags: ["Postman", "Newman", "CI/CD"]
+      },
+      {
+        role: "Proyek Pribadi",
+        title: "Framework Otomasi Web",
+        desc: "Membangun framework Selenium + TestNG dengan page-object-model untuk pengujian UI otomatis di 3 browser beserta laporan HTML.",
+        tags: ["Selenium", "TestNG", "Java"]
+      }
     ],
   }
 };
@@ -285,23 +343,16 @@ function getIcon(id) {
    EDUCATION POPUP
 ====================================================== */
 function openEduModal(edu) {
-  // LOGO: tampilkan img jika ada, atau placeholder bulat dengan inisial
   const logoEl = document.getElementById('modal-logo');
   if (edu.logo) {
     logoEl.innerHTML = `<img src="${edu.logo}" alt="${edu.school}" />`;
   } else {
-    // Ambil inisial dari nama school
     const initials = edu.school.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
     logoEl.innerHTML = `<div class="modal-logo-placeholder">${initials}</div>`;
   }
-
-  // JUDUL
   document.getElementById('modal-judul').textContent = edu.school;
-
-  // PRODI
   document.getElementById('modal-prodi').textContent = edu.prodi;
 
-  // TANGGAL dengan ikon kalender
   const tanggalEl = document.getElementById('modal-tanggal');
   tanggalEl.innerHTML = '';
   tanggalEl.appendChild(getIcon('icon-calendar'));
@@ -309,7 +360,6 @@ function openEduModal(edu) {
   tanggalSpan.textContent = edu.tanggal;
   tanggalEl.appendChild(tanggalSpan);
 
-  // ISI: text biasa atau bullet list
   const isiEl = document.getElementById('modal-isi');
   if (edu.isiType === 'bullets' && Array.isArray(edu.isi)) {
     const ul = document.createElement('ul');
@@ -335,8 +385,58 @@ document.getElementById('edu-modal').addEventListener('click', function(e) {
   if (e.target === this) closeEduModal();
 });
 document.getElementById('modal-close-btn').addEventListener('click', closeEduModal);
+
+/* ======================================================
+   PROJECT POPUP
+====================================================== */
+function openProjModal(proj) {
+  // LOGO — placeholder dengan inisial judul proyek
+  const logoEl = document.getElementById('proj-modal-logo');
+  const initials = proj.title.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+  logoEl.innerHTML = `<div class="modal-logo-placeholder">${initials}</div>`;
+
+  // JUDUL — judul proyek
+  document.getElementById('proj-modal-judul').textContent = proj.title;
+
+  // ROLE — setara dengan PRODI
+  document.getElementById('proj-modal-role').textContent = proj.role;
+
+  // TAGS — sebagai pill-pills berjajar, setara dengan TANGGAL
+  const tagsEl = document.getElementById('proj-modal-tags');
+  tagsEl.className = 'modal-tags-row';
+  tagsEl.innerHTML = '';
+  proj.tags.forEach(tag => {
+    const pill = document.createElement('span');
+    pill.className = 'modal-tag-pill';
+    const iconClone = getIcon('icon-tag');
+    pill.appendChild(iconClone);
+    const tagSpan = document.createElement('span');
+    tagSpan.textContent = tag;
+    pill.appendChild(tagSpan);
+    tagsEl.appendChild(pill);
+  });
+
+  // ISI — deskripsi proyek
+  document.getElementById('proj-modal-desc').textContent = proj.desc;
+
+  document.getElementById('proj-modal').classList.add('active');
+}
+
+function closeProjModal() {
+  document.getElementById('proj-modal').classList.remove('active');
+}
+
+document.getElementById('proj-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeProjModal();
+});
+document.getElementById('proj-close-btn').addEventListener('click', closeProjModal);
+
+// Escape menutup modal yang sedang aktif
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeEduModal();
+  if (e.key === 'Escape') {
+    closeEduModal();
+    closeProjModal();
+  }
 });
 
 /* ======================================================
@@ -347,7 +447,6 @@ function render() {
   const p = currentProf;
 
   document.documentElement.setAttribute('data-theme', p === 'da' ? '' : p);
-
   document.getElementById('nav-brand').textContent = L.brand;
   document.getElementById('btn-da').textContent = L.btn_da;
   document.getElementById('btn-qa').textContent = L.btn_qa;
@@ -358,7 +457,7 @@ function render() {
   document.getElementById('btn-cv-ats').textContent = L[`${p}_cv_ats`];
   document.getElementById('btn-cv-ats').href = L[`${p}_cv_ats_url`];
 
-  // Education — button, klik buka popup
+  // Education
   document.getElementById('label-edu').textContent = L[`${p}_edu_title`];
   const eduGrid = document.getElementById('edu-grid');
   eduGrid.innerHTML = '';
@@ -416,15 +515,22 @@ function render() {
       <div class="cert-issuer">${cert.issuer}</div>
     </div>`).join('');
 
-  // Projects
+  // Projects — render sebagai button, klik buka popup
   document.getElementById('label-proj').textContent = L[`${p}_proj_title`];
-  document.getElementById('project-grid').innerHTML = L[`${p}_projects`].map(proj => `
-    <div class="project-card">
+  const projGrid = document.getElementById('project-grid');
+  projGrid.innerHTML = '';
+  L[`${p}_projects`].forEach(proj => {
+    const btn = document.createElement('button');
+    btn.className = 'project-card';
+    btn.innerHTML = `
       <div class="project-role">${proj.role}</div>
       <div class="project-title">${proj.title}</div>
       <div class="project-desc">${proj.desc}</div>
       <div class="project-tags">${proj.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
-    </div>`).join('');
+    `;
+    btn.addEventListener('click', () => openProjModal(proj));
+    projGrid.appendChild(btn);
+  });
 
   // Profile photo
   const photoMap = {
