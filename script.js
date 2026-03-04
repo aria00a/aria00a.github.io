@@ -19,13 +19,29 @@ const LANG = {
         degree: "Bachelor of Informatics",
         school: "Pamulang University",
         year: "Sep, 2016 – Apr, 2023",
-        detail: "Completed a 4-year program in Informatics Engineering with a focus on software development, database systems, and computer networks. Gained foundational knowledge in programming, algorithms, and system analysis."
+        // LOGO: ganti dengan path file logo setelah upload, contoh: logo: "img/logo-pamulang.png"
+        logo: "",
+        prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00",
+        tanggal: "Sep, 2016 – Apr, 2023",
+        isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)",
+        isiType: "text"  // "text" atau "bullets"
       },
       {
         degree: "Full-stack Data Analytics",
         school: "RevoU",
         year: "Oct, 2025 – Feb, 2026",
-        detail: "Intensive full-stack data analytics bootcamp covering data wrangling, SQL, Python (Pandas, NumPy, Scikit-learn), and data visualization using Tableau. Completed multiple end-to-end analytics projects with real-world datasets."
+        // LOGO: ganti dengan path file logo setelah upload, contoh: logo: "img/logo-revou.png"
+        logo: "",
+        prodi: "Full-stack Data Analytics",
+        tanggal: "Oct, 2025 – Feb, 2026",
+        isi: [
+          "Analyzed datasets using SQL (BigQuery) to extract, clean, and transform data for business analysis.",
+          "Performed exploratory data analysis and data processing using Python (Google Colab) and relevant libraries.",
+          "Developed interactive dashboards in Tableau tailored to stakeholder needs.",
+          "Structured business problems into analytical frameworks to guide data-driven decision making.",
+          "Delivered end-to-end Data End-to-End Portfolio Project (DEEPP), translating raw data into actionable insights and recommendations."
+        ],
+        isiType: "bullets"
       }
     ],
     da_contact_title: "Contact",
@@ -64,13 +80,26 @@ const LANG = {
         degree: "Bachelor of Informatics",
         school: "Pamulang University",
         year: "Sep, 2016 – Apr, 2023",
-        detail: "Completed a 4-year program in Informatics Engineering with a focus on software development, database systems, and computer networks. Gained foundational knowledge in programming, algorithms, and system analysis."
+        logo: "",
+        prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00",
+        tanggal: "Sep, 2016 – Apr, 2023",
+        isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)",
+        isiType: "text"
       },
       {
         degree: "QA Automation Bootcamp",
         school: "Bootcamp Institution",
         year: "2023",
-        detail: "Intensive QA automation training covering Selenium WebDriver, TestNG, Postman API testing, and CI/CD pipeline integration. Hands-on projects focused on building automated test frameworks for web applications."
+        logo: "",
+        prodi: "QA Automation Bootcamp",
+        tanggal: "2023",
+        isi: [
+          "Intensive QA automation training covering Selenium WebDriver and TestNG.",
+          "Hands-on experience with Postman API testing and Newman CI/CD integration.",
+          "Built automated test frameworks for web applications using page-object-model design pattern.",
+          "Generated HTML test reports across multiple browser environments."
+        ],
+        isiType: "bullets"
       }
     ],
     qa_contact_title: "Contact",
@@ -114,13 +143,27 @@ const LANG = {
         degree: "S1 Teknik Informatika",
         school: "Universitas Pamulang",
         year: "Sep, 2016 – Apr, 2023",
-        detail: "Menyelesaikan program S1 Teknik Informatika dengan fokus pada pengembangan perangkat lunak, sistem basis data, dan jaringan komputer. Memperoleh pengetahuan dasar dalam pemrograman, algoritma, dan analisis sistem."
+        logo: "",
+        prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00",
+        tanggal: "Sep, 2016 – Apr, 2023",
+        isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)",
+        isiType: "text"
       },
       {
         degree: "Full-stack Data Analytics",
         school: "RevoU",
         year: "Okt, 2025 – Feb, 2026",
-        detail: "Bootcamp data analytics intensif yang mencakup data wrangling, SQL, Python (Pandas, NumPy, Scikit-learn), dan visualisasi data menggunakan Tableau. Menyelesaikan beberapa proyek analitik end-to-end dengan dataset nyata."
+        logo: "",
+        prodi: "Full-stack Data Analytics",
+        tanggal: "Okt, 2025 – Feb, 2026",
+        isi: [
+          "Menganalisis dataset menggunakan SQL (BigQuery) untuk mengekstrak, membersihkan, dan mentransformasi data untuk analisis bisnis.",
+          "Melakukan eksplorasi data dan pemrosesan menggunakan Python (Google Colab) dan library terkait.",
+          "Membangun dashboard interaktif di Tableau sesuai kebutuhan stakeholder.",
+          "Menyusun masalah bisnis dalam kerangka analitik untuk mendukung pengambilan keputusan berbasis data.",
+          "Menyelesaikan Data End-to-End Portfolio Project (DEEPP), mengubah data mentah menjadi wawasan dan rekomendasi yang dapat ditindaklanjuti."
+        ],
+        isiType: "bullets"
       }
     ],
     da_contact_title: "Kontak",
@@ -158,13 +201,26 @@ const LANG = {
         degree: "S1 Teknik Informatika",
         school: "Universitas Pamulang",
         year: "Sep, 2016 – Apr, 2023",
-        detail: "Menyelesaikan program S1 Teknik Informatika dengan fokus pada pengembangan perangkat lunak, sistem basis data, dan jaringan komputer. Memperoleh pengetahuan dasar dalam pemrograman, algoritma, dan analisis sistem."
+        logo: "",
+        prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00",
+        tanggal: "Sep, 2016 – Apr, 2023",
+        isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)",
+        isiType: "text"
       },
       {
         degree: "Bootcamp QA Automation",
         school: "Nama Institusi",
         year: "2023",
-        detail: "Pelatihan QA automation intensif yang mencakup Selenium WebDriver, TestNG, pengujian API dengan Postman, dan integrasi CI/CD pipeline. Proyek langsung berfokus pada pembuatan framework pengujian otomatis untuk aplikasi web."
+        logo: "",
+        prodi: "QA Automation Bootcamp",
+        tanggal: "2023",
+        isi: [
+          "Pelatihan QA automation intensif mencakup Selenium WebDriver dan TestNG.",
+          "Pengujian API menggunakan Postman dan integrasi CI/CD pipeline dengan Newman.",
+          "Membangun framework pengujian otomatis dengan pola page-object-model untuk aplikasi web.",
+          "Menghasilkan laporan pengujian HTML di berbagai lingkungan browser."
+        ],
+        isiType: "bullets"
       }
     ],
     qa_contact_title: "Kontak",
@@ -229,10 +285,45 @@ function getIcon(id) {
    EDUCATION POPUP
 ====================================================== */
 function openEduModal(edu) {
-  document.getElementById('modal-year').textContent   = edu.year;
-  document.getElementById('modal-degree').textContent = edu.degree;
-  document.getElementById('modal-school').textContent = edu.school;
-  document.getElementById('modal-detail').textContent = edu.detail || '';
+  // LOGO: tampilkan img jika ada, atau placeholder bulat dengan inisial
+  const logoEl = document.getElementById('modal-logo');
+  if (edu.logo) {
+    logoEl.innerHTML = `<img src="${edu.logo}" alt="${edu.school}" />`;
+  } else {
+    // Ambil inisial dari nama school
+    const initials = edu.school.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+    logoEl.innerHTML = `<div class="modal-logo-placeholder">${initials}</div>`;
+  }
+
+  // JUDUL
+  document.getElementById('modal-judul').textContent = edu.school;
+
+  // PRODI
+  document.getElementById('modal-prodi').textContent = edu.prodi;
+
+  // TANGGAL dengan ikon kalender
+  const tanggalEl = document.getElementById('modal-tanggal');
+  tanggalEl.innerHTML = '';
+  tanggalEl.appendChild(getIcon('icon-calendar'));
+  const tanggalSpan = document.createElement('span');
+  tanggalSpan.textContent = edu.tanggal;
+  tanggalEl.appendChild(tanggalSpan);
+
+  // ISI: text biasa atau bullet list
+  const isiEl = document.getElementById('modal-isi');
+  if (edu.isiType === 'bullets' && Array.isArray(edu.isi)) {
+    const ul = document.createElement('ul');
+    edu.isi.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+    isiEl.innerHTML = '';
+    isiEl.appendChild(ul);
+  } else {
+    isiEl.textContent = edu.isi || '';
+  }
+
   document.getElementById('edu-modal').classList.add('active');
 }
 
@@ -240,13 +331,10 @@ function closeEduModal() {
   document.getElementById('edu-modal').classList.remove('active');
 }
 
-// Tutup modal kalau klik di luar modal-card
 document.getElementById('edu-modal').addEventListener('click', function(e) {
   if (e.target === this) closeEduModal();
 });
 document.getElementById('modal-close-btn').addEventListener('click', closeEduModal);
-
-// Tutup modal dengan tombol Escape
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeEduModal();
 });
@@ -258,22 +346,19 @@ function render() {
   const L = LANG[currentLang];
   const p = currentProf;
 
-  // Theme
   document.documentElement.setAttribute('data-theme', p === 'da' ? '' : p);
 
-  // Brand & nav buttons
   document.getElementById('nav-brand').textContent = L.brand;
   document.getElementById('btn-da').textContent = L.btn_da;
   document.getElementById('btn-qa').textContent = L.btn_qa;
 
-  // About
   document.getElementById('about-name').textContent = L[`${p}_name`];
   document.getElementById('about-role').textContent = L[`${p}_role`];
   document.getElementById('about-text').textContent = L[`${p}_about`];
   document.getElementById('btn-cv-ats').textContent = L[`${p}_cv_ats`];
   document.getElementById('btn-cv-ats').href = L[`${p}_cv_ats_url`];
 
-  // Education — render sebagai button, klik buka popup
+  // Education — button, klik buka popup
   document.getElementById('label-edu').textContent = L[`${p}_edu_title`];
   const eduGrid = document.getElementById('edu-grid');
   eduGrid.innerHTML = '';

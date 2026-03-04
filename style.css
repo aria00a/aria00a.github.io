@@ -11,7 +11,6 @@
   --border:    rgba(0,109,91,0.18);
   --shadow:    rgba(0,109,91,0.12);
   --tag-bg:    rgba(0,109,91,0.10);
-  /* Filter untuk tint warna primary pada logo skill */
   --logo-tint: grayscale(100%) sepia(80%) hue-rotate(120deg) saturate(500%) brightness(0.55);
 }
 [data-theme="qa"] {
@@ -359,7 +358,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ======================================================
-   EDUCATION POPUP MODAL
+   EDUCATION POPUP MODAL — Redesigned
 ====================================================== */
 .modal-overlay {
   position: fixed;
@@ -382,9 +381,9 @@ a { color: inherit; text-decoration: none; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 18px;
-  padding: 32px 36px;
-  min-width: 360px;
-  max-width: 480px;
+  padding: 28px 32px 32px;
+  min-width: 400px;
+  max-width: 520px;
   box-shadow: 0 16px 48px rgba(0,0,0,0.2);
   position: relative;
   transform: translateY(12px) scale(0.97);
@@ -415,49 +414,128 @@ a { color: inherit; text-decoration: none; }
   color: var(--accent);
   border-color: var(--primary);
 }
-.modal-year {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
+
+/* Header: logo bulat + judul sejajar */
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
 }
-.modal-degree {
+.modal-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--tag-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Placeholder circle jika belum ada foto */
+.modal-logo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 26px;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.modal-judul {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
   font-weight: 700;
   color: var(--primary);
   line-height: 1.2;
-  margin-bottom: 4px;
+  flex: 1;
 }
-.modal-school {
+
+/* Prodi */
+.modal-prodi {
   font-size: 15px;
-  color: var(--muted);
-  font-weight: 500;
-  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
+
+/* Tanggal — pill seperti contact, tapi no hover */
+.modal-tanggal {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.modal-tanggal svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  stroke: var(--muted);
+}
+
+/* Divider */
 .modal-divider {
   height: 1px;
   background: var(--border);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
-.modal-detail {
+
+/* Isi — teks paragraf atau bullet */
+.modal-isi {
   font-size: 14px;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.75;
+}
+.modal-isi ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+}
+.modal-isi ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.modal-isi ul li::before {
+  content: "•";
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  flex-shrink: 0;
 }
 
 /* ======================================================
-   ROW 3 — SKILLS
+   ROW 3 — SKILLS (40:60 split)
 ====================================================== */
 .row-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40fr 60fr;
   gap: 10px;
 }
 
-/* Skill logos: rata kiri-kanan dengan space-between */
+/* Technical Skills: logo tersebar rata */
 .skill-logos {
   display: flex;
   justify-content: space-between;
@@ -475,8 +553,6 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   cursor: default;
 }
-
-/* Logo: default = tint warna primary, hover = warna asli brand */
 .skill-logo img {
   width: 42px;
   height: 42px;
@@ -488,30 +564,33 @@ a { color: inherit; text-decoration: none; }
   filter: none;
   transform: scale(1.12);
 }
-.skill-logo span {
-  transition: color 0.3s;
-}
+.skill-logo span { transition: color 0.3s; }
 .skill-logo:hover span {
   color: var(--primary);
   font-weight: 600;
 }
 
+/* Soft Skills: 3 kolom, pill-style, bold, no hover */
 .soft-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
   margin-top: 6px;
 }
 .soft-list li {
-  font-size: 15px;
-  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 6px 8px;
   border-radius: 20px;
   background: var(--tag-bg);
   border: 1px solid var(--border);
   color: var(--text);
-  font-weight: 500;
-  transition: background 0.3s, border-color 0.3s;
+  line-height: 1.3;
 }
 
 /* ======================================================
