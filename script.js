@@ -8,7 +8,7 @@ const LANG = {
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
-    da_role: "Data Analyst",
+    da_role: "Data Analystzz",
     da_name: "Aria Bimantara",
     da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
