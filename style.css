@@ -531,7 +531,7 @@ a { color: inherit; text-decoration: none; }
 ====================================================== */
 .row-skills {
   display: grid;
-  grid-template-columns: 40fr 60fr;
+  grid-template-columns: 30fr 70fr;
   gap: 10px;
 }
 
@@ -577,6 +577,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
   margin-top: 6px;
+  padding-bottom: 6px;
 }
 .soft-list li {
   display: flex;
