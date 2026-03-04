@@ -15,18 +15,14 @@
 </head>
 <body>
 
-<!-- =============================================
-     MAIN LAYOUT
-============================================= -->
 <div class="portfolio">
 
   <!-- ROW 1: NAVBAR -->
   <nav class="navbar">
     <div class="nav-brand" id="nav-brand">My Portfolio</div>
     <div class="nav-center">
-      <button class="prof-btn active" data-prof="da" id="btn-da">Data Analyst</button>
+      <button class="prof-btn active" data-prof="da" id="btn-da">Data Enthusiast</button>
       <button class="prof-btn" data-prof="qa" id="btn-qa">Quality Assurance</button>
-      <button class="prof-btn" data-prof="other" id="btn-other">Other</button>
     </div>
     <div class="nav-lang">
       <button class="lang-btn active" data-lang="en"><span class="flag"></span> EN</button>
@@ -42,22 +38,25 @@
       <img id="profile-photo" alt="Profile Photo" />
     </div>
 
-    <!-- Info Column: About Me (atas) + Contact & Education (bawah, 2 kolom) -->
+    <!-- Info Column -->
     <div class="info-col">
 
-      <!-- b1: About Me -->
-      <div class="card">
-        <div class="card-title" id="label-about">About Me</div>
-        <div class="about-name" id="about-name"></div>
-        <div class="about-role" id="about-role"></div>
-        <div class="about-text" id="about-text"></div>
-        <div class="cv-btns">
-          <a class="cv-btn cv-btn-primary" id="btn-cv-design" href="#" target="_blank">Download CV Design</a>
-          <a class="cv-btn cv-btn-primary" id="btn-cv-ats" href="#" target="_blank">Download CV ATS</a>
+      <!-- b1: About Me — dengan tombol CV ATS di pojok kanan atas -->
+      <div class="card about-card">
+        <div class="about-header">
+          <div class="about-header-left">
+            <div class="card-title" id="label-about">About Me</div>
+            <div class="about-name" id="about-name"></div>
+            <div class="about-role" id="about-role"></div>
+          </div>
+          <div class="about-header-right">
+            <a class="cv-btn cv-btn-primary" id="btn-cv-ats" href="#" target="_blank">Download CV</a>
+          </div>
         </div>
+        <div class="about-text" id="about-text"></div>
       </div>
 
-      <!-- b2: Contact (kiri) + Education (kanan) -->
+      <!-- b2: Contact (kiri) + Education (tengah) + Certification (kanan) -->
       <div class="info-bottom">
 
         <!-- b2.1: Contact -->
@@ -70,6 +69,12 @@
         <div class="card">
           <div class="card-title" id="label-edu">Education</div>
           <div class="edu-grid" id="edu-grid"></div>
+        </div>
+
+        <!-- b2.3: Certification -->
+        <div class="card">
+          <div class="card-title" id="label-cert">Certifications</div>
+          <div class="cert-grid" id="cert-grid"></div>
         </div>
 
       </div>
@@ -88,13 +93,7 @@
     </div>
   </div>
 
-  <!-- ROW 4: CERTIFICATIONS -->
-  <div class="card row-cert">
-    <div class="card-title" id="label-cert">Certifications</div>
-    <div class="cert-grid" id="cert-grid"></div>
-  </div>
-
-  <!-- ROW 5: PROJECT EXPERIENCE -->
+  <!-- ROW 4: PROJECT EXPERIENCE -->
   <div class="card row-projects">
     <div class="card-title" id="label-proj">Project Experience</div>
     <div class="projects-scroll">
@@ -104,9 +103,7 @@
 
 </div>
 
-<!-- =============================================
-     SVG ICON TEMPLATES (dipakai oleh script.js)
-============================================= -->
+<!-- SVG ICON TEMPLATES -->
 <template id="icon-location">
   <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
@@ -120,13 +117,6 @@
     <circle cx="4" cy="4" r="2"/>
   </svg>
 </template>
-<template id="icon-instagram">
-  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-  </svg>
-</template>
 <template id="icon-email">
   <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -134,8 +124,6 @@
   </svg>
 </template>
 
-<!-- JavaScript -->
 <script src="script.js"></script>
-
 </body>
 </html>
