@@ -8,7 +8,7 @@ const LANG = {
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
-    da_role: "Data Analyst",
+    da_role: "Data Analystaa",
     da_name: "Aria Bimantara",
     da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
@@ -55,28 +55,16 @@ const LANG = {
     da_cert_title: "Certifications",
     da_certs: [
       {
-        name: "Google Data Analytics Certificate",
-        issuer: "Google", year: "2023", logo: "",
-        desc: "A professional certificate covering the full data analysis process: ask, prepare, process, analyze, share, and act. Topics include data cleaning, SQL, R programming, and Tableau visualization.",
+        name: "Full-stack Data Analytics",
+        issuer: "RevoU", year: "Feb, 2026", logo: "img/RevoU.png",
+        desc: "Understanding Business Problem | Statistics & Spreadsheet | SQL | Python | Data Visualization | Data Communication | DEEPP (Data End-to-End Portofolio Project)",
         certUrl: "#"
       },
       {
-        name: "SQL for Data Science",
-        issuer: "Coursera", year: "2023", logo: "",
-        desc: "Covers SQL fundamentals for data retrieval, filtering, aggregation, and joining tables. Applied to real-world datasets for business analysis use cases.",
-        certUrl: "#"
-      },
-      {
-        name: "Tableau Desktop Specialist",
-        issuer: "Tableau", year: "2022", logo: "",
-        desc: "Official Tableau certification validating skills in connecting to data, creating visualizations, organizing and simplifying data, and sharing dashboards.",
-        certUrl: "#"
-      },
-      {
-        name: "Python for Everybody",
-        issuer: "Coursera", year: "2022", logo: "",
-        desc: "Introductory Python programming course covering variables, conditionals, loops, functions, and working with files and databases. Foundation for data analysis with Python.",
-        certUrl: "#"
+        name: "Microsoft Excel Basic to Advance for Data Analysis",
+        issuer: "MySkill", year: "Jun, 2022", logo: "img/MySkill.jpg",
+        desc: "Excel Basic Formula & Function | Data Formatting & Cleansing | Conditional IF ELSE and Formatting | Data Visualisasi | Vlookup & Index match | Pivot Table | What if analysis | Introduction and Practice Macro VBA",
+        certUrl: "https://drive.google.com/file/d/1jXSn8WYmOkJ6E09UAaHDa4n7ZekC-YtE/view?usp=sharing"
       }
     ],
     da_proj_title: "Project Experience",
@@ -387,7 +375,7 @@ function openProjModal(proj) {
   document.getElementById('proj-modal-title').textContent = proj.title;
 
   // View Deck
-  document.getElementById('proj-deck-btn').href = proj.deckUrl || '#';
+  document.getElementById('proj-deck-btn').href = proj.deckUrl || 'docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg';
 
   // Tags — rata kanan
   const tagsEl = document.getElementById('proj-modal-tags');
