@@ -4,13 +4,13 @@
 const LANG = {
   en: {
     brand: "My Portfolio",
-    btn_da: "Data Enthusiast",
+    btn_da: "Data Analyst",
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
-    da_role: "Data Enthusiast",
+    da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "I am a detail-oriented professional transitioning into a Data Analyst role, guided by accuracy, responsibility, and a strong commitment to quality in my work. With a background in Quality Assurance, I have gained extensive experience in application testing within the banking sector, focusing on managing testing data and preparing structured documentation in accordance with established standards. My primary responsibilities included conducting comprehensive application testing, analyzing results, and identifying potential risks prior to production release, which significantly minimized post-release issues. I have also developed skills in processing SQL queries and am currently enhancing my capabilities in data analysis using Python and data visualization with Tableau. My unique combination of quality assurance experience, technical skills, and a commitment to continuous learning positions me as an ideal candidate for a Data Analyst role.",
+    da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
     da_cv_ats_url: "#",
     da_edu_title: "Education",
@@ -80,10 +80,10 @@ const LANG = {
 
   id: {
     brand: "Portofolio Saya",
-    btn_da: "Data Enthusiast",
+    btn_da: "Data Analyst",
     btn_qa: "Quality Assurance",
 
-    da_role: "Data Enthusiast",
+    da_role: "Data Analyst",
     da_name: "Aria Bimantara",
     da_about: "Saya adalah profesional yang berorientasi pada detail yang sedang bertransisi ke peran Data Analyst, dengan panduan akurasi, tanggung jawab, dan komitmen kuat terhadap kualitas. Dengan latar belakang Quality Assurance di sektor perbankan, saya telah memiliki pengalaman luas dalam pengujian aplikasi, pengelolaan data pengujian, dan penyusunan dokumentasi terstruktur sesuai standar. Saya juga memiliki keahlian dalam pemrosesan query SQL, dan saat ini sedang mengembangkan kemampuan analisis data menggunakan Python serta visualisasi data dengan Tableau.",
     da_cv_ats: "Unduh CV",
