@@ -62,7 +62,7 @@ a { color: inherit; text-decoration: none; }
 ====================================================== */
 .portfolio {
   display: grid;
-  grid-template-rows: 52px 1fr 130px 160px;
+  grid-template-rows: 52px 1fr 130px 180px;
   height: 100vh;
   padding: 10px 14px 8px;
   gap: 8px;
