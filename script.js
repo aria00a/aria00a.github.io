@@ -15,8 +15,18 @@ const LANG = {
     da_cv_ats_url: "#",
     da_edu_title: "Education",
     da_edu: [
-      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023" },
-      { degree: "Full-stack Data Analytics", school: "RevoU", year: "Oct, 2025 - Feb, 2026" }
+      {
+        degree: "Bachelor of Informatics",
+        school: "Pamulang University",
+        year: "Sep, 2016 – Apr, 2023",
+        detail: "Completed a 4-year program in Informatics Engineering with a focus on software development, database systems, and computer networks. Gained foundational knowledge in programming, algorithms, and system analysis."
+      },
+      {
+        degree: "Full-stack Data Analytics",
+        school: "RevoU",
+        year: "Oct, 2025 – Feb, 2026",
+        detail: "Intensive full-stack data analytics bootcamp covering data wrangling, SQL, Python (Pandas, NumPy, Scikit-learn), and data visualization using Tableau. Completed multiple end-to-end analytics projects with real-world datasets."
+      }
     ],
     da_contact_title: "Contact",
     da_contact: {
@@ -50,8 +60,18 @@ const LANG = {
     qa_cv_ats_url: "#",
     qa_edu_title: "Education",
     qa_edu: [
-      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023" },
-      { degree: "QA Automation Bootcamp", school: "Bootcamp Institution", year: "2023" }
+      {
+        degree: "Bachelor of Informatics",
+        school: "Pamulang University",
+        year: "Sep, 2016 – Apr, 2023",
+        detail: "Completed a 4-year program in Informatics Engineering with a focus on software development, database systems, and computer networks. Gained foundational knowledge in programming, algorithms, and system analysis."
+      },
+      {
+        degree: "QA Automation Bootcamp",
+        school: "Bootcamp Institution",
+        year: "2023",
+        detail: "Intensive QA automation training covering Selenium WebDriver, TestNG, Postman API testing, and CI/CD pipeline integration. Hands-on projects focused on building automated test frameworks for web applications."
+      }
     ],
     qa_contact_title: "Contact",
     qa_contact: {
@@ -90,8 +110,18 @@ const LANG = {
     da_cv_ats_url: "#",
     da_edu_title: "Pendidikan",
     da_edu: [
-      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023" },
-      { degree: "Full-stack Data Analytics", school: "RevoU", year: "Okt, 2025 - Feb, 2026" }
+      {
+        degree: "S1 Teknik Informatika",
+        school: "Universitas Pamulang",
+        year: "Sep, 2016 – Apr, 2023",
+        detail: "Menyelesaikan program S1 Teknik Informatika dengan fokus pada pengembangan perangkat lunak, sistem basis data, dan jaringan komputer. Memperoleh pengetahuan dasar dalam pemrograman, algoritma, dan analisis sistem."
+      },
+      {
+        degree: "Full-stack Data Analytics",
+        school: "RevoU",
+        year: "Okt, 2025 – Feb, 2026",
+        detail: "Bootcamp data analytics intensif yang mencakup data wrangling, SQL, Python (Pandas, NumPy, Scikit-learn), dan visualisasi data menggunakan Tableau. Menyelesaikan beberapa proyek analitik end-to-end dengan dataset nyata."
+      }
     ],
     da_contact_title: "Kontak",
     da_contact: {
@@ -124,8 +154,18 @@ const LANG = {
     qa_cv_ats_url: "#",
     qa_edu_title: "Pendidikan",
     qa_edu: [
-      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023" },
-      { degree: "Bootcamp QA Automation", school: "Nama Institusi", year: "2023" }
+      {
+        degree: "S1 Teknik Informatika",
+        school: "Universitas Pamulang",
+        year: "Sep, 2016 – Apr, 2023",
+        detail: "Menyelesaikan program S1 Teknik Informatika dengan fokus pada pengembangan perangkat lunak, sistem basis data, dan jaringan komputer. Memperoleh pengetahuan dasar dalam pemrograman, algoritma, dan analisis sistem."
+      },
+      {
+        degree: "Bootcamp QA Automation",
+        school: "Nama Institusi",
+        year: "2023",
+        detail: "Pelatihan QA automation intensif yang mencakup Selenium WebDriver, TestNG, pengujian API dengan Postman, dan integrasi CI/CD pipeline. Proyek langsung berfokus pada pembuatan framework pengujian otomatis untuk aplikasi web."
+      }
     ],
     qa_contact_title: "Kontak",
     qa_contact: {
@@ -186,6 +226,32 @@ function getIcon(id) {
 }
 
 /* ======================================================
+   EDUCATION POPUP
+====================================================== */
+function openEduModal(edu) {
+  document.getElementById('modal-year').textContent   = edu.year;
+  document.getElementById('modal-degree').textContent = edu.degree;
+  document.getElementById('modal-school').textContent = edu.school;
+  document.getElementById('modal-detail').textContent = edu.detail || '';
+  document.getElementById('edu-modal').classList.add('active');
+}
+
+function closeEduModal() {
+  document.getElementById('edu-modal').classList.remove('active');
+}
+
+// Tutup modal kalau klik di luar modal-card
+document.getElementById('edu-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeEduModal();
+});
+document.getElementById('modal-close-btn').addEventListener('click', closeEduModal);
+
+// Tutup modal dengan tombol Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeEduModal();
+});
+
+/* ======================================================
    MAIN RENDER FUNCTION
 ====================================================== */
 function render() {
@@ -207,16 +273,23 @@ function render() {
   document.getElementById('btn-cv-ats').textContent = L[`${p}_cv_ats`];
   document.getElementById('btn-cv-ats').href = L[`${p}_cv_ats_url`];
 
-  // Education
+  // Education — render sebagai button, klik buka popup
   document.getElementById('label-edu').textContent = L[`${p}_edu_title`];
-  document.getElementById('edu-grid').innerHTML = L[`${p}_edu`].map(e => `
-    <div class="edu-item">
+  const eduGrid = document.getElementById('edu-grid');
+  eduGrid.innerHTML = '';
+  L[`${p}_edu`].forEach(e => {
+    const btn = document.createElement('button');
+    btn.className = 'edu-item';
+    btn.innerHTML = `
       <div class="edu-degree">${e.degree}</div>
       <div class="edu-school">${e.school}</div>
       <div class="edu-year">${e.year}</div>
-    </div>`).join('');
+    `;
+    btn.addEventListener('click', () => openEduModal(e));
+    eduGrid.appendChild(btn);
+  });
 
-  // Contact (tanpa Instagram)
+  // Contact
   document.getElementById('label-contact').textContent = L[`${p}_contact_title`];
   const c = L[`${p}_contact`];
   const contactRow = document.getElementById('contact-row');
@@ -242,7 +315,7 @@ function render() {
   document.getElementById('label-tech').textContent = L[`${p}_tech_title`];
   document.getElementById('skill-logos').innerHTML = L[`${p}_tech`].map(t => `
     <div class="skill-logo">
-      <img src="${TECH_ICONS[t] || 'https://placehold.co/28x28/eee/999?text=?'}" alt="${t}" title="${t}" />
+      <img src="${TECH_ICONS[t] || 'https://placehold.co/42x42/eee/999?text=?'}" alt="${t}" title="${t}" />
       <span>${t}</span>
     </div>`).join('');
 

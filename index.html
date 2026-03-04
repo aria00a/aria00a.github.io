@@ -4,13 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aria's Portfolio</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +17,7 @@
   <nav class="navbar">
     <div class="nav-brand" id="nav-brand">My Portfolio</div>
     <div class="nav-center">
-      <button class="prof-btn active" data-prof="da" id="btn-da">Data Enthusiast</button>
+      <button class="prof-btn active" data-prof="da" id="btn-da">Data Analyst</button>
       <button class="prof-btn" data-prof="qa" id="btn-qa">Quality Assurance</button>
     </div>
     <div class="nav-lang">
@@ -32,16 +28,12 @@
 
   <!-- ROW 2: HERO / PROFILE -->
   <div class="row-hero">
-
-    <!-- Foto Profil -->
     <div class="photo-col">
       <img id="profile-photo" alt="Profile Photo" />
     </div>
-
-    <!-- Info Column -->
     <div class="info-col">
 
-      <!-- b1: About Me — dengan tombol CV ATS di pojok kanan atas -->
+      <!-- About Me -->
       <div class="card about-card">
         <div class="about-header">
           <div class="about-header-left">
@@ -56,22 +48,19 @@
         <div class="about-text" id="about-text"></div>
       </div>
 
-      <!-- b2: Contact (kiri) + Education (tengah) + Certification (kanan) -->
+      <!-- Contact + Education + Certification -->
       <div class="info-bottom">
 
-        <!-- b2.1: Contact -->
         <div class="card">
           <div class="card-title" id="label-contact">Contact</div>
           <div class="contact-col" id="contact-row"></div>
         </div>
 
-        <!-- b2.2: Education -->
         <div class="card">
           <div class="card-title" id="label-edu">Education</div>
           <div class="edu-grid" id="edu-grid"></div>
         </div>
 
-        <!-- b2.3: Certification -->
         <div class="card">
           <div class="card-title" id="label-cert">Certifications</div>
           <div class="cert-grid" id="cert-grid"></div>
@@ -101,6 +90,20 @@
     </div>
   </div>
 
+</div>
+
+<!-- =============================================
+     EDUCATION POPUP MODAL
+============================================= -->
+<div class="modal-overlay" id="edu-modal">
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close-btn">✕</button>
+    <div class="modal-year" id="modal-year"></div>
+    <div class="modal-degree" id="modal-degree"></div>
+    <div class="modal-school" id="modal-school"></div>
+    <div class="modal-divider"></div>
+    <div class="modal-detail" id="modal-detail"></div>
+  </div>
 </div>
 
 <!-- SVG ICON TEMPLATES -->
