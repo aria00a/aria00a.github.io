@@ -70,9 +70,9 @@ const LANG = {
     da_proj_title: "Project Experience",
     da_projects: [
       {
-        role: "DEEPP — RevoU",
+        role: "RevoU (DEEPP)",
         title: "An Analysis of Hotel Booking Cancellation Behavior",
-        coverImg: "", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/Project01.png", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
@@ -118,31 +118,51 @@ const LANG = {
         ]
       },
       {
-        role: "Personal Project",
-        title: "Customer Churn Analysis",
-        coverImg: "",
-        deckUrl: "#",
-        tags: ["Python", "Pandas", "Scikit-learn"],
-        desc: "Performed EDA and predictive modeling using Python to identify key drivers of customer churn with 82% model accuracy.",
+        role: "RevoU (Assignment)",
+        title: "RevoGrocers Sales Performance Analysis",
+        coverImg: "img/Project02.png", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
+        tags: ["SQL", "BigQuery"],
+        desc: "BIKIN DULU.",
         sections: [
-          { title: "Project Description", content: "Built a machine learning pipeline to identify customers likely to churn based on behavioral and demographic data.", type: "text" },
-          { title: "Objective", content: "Predict customer churn with high accuracy and provide actionable retention recommendations.", type: "text" },
-          { title: "Key Findings", content: ["82% model accuracy achieved.", "Contract type and tenure are top churn predictors.", "Month-to-month customers churn 3x more than long-term."], type: "bullets" },
-          { title: "Recommendations", content: "Offer incentives to month-to-month customers to upgrade to annual plans. Target early-tenure customers with loyalty programs.", type: "text" }
-        ]
-      },
-      {
-        role: "Academic Project",
-        title: "Market Basket Analysis",
-        coverImg: "",
-        deckUrl: "#",
-        tags: ["Python", "MLxtend", "Jupyter"],
-        desc: "Applied Apriori algorithm on transactional data to discover product association rules, aiding cross-selling strategy for a local retailer.",
-        sections: [
-          { title: "Project Description", content: "Applied association rule mining on transactional data from a local retail store to discover product purchase patterns.", type: "text" },
-          { title: "Objective", content: "Identify frequently co-purchased items to guide product placement and cross-selling strategies.", type: "text" },
-          { title: "Key Findings", content: ["Found 47 strong association rules with lift > 1.5.", "Bread and butter show highest support (32%).", "Dairy products frequently co-purchased with bakery items."], type: "bullets" },
-          { title: "Recommendations", content: "Rearrange store layout to place frequently co-purchased items near each other. Create bundling promotions based on top association rules.", type: "text" }
+          {
+            title: "Project Description",
+            content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.",
+            type: "text"
+          },
+          {
+            title: "Objective",
+            content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.",
+            type: "text"
+          },
+          {
+            title: "Key Metrics",
+            content: [
+              "Revenue After Discount",
+              "Total Units Sold",
+              "Unique Customers",
+              "Average Price (AVG_Price)",
+              "Contribution Percentage",
+              "Repeat Purchase Rate"
+            ],
+            type: "bullets"
+          },
+          {
+            title: "Key Findings",
+            content: [
+              "The 'Confections' category is the most significant contributor, accounting for 12.87% of total revenue and yielding the highest revenue after discounts.",
+              "Customer loyalty is exceptionally strong across all categories, with repeat purchase rates ranging between 93% and 99%.",
+              "Revenue is primarily driven by high sales volumes and a large customer base rather than high individual product prices.",
+              "Categories with higher average prices, such as Grain and Dairy, do not show a significant drop in unique buyers compared to cheaper categories like Produce.",
+              "Wayne Chan (Customer ID 94800) was identified as the top user, demonstrating consistent high-value transactions over time."
+            ],
+            type: "bullets"
+          },
+          {
+            title: "Recommendations",
+            content: "The business should focus its marketing efforts on 'power categories' like Confections, Meat, and Poultry by enhancing stock availability and implementing cross-selling or bundling strategies. For underperforming areas like Shell Fish and Grain, RevoGrocers should evaluate pricing strategies and introduce targeted 'Try Something New' campaigns to boost engagement. Given that volume is the main revenue driver, the company should prioritize quantity-based promotions and personalized loyalty rewards based on purchase history to maintain the current high repeat purchase rates.",
+            type: "text"
+          }
         ]
       }
     ],
