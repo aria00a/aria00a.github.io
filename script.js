@@ -72,7 +72,7 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "An Analysis of Hotel Booking Cancellation Behavior",
-        coverImg: "img/Project01.png", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/analysis.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
