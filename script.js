@@ -63,7 +63,7 @@ const LANG = {
       {
         name: "Microsoft Excel Basic to Advance for Data Analysis",
         issuer: "MySkill", year: "Jun, 2022", logo: "img/MySkill.jpg",
-        desc: "Excel Basic Formula & Function | Data Formatting & Cleansing | Conditional IF ELSE and Formatting | Data Visualisasi | Vlookup & Index match | Pivot Table | What if analysis | Introduction and Practice Macro VBA",
+        desc: "Excel Basic Formula & Function | Data Formatting & Cleansing | Conditional IF ELSE and Formatting | Data Visualization | VLOOKUP & INDEX MATCH | Pivot Table | What If Analysis | Introduction and Practice Macro VBA",
         certUrl: "https://drive.google.com/file/d/1jXSn8WYmOkJ6E09UAaHDa4n7ZekC-YtE/view?usp=sharing"
       }
     ],
@@ -72,7 +72,7 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "An Analysis of Hotel Booking Cancellation Behavior",
-        coverImg: "img/analysis.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/analysisBanner01.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
@@ -120,10 +120,10 @@ const LANG = {
       {
         role: "RevoU (Assignment)",
         title: "RevoGrocers Sales Performance Analysis",
-        coverImg: "img/Project02.png", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/analysisBanner02.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         tags: ["SQL", "BigQuery"],
-        desc: "BIKIN DULU.",
+        desc: "Analyzed grocery sales data to identify sales trends, top products, and key revenue drivers to support data-driven decision making.",
         sections: [
           {
             title: "Project Description",
@@ -206,45 +206,128 @@ const LANG = {
 
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "Saya adalah profesional yang berorientasi pada detail yang sedang bertransisi ke peran Data Analyst, dengan panduan akurasi, tanggung jawab, dan komitmen kuat terhadap kualitas. Dengan latar belakang Quality Assurance di sektor perbankan, saya telah memiliki pengalaman luas dalam pengujian aplikasi, pengelolaan data pengujian, dan penyusunan dokumentasi terstruktur sesuai standar. Saya juga memiliki keahlian dalam pemrosesan query SQL, dan saat ini sedang mengembangkan kemampuan analisis data menggunakan Python serta visualisasi data dengan Tableau.",
+    da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang beralih ke bidang Data Analytics. Selama menjalani berbagai siklus rilis sistem, saya membangun dasar yang kuat dalam menjaga akurasi, melakukan penilaian risiko, serta menyusun dokumentasi secara terstruktur. Berpengalaman dalam mengelola data pengujian dan memastikan kepatuhan terhadap standar perbankan, saya juga melakukan analisis pengujian secara mendalam untuk mengurangi bug setelah rilis dan meningkatkan stabilitas sistem. Dalam bidang analisis data, saya menguasai SQL untuk ekstraksi dan analisis data. Python dan Tableau juga saya gunakan dalam berbagai proyek portofolio untuk menganalisis dataset, mengidentifikasi tren, serta membangun dashboard interaktif. Dengan pendekatan analitis dan komitmen untuk terus belajar, saya berupaya menghasilkan keputusan bisnis yang andal dan berbasis data.",
     da_cv_ats: "Unduh CV",
     da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
     da_edu_title: "Pendidikan",
     da_edu: [
-      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" },
+      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Sarjana Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan Dashboard Sistem Informasi Dengan Metode Scrum Menggunakan Azure Board (Studi Kasus : PT. Arranet Indonesia Sejahtera)", isiType: "text" },
       { degree: "Full-stack Data Analytics", school: "RevoU", year: "Okt, 2025 – Feb, 2026", logo: "img/RevoU.png", prodi: "Full-stack Data Analytics", tanggal: "Okt, 2025 – Feb, 2026", isi: ["Menganalisis dataset menggunakan SQL (BigQuery) untuk mengekstrak, membersihkan, dan mentransformasi data untuk analisis bisnis.", "Melakukan eksplorasi data dan pemrosesan menggunakan Python (Google Colab) dan library terkait.", "Membangun dashboard interaktif di Tableau sesuai kebutuhan stakeholder.", "Menyusun masalah bisnis dalam kerangka analitik untuk mendukung pengambilan keputusan berbasis data.", "Menyelesaikan Data End-to-End Portfolio Project (DEEPP), mengubah data mentah menjadi wawasan dan rekomendasi yang dapat ditindaklanjuti."], isiType: "bullets" }
     ],
     da_contact_title: "Kontak",
     da_contact: { location: "Tangerang Selatan, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
     da_tech_title: "Keahlian Teknis",
     da_tech: ["Excel", "Spreadsheet", "SQL", "Python", "Tableau"],
-    da_soft_title: "Soft Skill",
+    da_soft_title: "Keahlian Non-Teknis",
     da_soft: ["Berpikir Analitis", "Pemecahan Masalah", "Data Storytelling", "Perhatian terhadap Detail", "Kerja Tim", "Berpikir Kritis"],
     da_cert_title: "Sertifikasi",
     da_certs: [
-      { name: "Google Data Analytics Certificate", issuer: "Google", year: "2023", logo: "", desc: "Sertifikat profesional yang mencakup seluruh proses analisis data: bertanya, menyiapkan, memproses, menganalisis, berbagi, dan bertindak. Topik meliputi pembersihan data, SQL, pemrograman R, dan visualisasi Tableau.", certUrl: "#" },
-      { name: "SQL for Data Science", issuer: "Coursera", year: "2023", logo: "", desc: "Mencakup dasar-dasar SQL untuk pengambilan data, filter, agregasi, dan join tabel. Diterapkan pada dataset nyata untuk kasus analisis bisnis.", certUrl: "#" },
-      { name: "Tableau Desktop Specialist", issuer: "Tableau", year: "2022", logo: "", desc: "Sertifikasi resmi Tableau yang memvalidasi keterampilan dalam menghubungkan data, membuat visualisasi, mengorganisir data, dan berbagi dashboard.", certUrl: "#" },
-      { name: "Python for Everybody", issuer: "Coursera", year: "2022", logo: "", desc: "Kursus pemrograman Python dasar yang mencakup variabel, kondisional, perulangan, fungsi, dan bekerja dengan file dan database.", certUrl: "#" }
+      { name: "Full-stack Data Analytics", 
+        issuer: "RevoU", year: "Feb, 2026", logo: "",
+        desc: "Pemahaman Masalah Bisnis | Statistika & Pengolahan Spreadsheet | SQL | Python | Visualisasi Data | Komunikasi Data | Proyek Portofolio Data End-to-End (DEEPP).",
+        certUrl: "#"
+      },
+      { name: "Microsoft Excel Basic to Advance for Data Analysis",
+        issuer: "MySkill", year: "Jun, 2022", logo: "",
+        desc: "Dasar Formula & Fungsi Excel | Pemformatan dan Pembersihan Data | Logika IF dan Conditional Formatting | Visualisasi Data | VLOOKUP & INDEX MATCH | Pivot Table | Analisis What-If | Pengenalan dan Praktik Macro VBA.",
+        certUrl: "https://drive.google.com/file/d/1jXSn8WYmOkJ6E09UAaHDa4n7ZekC-YtE/view?usp=sharing"
+      }
     ],
     da_proj_title: "Pengalaman Proyek",
     da_projects: [
       {
-        role: "DEEPP — RevoU",
+        role: "RevoU (DEEPP)",
         title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
-        coverImg: "", deckUrl: "#",
+        coverImg: "img/analysisBanner01.jpg", deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Menganalisis pola pembatalan pemesanan hotel untuk mengidentifikasi segmen berisiko tinggi dan mengusulkan strategi berbasis data.",
         sections: [
-          { title: "Deskripsi Proyek", content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels.", type: "text" },
-          { title: "Tujuan", content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.", type: "text" },
-          { title: "Metrik Utama", content: ["Tingkat Pembatalan Keseluruhan", "Tingkat Pembatalan per Tipe Hotel", "Tingkat Pembatalan per Segmen Pasar", "Tingkat Pembatalan per Bucket Lead Time", "Tingkat Pembatalan per Tipe Pelanggan (Baru vs Repeat)"], type: "bullets" },
-          { title: "Temuan Utama", content: ["Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.", "City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).", "Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).", "Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.", "Tamu repeat jauh lebih stabil, hanya 7,64% pembatalan.", "Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."], type: "bullets" },
-          { title: "Rekomendasi", content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, saluran OTA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
+          { 
+            title: "Deskripsi Proyek",
+            content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.",
+            type: "text"
+          },
+          { 
+            title: "Tujuan",
+            content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.",
+            type: "text"
+          },
+          { 
+            title: "Metrik Utama",
+            content: [
+              "Tingkat Pembatalan Keseluruhan",
+              "Tingkat Pembatalan per Tipe Hotel",
+              "Tingkat Pembatalan per Segmen Pasar",
+              "Tingkat Pembatalan per Bucket Lead Time",
+              "Tingkat Pembatalan Berdasarkan Tipe Pelanggan (Tamu Baru vs Tamu Lama)"
+            ], 
+            type: "bullets"
+          },
+          { 
+            title: "Temuan Utama",
+            content: [
+              "Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.",
+              "City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).", 
+              "Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).",
+              "Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.", 
+              "Tamu lama menunjukkan perilaku pemesanan yang jauh lebih stabil, dengan tingkat pembatalan hanya sebesar 7,64%.", 
+              "Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."
+            ], 
+            type: "bullets" 
+          },
+          { 
+            title: "Rekomendasi", 
+            content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, channel Online TA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
         ]
       },
-      { role: "Proyek Pribadi", title: "Analisis Churn Pelanggan", coverImg: "", deckUrl: "#", tags: ["Python", "Pandas", "Scikit-learn"], desc: "Melakukan EDA dan pemodelan prediktif menggunakan Python untuk mengidentifikasi faktor utama churn dengan akurasi model 82%.", sections: [{ title: "Deskripsi Proyek", content: "Membangun pipeline machine learning untuk mengidentifikasi pelanggan yang berpotensi churn.", type: "text" }, { title: "Tujuan", content: "Memprediksi churn dengan akurasi tinggi dan memberikan rekomendasi retensi.", type: "text" }, { title: "Temuan Utama", content: ["Akurasi model 82%.", "Jenis kontrak dan tenure adalah prediktor utama.", "Pelanggan bulan-ke-bulan churn 3x lebih banyak."], type: "bullets" }, { title: "Rekomendasi", content: "Tawarkan insentif untuk beralih ke paket tahunan. Targetkan pelanggan awal dengan program loyalitas.", type: "text" }] },
-      { role: "Proyek Akademik", title: "Market Basket Analysis", coverImg: "", deckUrl: "#", tags: ["Python", "MLxtend", "Jupyter"], desc: "Menerapkan algoritma Apriori pada data transaksi untuk menemukan aturan asosiasi produk.", sections: [{ title: "Deskripsi Proyek", content: "Menerapkan association rule mining pada data transaksi toko ritel lokal.", type: "text" }, { title: "Tujuan", content: "Mengidentifikasi item yang sering dibeli bersama untuk strategi cross-selling.", type: "text" }, { title: "Temuan Utama", content: ["47 aturan asosiasi kuat dengan lift > 1.5.", "Roti dan mentega memiliki support tertinggi (32%).", "Produk susu sering dibeli bersama produk roti."], type: "bullets" }, { title: "Rekomendasi", content: "Susun ulang tata letak toko dan buat promosi bundling berdasarkan aturan asosiasi teratas.", type: "text" }] }
+      { 
+        role: "RevoU (Assignment)", 
+        title: "Analisis Kinerja Penjualan RevoGrocers",
+        coverImg: "img/analysisBanner02.jpg",
+        deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
+        tags: ["SQL", "BigQuery"],
+        desc: "Menganalisis data penjualan untuk mengidentifikasi tren penjualan, produk terlaris, serta faktor utama yang mendorong pendapatan guna mendukung pengambilan keputusan berbasis data.", 
+        sections: [
+          { 
+            title: "Deskripsi Proyek",
+            content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", 
+            type: "text" 
+          }, 
+          { 
+            title: "Tujuan", 
+            content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", 
+            type: "text" 
+          }, 
+          { 
+            title: "Metrik Utama",
+            content: [
+              "Pendapatan Setelah Diskon",
+              "Total Unit Terjual",
+              "Jumlah Pelanggan Unik",
+              "Harga Rata-rata (AVG_Price)",
+              "Persentase Kontribusi",
+              "Tingkat Pembelian Ulang"
+            ], 
+            type: "bullets"
+          },
+          { 
+            title: "Temuan Utama", 
+            content: [
+              "Kategori 'Confections' menjadi kontributor terbesar dengan menyumbang 12,87% dari total pendapatan serta menghasilkan pendapatan setelah diskon tertinggi.",
+              "Loyalitas pelanggan tergolong sangat kuat di seluruh kategori produk, dengan tingkat pembelian ulang berkisar antara 93% hingga 99%.",
+              "Pendapatan terutama didorong oleh volume penjualan yang tinggi dan jumlah pelanggan yang besar, bukan oleh harga produk yang tinggi.",
+              "Kategori dengan harga rata-rata lebih tinggi seperti 'Grain' dan 'Dairy' tidak menunjukkan penurunan signifikan pada jumlah pembeli unik dibandingkan kategori dengan harga lebih rendah seperti 'Produce'.",
+              "Wayne Chan (Customer ID 94800) teridentifikasi sebagai pelanggan dengan nilai transaksi tertinggi, yang secara konsisten melakukan transaksi bernilai besar dari waktu ke waktu."
+            ], 
+            type: "bullets" 
+          }, 
+          { 
+            title: "Rekomendasi", 
+            content: "Perusahaan sebaiknya memfokuskan upaya pemasaran pada kategori utama (power categories) seperti 'Confections', 'Meat', dan 'Poultry' dengan meningkatkan ketersediaan stok serta menerapkan strategi cross-selling atau bundling produk. Untuk kategori dengan performa yang lebih rendah seperti 'Shell Fish' dan 'Grain', RevoGrocers disarankan mengevaluasi kembali strategi harga serta memperkenalkan kampanye bertema 'Coba Produk Baru' guna meningkatkan minat pelanggan. Mengingat bahwa volume penjualan merupakan penggerak utama pendapatan, perusahaan sebaiknya memprioritaskan promosi berbasis jumlah pembelian serta memberikan program loyalitas yang dipersonalisasi berdasarkan riwayat pembelian pelanggan untuk mempertahankan tingkat pembelian ulang yang saat ini sudah sangat tinggi.", 
+            type: "text" 
+          }
+        ] 
+      }
     ],
 
     qa_role: "Quality Assurance Engineer",
