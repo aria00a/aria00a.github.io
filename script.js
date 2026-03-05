@@ -8,7 +8,7 @@ const LANG = {
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
-    da_about_title: "About MeA",
+    da_about_title: "About Me",
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
     da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
@@ -92,7 +92,7 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "An Analysis of Hotel Booking Cancellation Behavior",
-        coverImg: "img/analysisBanner01.jpg",
+        coverImg: "img/Banner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
@@ -107,7 +107,7 @@ const LANG = {
       {
         role: "RevoU (Assignment)",
         title: "RevoGrocers Sales Performance Analysis",
-        coverImg: "img/analysisBanner02.jpg",
+        coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         tags: ["SQL", "BigQuery"],
         desc: "Analyzed grocery sales data to identify sales trends, top products, and key revenue drivers to support data-driven decision making.",
@@ -216,7 +216,7 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
-        coverImg: "img/analysisBanner01.jpg",
+        coverImg: "img/Banner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Menganalisis pola pembatalan pemesanan hotel untuk mengidentifikasi segmen berisiko tinggi dan mengusulkan strategi berbasis data.",
@@ -231,7 +231,7 @@ const LANG = {
       {
         role: "RevoU (Assignment)",
         title: "Analisis Kinerja Penjualan RevoGrocers",
-        coverImg: "img/analysisBanner02.jpg",
+        coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         tags: ["SQL", "BigQuery"],
         desc: "Menganalisis data penjualan untuk mengidentifikasi tren penjualan, produk terlaris, serta faktor utama yang mendorong pendapatan guna mendukung pengambilan keputusan berbasis data.",
