@@ -8,6 +8,7 @@ const LANG = {
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
+    da_about_title: "About Me",
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
     da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
@@ -57,13 +58,32 @@ const LANG = {
       {
         name: "Full-stack Data Analytics",
         issuer: "RevoU", year: "Feb, 2026", logo: "img/RevoU.png",
-        desc: "Understanding Business Problem | Statistics & Spreadsheet | SQL | Python | Data Visualization | Data Communication | DEEPP (Data End-to-End Portofolio Project)",
+        desc: [
+          "Understanding Business Problem",
+          "Statistics & Spreadsheet",
+          "SQL",
+          "Python",
+          "Data Visualization",
+          "Data Communication",
+          "DEEPP (Data End-to-End Portfolio Project)"
+        ],
+        descType: "bullets",
         certUrl: "#"
       },
       {
         name: "Microsoft Excel Basic to Advance for Data Analysis",
         issuer: "MySkill", year: "Jun, 2022", logo: "img/MySkill.jpg",
-        desc: "Excel Basic Formula & Function | Data Formatting & Cleansing | Conditional IF ELSE and Formatting | Data Visualization | VLOOKUP & INDEX MATCH | Pivot Table | What If Analysis | Introduction and Practice Macro VBA",
+        desc: [
+          "Excel Basic Formula & Function",
+          "Data Formatting & Cleansing",
+          "Conditional IF ELSE and Formatting",
+          "Data Visualization",
+          "VLOOKUP & INDEX MATCH",
+          "Pivot Table",
+          "What If Analysis",
+          "Introduction and Practice Macro VBA"
+        ],
+        descType: "bullets",
         certUrl: "https://drive.google.com/file/d/1jXSn8WYmOkJ6E09UAaHDa4n7ZekC-YtE/view?usp=sharing"
       }
     ],
@@ -72,102 +92,37 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "An Analysis of Hotel Booking Cancellation Behavior",
-        coverImg: "img/analysisBanner01.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/analysisBanner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
         sections: [
-          {
-            title: "Project Description",
-            content: "This project analyzes hotel booking demand data from July 2015 to August 2017 for Strigiformotel Group, focusing on customer booking behavior and cancellation patterns across City Hotels and Resort Hotels. The analysis aims to uncover key drivers behind booking cancellations and identify actionable opportunities to improve booking retention.",
-            type: "text"
-          },
-          {
-            title: "Objective",
-            content: "To identify customer segments and booking characteristics that contribute to high cancellation rates and propose data-driven strategies to reduce the overall hotel cancellation rate from 27.49% to approximately 23% within 6 months.",
-            type: "text"
-          },
-          {
-            title: "Key Metrics",
-            content: [
-              "Overall Cancellation Rate",
-              "Cancellation Rate by Hotel Type",
-              "Cancellation Rate by Market Segment",
-              "Cancellation Rate by Lead Time Bucket",
-              "Cancellation Rate by Customer Type (New vs Repeat Guests)"
-            ],
-            type: "bullets"
-          },
-          {
-            title: "Key Findings",
-            content: [
-              "Overall cancellation rate stands at 27.49% from 87,396 bookings.",
-              "City Hotels experience higher cancellations (30.0%) than Resort Hotels (23.5%).",
-              "Online Travel Agents (OTA) contribute the highest cancellation rate (35.35%) and volume.",
-              "Bookings with lead time >180 days show the highest cancellation rate (39.74%).",
-              "Repeat guests are significantly more stable, with only 7.64% cancellation rate.",
-              "Customer clustering reveals distinct high-risk segments driven by long lead times and OTA bookings."
-            ],
-            type: "bullets"
-          },
-          {
-            title: "Recommendations",
-            content: "By focusing strategies on long lead time bookings, Online TA channels, and new guests, hotels can directly target the areas with the largest contribution to cancellations. This approach enables a realistic reduction in the cancellation rate toward the 23% target, without requiring extreme operational changes.",
-            type: "text"
-          }
+          { title: "Project Description", content: "This project analyzes hotel booking demand data from July 2015 to August 2017 for Strigiformotel Group, focusing on customer booking behavior and cancellation patterns across City Hotels and Resort Hotels. The analysis aims to uncover key drivers behind booking cancellations and identify actionable opportunities to improve booking retention.", type: "text" },
+          { title: "Objective", content: "To identify customer segments and booking characteristics that contribute to high cancellation rates and propose data-driven strategies to reduce the overall hotel cancellation rate from 27.49% to approximately 23% within 6 months.", type: "text" },
+          { title: "Key Metrics", content: ["Overall Cancellation Rate", "Cancellation Rate by Hotel Type", "Cancellation Rate by Market Segment", "Cancellation Rate by Lead Time Bucket", "Cancellation Rate by Customer Type (New vs Repeat Guests)"], type: "bullets" },
+          { title: "Key Findings", content: ["Overall cancellation rate stands at 27.49% from 87,396 bookings.", "City Hotels experience higher cancellations (30.0%) than Resort Hotels (23.5%).", "Online Travel Agents (OTA) contribute the highest cancellation rate (35.35%) and volume.", "Bookings with lead time >180 days show the highest cancellation rate (39.74%).", "Repeat guests are significantly more stable, with only 7.64% cancellation rate.", "Customer clustering reveals distinct high-risk segments driven by long lead times and OTA bookings."], type: "bullets" },
+          { title: "Recommendations", content: "By focusing strategies on long lead time bookings, Online TA channels, and new guests, hotels can directly target the areas with the largest contribution to cancellations. This approach enables a realistic reduction in the cancellation rate toward the 23% target, without requiring extreme operational changes.", type: "text" }
         ]
       },
       {
         role: "RevoU (Assignment)",
         title: "RevoGrocers Sales Performance Analysis",
-        coverImg: "img/analysisBanner02.jpg", // ganti: "https://drive.google.com/uc?export=view&id=YOUR_ID"
+        coverImg: "img/analysisBanner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         tags: ["SQL", "BigQuery"],
         desc: "Analyzed grocery sales data to identify sales trends, top products, and key revenue drivers to support data-driven decision making.",
         sections: [
-          {
-            title: "Project Description",
-            content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.",
-            type: "text"
-          },
-          {
-            title: "Objective",
-            content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.",
-            type: "text"
-          },
-          {
-            title: "Key Metrics",
-            content: [
-              "Revenue After Discount",
-              "Total Units Sold",
-              "Unique Customers",
-              "Average Price (AVG_Price)",
-              "Contribution Percentage",
-              "Repeat Purchase Rate"
-            ],
-            type: "bullets"
-          },
-          {
-            title: "Key Findings",
-            content: [
-              "The 'Confections' category is the most significant contributor, accounting for 12.87% of total revenue and yielding the highest revenue after discounts.",
-              "Customer loyalty is exceptionally strong across all categories, with repeat purchase rates ranging between 93% and 99%.",
-              "Revenue is primarily driven by high sales volumes and a large customer base rather than high individual product prices.",
-              "Categories with higher average prices, such as Grain and Dairy, do not show a significant drop in unique buyers compared to cheaper categories like Produce.",
-              "Wayne Chan (Customer ID 94800) was identified as the top user, demonstrating consistent high-value transactions over time."
-            ],
-            type: "bullets"
-          },
-          {
-            title: "Recommendations",
-            content: "The business should focus its marketing efforts on 'power categories' like Confections, Meat, and Poultry by enhancing stock availability and implementing cross-selling or bundling strategies. For underperforming areas like Shell Fish and Grain, RevoGrocers should evaluate pricing strategies and introduce targeted 'Try Something New' campaigns to boost engagement. Given that volume is the main revenue driver, the company should prioritize quantity-based promotions and personalized loyalty rewards based on purchase history to maintain the current high repeat purchase rates.",
-            type: "text"
-          }
+          { title: "Project Description", content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.", type: "text" },
+          { title: "Objective", content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.", type: "text" },
+          { title: "Key Metrics", content: ["Revenue After Discount", "Total Units Sold", "Unique Customers", "Average Price (AVG_Price)", "Contribution Percentage", "Repeat Purchase Rate"], type: "bullets" },
+          { title: "Key Findings", content: ["The 'Confections' category is the most significant contributor, accounting for 12.87% of total revenue and yielding the highest revenue after discounts.", "Customer loyalty is exceptionally strong across all categories, with repeat purchase rates ranging between 93% and 99%.", "Revenue is primarily driven by high sales volumes and a large customer base rather than high individual product prices.", "Categories with higher average prices, such as Grain and Dairy, do not show a significant drop in unique buyers compared to cheaper categories like Produce.", "Wayne Chan (Customer ID 94800) was identified as the top user, demonstrating consistent high-value transactions over time."], type: "bullets" },
+          { title: "Recommendations", content: "The business should focus its marketing efforts on 'power categories' like Confections, Meat, and Poultry by enhancing stock availability and implementing cross-selling or bundling strategies. For underperforming areas like Shell Fish and Grain, RevoGrocers should evaluate pricing strategies and introduce targeted 'Try Something New' campaigns to boost engagement. Given that volume is the main revenue driver, the company should prioritize quantity-based promotions and personalized loyalty rewards based on purchase history to maintain the current high repeat purchase rates.", type: "text" }
         ]
       }
     ],
 
     // ── QUALITY ASSURANCE ──────────────────────
+    qa_about_title: "About Me",
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
     qa_about: "Detail-oriented QA Engineer with hands-on experience in manual and automated testing. Committed to delivering high-quality software by identifying defects early and ensuring robust test coverage across web and mobile platforms.",
@@ -186,10 +141,10 @@ const LANG = {
     qa_soft: ["Attention to Detail", "Critical Thinking", "Communication", "Time Management", "Adaptability", "Teamwork"],
     qa_cert_title: "Certifications",
     qa_certs: [
-      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: "International Software Testing Qualifications Board (ISTQB) Foundation Level certification covering fundamentals of software testing, test design techniques, and test management.", certUrl: "#" },
-      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: "Certification covering API testing fundamentals using Postman, including writing test scripts, running collections, and integrating with CI/CD pipelines via Newman.", certUrl: "#" },
-      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: "Comprehensive course on building automated UI test frameworks using Selenium WebDriver with Java, TestNG, and the page-object model design pattern.", certUrl: "#" },
-      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: "Covers agile testing principles, test-driven development (TDD), behavior-driven development (BDD), and QA integration within agile sprint cycles.", certUrl: "#" }
+      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: ["Fundamentals of software testing", "Test design techniques", "Test management principles", "Static testing & reviews", "Test tools overview"], descType: "bullets", certUrl: "#" },
+      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: ["API testing fundamentals", "Writing Postman test scripts", "Running and organizing collections", "CI/CD integration via Newman", "Environment & variable management"], descType: "bullets", certUrl: "#" },
+      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: ["Selenium WebDriver setup with Java", "Page Object Model design pattern", "TestNG test framework", "Cross-browser test execution", "HTML test report generation"], descType: "bullets", certUrl: "#" },
+      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: ["Agile testing principles", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "QA integration in sprint cycles", "Continuous testing practices"], descType: "bullets", certUrl: "#" }
     ],
     qa_proj_title: "Project Experience",
     qa_projects: [
@@ -204,6 +159,8 @@ const LANG = {
     btn_da: "Data Analyst",
     btn_qa: "Quality Assurance",
 
+    // ── DATA ANALYST ───────────────────────────
+    da_about_title: "Tentang Saya",
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
     da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang beralih ke bidang Data Analytics. Selama menjalani berbagai siklus rilis sistem, saya membangun dasar yang kuat dalam menjaga akurasi, melakukan penilaian risiko, serta menyusun dokumentasi secara terstruktur. Berpengalaman dalam mengelola data pengujian dan memastikan kepatuhan terhadap standar perbankan, saya juga melakukan analisis pengujian secara mendalam untuk mengurangi bug setelah rilis dan meningkatkan stabilitas sistem. Dalam bidang analisis data, saya menguasai SQL untuk ekstraksi dan analisis data. Python dan Tableau juga saya gunakan dalam berbagai proyek portofolio untuk menganalisis dataset, mengidentifikasi tren, serta membangun dashboard interaktif. Dengan pendekatan analitis dan komitmen untuk terus belajar, saya berupaya menghasilkan keputusan bisnis yang andal dan berbasis data.",
@@ -222,14 +179,35 @@ const LANG = {
     da_soft: ["Berpikir Analitis", "Pemecahan Masalah", "Data Storytelling", "Perhatian terhadap Detail", "Kerja Tim", "Berpikir Kritis"],
     da_cert_title: "Sertifikasi",
     da_certs: [
-      { name: "Full-stack Data Analytics", 
-        issuer: "RevoU", year: "Feb, 2026", logo: "",
-        desc: "Pemahaman Masalah Bisnis | Statistika & Pengolahan Spreadsheet | SQL | Python | Visualisasi Data | Komunikasi Data | Proyek Portofolio Data End-to-End (DEEPP).",
+      {
+        name: "Full-stack Data Analytics",
+        issuer: "RevoU", year: "Feb, 2026", logo: "img/RevoU.png",
+        desc: [
+          "Pemahaman Masalah Bisnis",
+          "Statistika & Pengolahan Spreadsheet",
+          "SQL",
+          "Python",
+          "Visualisasi Data",
+          "Komunikasi Data",
+          "Proyek Portofolio Data End-to-End (DEEPP)"
+        ],
+        descType: "bullets",
         certUrl: "#"
       },
-      { name: "Microsoft Excel Basic to Advance for Data Analysis",
-        issuer: "MySkill", year: "Jun, 2022", logo: "",
-        desc: "Dasar Formula & Fungsi Excel | Pemformatan dan Pembersihan Data | Logika IF dan Conditional Formatting | Visualisasi Data | VLOOKUP & INDEX MATCH | Pivot Table | Analisis What-If | Pengenalan dan Praktik Macro VBA.",
+      {
+        name: "Microsoft Excel Basic to Advance for Data Analysis",
+        issuer: "MySkill", year: "Jun, 2022", logo: "img/MySkill.jpg",
+        desc: [
+          "Dasar Formula & Fungsi Excel",
+          "Pemformatan dan Pembersihan Data",
+          "Logika IF dan Conditional Formatting",
+          "Visualisasi Data",
+          "VLOOKUP & INDEX MATCH",
+          "Pivot Table",
+          "Analisis What-If",
+          "Pengenalan dan Praktik Macro VBA"
+        ],
+        descType: "bullets",
         certUrl: "https://drive.google.com/file/d/1jXSn8WYmOkJ6E09UAaHDa4n7ZekC-YtE/view?usp=sharing"
       }
     ],
@@ -238,98 +216,37 @@ const LANG = {
       {
         role: "RevoU (DEEPP)",
         title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
-        coverImg: "img/analysisBanner01.jpg", deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
+        coverImg: "img/analysisBanner01.jpg",
+        deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Menganalisis pola pembatalan pemesanan hotel untuk mengidentifikasi segmen berisiko tinggi dan mengusulkan strategi berbasis data.",
         sections: [
-          { 
-            title: "Deskripsi Proyek",
-            content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.",
-            type: "text"
-          },
-          { 
-            title: "Tujuan",
-            content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.",
-            type: "text"
-          },
-          { 
-            title: "Metrik Utama",
-            content: [
-              "Tingkat Pembatalan Keseluruhan",
-              "Tingkat Pembatalan per Tipe Hotel",
-              "Tingkat Pembatalan per Segmen Pasar",
-              "Tingkat Pembatalan per Bucket Lead Time",
-              "Tingkat Pembatalan Berdasarkan Tipe Pelanggan (Tamu Baru vs Tamu Lama)"
-            ], 
-            type: "bullets"
-          },
-          { 
-            title: "Temuan Utama",
-            content: [
-              "Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.",
-              "City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).", 
-              "Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).",
-              "Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.", 
-              "Tamu lama menunjukkan perilaku pemesanan yang jauh lebih stabil, dengan tingkat pembatalan hanya sebesar 7,64%.", 
-              "Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."
-            ], 
-            type: "bullets" 
-          },
-          { 
-            title: "Rekomendasi", 
-            content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, channel Online TA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
+          { title: "Deskripsi Proyek", content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.", type: "text" },
+          { title: "Tujuan", content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.", type: "text" },
+          { title: "Metrik Utama", content: ["Tingkat Pembatalan Keseluruhan", "Tingkat Pembatalan per Tipe Hotel", "Tingkat Pembatalan per Segmen Pasar", "Tingkat Pembatalan per Bucket Lead Time", "Tingkat Pembatalan Berdasarkan Tipe Pelanggan (Tamu Baru vs Tamu Lama)"], type: "bullets" },
+          { title: "Temuan Utama", content: ["Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.", "City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).", "Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).", "Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.", "Tamu lama menunjukkan perilaku pemesanan yang jauh lebih stabil, dengan tingkat pembatalan hanya sebesar 7,64%.", "Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."], type: "bullets" },
+          { title: "Rekomendasi", content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, channel Online TA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
         ]
       },
-      { 
-        role: "RevoU (Assignment)", 
+      {
+        role: "RevoU (Assignment)",
         title: "Analisis Kinerja Penjualan RevoGrocers",
         coverImg: "img/analysisBanner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         tags: ["SQL", "BigQuery"],
-        desc: "Menganalisis data penjualan untuk mengidentifikasi tren penjualan, produk terlaris, serta faktor utama yang mendorong pendapatan guna mendukung pengambilan keputusan berbasis data.", 
+        desc: "Menganalisis data penjualan untuk mengidentifikasi tren penjualan, produk terlaris, serta faktor utama yang mendorong pendapatan guna mendukung pengambilan keputusan berbasis data.",
         sections: [
-          { 
-            title: "Deskripsi Proyek",
-            content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", 
-            type: "text" 
-          }, 
-          { 
-            title: "Tujuan", 
-            content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", 
-            type: "text" 
-          }, 
-          { 
-            title: "Metrik Utama",
-            content: [
-              "Pendapatan Setelah Diskon",
-              "Total Unit Terjual",
-              "Jumlah Pelanggan Unik",
-              "Harga Rata-rata (AVG_Price)",
-              "Persentase Kontribusi",
-              "Tingkat Pembelian Ulang"
-            ], 
-            type: "bullets"
-          },
-          { 
-            title: "Temuan Utama", 
-            content: [
-              "Kategori 'Confections' menjadi kontributor terbesar dengan menyumbang 12,87% dari total pendapatan serta menghasilkan pendapatan setelah diskon tertinggi.",
-              "Loyalitas pelanggan tergolong sangat kuat di seluruh kategori produk, dengan tingkat pembelian ulang berkisar antara 93% hingga 99%.",
-              "Pendapatan terutama didorong oleh volume penjualan yang tinggi dan jumlah pelanggan yang besar, bukan oleh harga produk yang tinggi.",
-              "Kategori dengan harga rata-rata lebih tinggi seperti 'Grain' dan 'Dairy' tidak menunjukkan penurunan signifikan pada jumlah pembeli unik dibandingkan kategori dengan harga lebih rendah seperti 'Produce'.",
-              "Wayne Chan (Customer ID 94800) teridentifikasi sebagai pelanggan dengan nilai transaksi tertinggi, yang secara konsisten melakukan transaksi bernilai besar dari waktu ke waktu."
-            ], 
-            type: "bullets" 
-          }, 
-          { 
-            title: "Rekomendasi", 
-            content: "Perusahaan sebaiknya memfokuskan upaya pemasaran pada kategori utama (power categories) seperti 'Confections', 'Meat', dan 'Poultry' dengan meningkatkan ketersediaan stok serta menerapkan strategi cross-selling atau bundling produk. Untuk kategori dengan performa yang lebih rendah seperti 'Shell Fish' dan 'Grain', RevoGrocers disarankan mengevaluasi kembali strategi harga serta memperkenalkan kampanye bertema 'Coba Produk Baru' guna meningkatkan minat pelanggan. Mengingat bahwa volume penjualan merupakan penggerak utama pendapatan, perusahaan sebaiknya memprioritaskan promosi berbasis jumlah pembelian serta memberikan program loyalitas yang dipersonalisasi berdasarkan riwayat pembelian pelanggan untuk mempertahankan tingkat pembelian ulang yang saat ini sudah sangat tinggi.", 
-            type: "text" 
-          }
-        ] 
+          { title: "Deskripsi Proyek", content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", type: "text" },
+          { title: "Tujuan", content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", type: "text" },
+          { title: "Metrik Utama", content: ["Pendapatan Setelah Diskon", "Total Unit Terjual", "Jumlah Pelanggan Unik", "Harga Rata-rata (AVG_Price)", "Persentase Kontribusi", "Tingkat Pembelian Ulang"], type: "bullets" },
+          { title: "Temuan Utama", content: ["Kategori 'Confections' menjadi kontributor terbesar dengan menyumbang 12,87% dari total pendapatan serta menghasilkan pendapatan setelah diskon tertinggi.", "Loyalitas pelanggan tergolong sangat kuat di seluruh kategori produk, dengan tingkat pembelian ulang berkisar antara 93% hingga 99%.", "Pendapatan terutama didorong oleh volume penjualan yang tinggi dan jumlah pelanggan yang besar, bukan oleh harga produk yang tinggi.", "Kategori dengan harga rata-rata lebih tinggi seperti 'Grain' dan 'Dairy' tidak menunjukkan penurunan signifikan pada jumlah pembeli unik dibandingkan kategori dengan harga lebih rendah seperti 'Produce'.", "Wayne Chan (Customer ID 94800) teridentifikasi sebagai pelanggan dengan nilai transaksi tertinggi, yang secara konsisten melakukan transaksi bernilai besar dari waktu ke waktu."], type: "bullets" },
+          { title: "Rekomendasi", content: "Perusahaan sebaiknya memfokuskan upaya pemasaran pada kategori utama seperti 'Confections', 'Meat', dan 'Poultry' dengan meningkatkan ketersediaan stok serta menerapkan strategi cross-selling atau bundling produk. Untuk kategori dengan performa yang lebih rendah seperti 'Shell Fish' dan 'Grain', RevoGrocers disarankan mengevaluasi kembali strategi harga serta memperkenalkan kampanye bertema 'Coba Produk Baru' guna meningkatkan minat pelanggan. Mengingat bahwa volume penjualan merupakan penggerak utama pendapatan, perusahaan sebaiknya memprioritaskan promosi berbasis jumlah pembelian serta memberikan program loyalitas yang dipersonalisasi berdasarkan riwayat pembelian pelanggan.", type: "text" }
+        ]
       }
     ],
 
+    // ── QUALITY ASSURANCE ──────────────────────
+    qa_about_title: "Tentang Saya",
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
     qa_about: "QA Engineer yang teliti dengan pengalaman langsung dalam pengujian manual dan otomatis. Berkomitmen menghadirkan perangkat lunak berkualitas tinggi dengan mendeteksi cacat lebih awal dan memastikan cakupan pengujian yang solid di platform web dan mobile.",
@@ -348,10 +265,10 @@ const LANG = {
     qa_soft: ["Perhatian terhadap Detail", "Berpikir Kritis", "Komunikasi", "Manajemen Waktu", "Adaptabilitas", "Kerja Tim"],
     qa_cert_title: "Sertifikasi",
     qa_certs: [
-      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: "Sertifikasi ISTQB Foundation Level mencakup dasar-dasar pengujian perangkat lunak, teknik desain pengujian, dan manajemen pengujian.", certUrl: "#" },
-      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: "Sertifikasi pengujian API menggunakan Postman, penulisan skrip pengujian, dan integrasi CI/CD via Newman.", certUrl: "#" },
-      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: "Kursus membangun framework otomasi UI menggunakan Selenium WebDriver dengan Java, TestNG, dan pola page-object-model.", certUrl: "#" },
-      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: "Mencakup prinsip pengujian agile, TDD, BDD, dan integrasi QA dalam siklus sprint agile.", certUrl: "#" }
+      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: ["Dasar-dasar pengujian perangkat lunak", "Teknik desain pengujian", "Prinsip manajemen pengujian", "Static testing & review", "Pengenalan alat pengujian"], descType: "bullets", certUrl: "#" },
+      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: ["Dasar pengujian API", "Penulisan skrip pengujian Postman", "Menjalankan dan mengorganisir koleksi", "Integrasi CI/CD via Newman", "Manajemen environment & variabel"], descType: "bullets", certUrl: "#" },
+      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: ["Setup Selenium WebDriver dengan Java", "Pola desain Page Object Model", "Framework pengujian TestNG", "Eksekusi lintas browser", "Pembuatan laporan pengujian HTML"], descType: "bullets", certUrl: "#" },
+      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: ["Prinsip pengujian agile", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Integrasi QA dalam siklus sprint", "Praktik continuous testing"], descType: "bullets", certUrl: "#" }
     ],
     qa_proj_title: "Pengalaman Proyek",
     qa_projects: [
@@ -449,7 +366,16 @@ function openCertModal(cert) {
   const s = document.createElement('span'); s.textContent = cert.year;
   yearEl.appendChild(s);
 
-  document.getElementById('cert-modal-desc').textContent = cert.desc || '';
+  // FIX 2: render bullets jika descType === 'bullets'
+  const descEl = document.getElementById('cert-modal-desc');
+  if (cert.descType === 'bullets' && Array.isArray(cert.desc)) {
+    const ul = document.createElement('ul');
+    cert.desc.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul.appendChild(li); });
+    descEl.innerHTML = ''; descEl.appendChild(ul);
+  } else {
+    descEl.textContent = cert.desc || '';
+  }
+
   document.getElementById('cert-view-btn').href = cert.certUrl || '#';
   document.getElementById('cert-modal').classList.add('active');
 }
@@ -461,7 +387,6 @@ document.getElementById('cert-close-btn').addEventListener('click', closeCertMod
    PROJECT POPUP
 ====================================================== */
 function openProjModal(proj) {
-  // Cover
   const coverImg = document.getElementById('proj-cover-img');
   const placeholder = document.getElementById('proj-cover-placeholder');
   if (proj.coverImg) {
@@ -474,13 +399,9 @@ function openProjModal(proj) {
     placeholder.textContent = proj.title;
   }
 
-  // Judul
   document.getElementById('proj-modal-title').textContent = proj.title;
-
-  // View Deck
   document.getElementById('proj-deck-btn').href = proj.deckUrl || '#';
 
-  // Tags — rata kanan
   const tagsEl = document.getElementById('proj-modal-tags');
   tagsEl.innerHTML = '';
   proj.tags.forEach(tag => {
@@ -492,7 +413,6 @@ function openProjModal(proj) {
     tagsEl.appendChild(pill);
   });
 
-  // Sections — 2 kolom
   const sectionsEl = document.getElementById('proj-sections');
   sectionsEl.innerHTML = '';
   (proj.sections || []).forEach(sec => {
@@ -522,7 +442,6 @@ function closeProjModal() { document.getElementById('proj-modal').classList.remo
 document.getElementById('proj-modal').addEventListener('click', function(e) { if (e.target === this) closeProjModal(); });
 document.getElementById('proj-close-btn').addEventListener('click', closeProjModal);
 
-// Escape
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') { closeEduModal(); closeCertModal(); closeProjModal(); }
 });
@@ -539,6 +458,8 @@ function render() {
   document.getElementById('btn-da').textContent = L.btn_da;
   document.getElementById('btn-qa').textContent = L.btn_qa;
 
+  // FIX 1: label-about ikut bahasa
+  document.getElementById('label-about').textContent = L[`${p}_about_title`];
   document.getElementById('about-name').textContent = L[`${p}_name`];
   document.getElementById('about-role').textContent = L[`${p}_role`];
   document.getElementById('about-text').textContent = L[`${p}_about`];
@@ -586,7 +507,7 @@ function render() {
   document.getElementById('label-soft').textContent = L[`${p}_soft_title`];
   document.getElementById('soft-list').innerHTML = L[`${p}_soft`].map(s => `<li>${s}</li>`).join('');
 
-  // Certifications — tombol, klik buka popup
+  // Certifications
   document.getElementById('label-cert').textContent = L[`${p}_cert_title`];
   const certGrid = document.getElementById('cert-grid');
   certGrid.innerHTML = '';
@@ -598,7 +519,7 @@ function render() {
     certGrid.appendChild(btn);
   });
 
-  // Projects — tombol, klik buka popup
+  // Projects
   document.getElementById('label-proj').textContent = L[`${p}_proj_title`];
   const projGrid = document.getElementById('project-grid');
   projGrid.innerHTML = '';
