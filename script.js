@@ -52,7 +52,7 @@ const LANG = {
     da_tech_title: "Technical Skills",
     da_tech: ["Excel", "Spreadsheet", "SQL", "Python", "Tableau"],
     da_soft_title: "Soft Skills",
-    da_soft: ["Analytical Thinking", "Problem Solving", "Data Storytelling", "Attention to Detail", "Team Collaboration", "Critical Thinking"],
+    da_soft: ["Analytical Thinking", "Data Storytelling", "Attention to Detail", "Problem Solving", "Team Collaboration", "Curiosity"],
     da_cert_title: "Certifications",
     da_certs: [
       {
@@ -125,7 +125,7 @@ const LANG = {
     qa_about_title: "About Me",
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
-    qa_about: "Detail-oriented QA Engineer with hands-on experience in manual and automated testing. Committed to delivering high-quality software by identifying defects early and ensuring robust test coverage across web and mobile platforms.",
+    qa_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking industry. I specialize in core banking system validation, financial transaction testing, and SQL-based data verification to ensure data integrity and system reliability. My responsibilities include analyzing requirements, executing application testing, documenting test results, and reporting defects throughout the development lifecycle. I am experienced with tools such as Jira, Confluence, Postman, Katalon Studio, and AS400, working within both Waterfall and Agile environments. I bring strong analytical thinking, a quality-driven mindset, and collaborative communication to support stable and reliable system releases.",
     qa_cv_ats: "Download CV",
     qa_cv_ats_url: "#",
     qa_edu_title: "Education",
@@ -136,22 +136,120 @@ const LANG = {
     qa_contact_title: "Contact",
     qa_contact: { location: "South Tangerang, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
     qa_tech_title: "Technical Skills",
-    qa_tech: ["Jira", "Postman", "Selenium", "Cypress", "Excel"],
+    qa_tech: ["Jira", "Confluence", "Postman", "AS400", "Katalon Studio"],
     qa_soft_title: "Soft Skills",
-    qa_soft: ["Attention to Detail", "Critical Thinking", "Communication", "Time Management", "Adaptability", "Teamwork"],
+    qa_soft: ["Critical Thinking", "Adaptability", "Attention to Detail", "Problem Solving", "Team Collaboration", "Curiosity"],
     qa_cert_title: "Certifications",
     qa_certs: [
-      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: ["Fundamentals of software testing", "Test design techniques", "Test management principles", "Static testing & reviews", "Test tools overview"], descType: "bullets", certUrl: "#" },
-      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: ["API testing fundamentals", "Writing Postman test scripts", "Running and organizing collections", "CI/CD integration via Newman", "Environment & variable management"], descType: "bullets", certUrl: "#" },
-      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: ["Selenium WebDriver setup with Java", "Page Object Model design pattern", "TestNG test framework", "Cross-browser test execution", "HTML test report generation"], descType: "bullets", certUrl: "#" },
-      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: ["Agile testing principles", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "QA integration in sprint cycles", "Continuous testing practices"], descType: "bullets", certUrl: "#" }
-    ],
-    qa_proj_title: "Project Experience",
+      { 
+        name: "Awareness ISO 29119",
+        issuer: "Narada Code", year: "2023", logo: "",
+        desc: ["Introduction to ISO/IEC 29119 software testing standards", "Software testing principles and lifecycle", "Test documentation and reporting standards", "Test design techniques and defect management", "Test planning and test process management"],
+        descType: "bullets",
+        certUrl: "https://drive.google.com/file/d/17SJrjRTacIrCJEk--6gd4rOuUnMVHBgr/view?usp=sharing"
+      },
+      { name: "Awareness Quality Assurance",
+        issuer: "Postman", year: "2023", logo: "",
+        desc: ["Introduction to software quality assurance concepts", "Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC)", "Types of software testing and testing strategies", "Defect lifecycle and bug tracking process", "QA documentation and reporting practices"],
+        descType: "bullets",
+        certUrl: "https://drive.google.com/file/d/1sdXtgwcy5zAkkJwUqTbi4_JUczAAflFR/view?usp=sharing"
+      }
+      ],
+    qa_proj_title: "Work Experience",
     qa_projects: [
-      { role: "Internship", title: "E-commerce Platform Testing", coverImg: "", deckUrl: "#", tags: ["Jira", "Manual Testing", "Regression"], desc: "Designed and executed 200+ test cases for a B2C e-commerce platform.", sections: [{ title: "Project Description", content: "End-to-end QA testing for a B2C e-commerce platform covering functional, regression, and user acceptance testing.", type: "text" }, { title: "Objective", content: "Ensure platform stability and zero critical bugs before each sprint release.", type: "text" }, { title: "Key Findings", content: ["200+ test cases designed and executed.", "32 critical bugs identified pre-release.", "Regression suite reduced re-testing time by 35%."], type: "bullets" }, { title: "Recommendations", content: "Automate repetitive regression test cases using Selenium to further reduce manual QA effort.", type: "text" }] },
-      { role: "Freelance", title: "API Testing for Fintech App", coverImg: "", deckUrl: "#", tags: ["Postman", "Newman", "CI/CD"], desc: "Created automated API test scripts using Postman and Newman, reducing manual QA time by 40%.", sections: [{ title: "Project Description", content: "Designed and implemented automated API test suites for a fintech mobile application backend.", type: "text" }, { title: "Objective", content: "Automate API regression testing and integrate into CI/CD pipeline for continuous quality assurance.", type: "text" }, { title: "Key Findings", content: ["40% reduction in manual QA time.", "120 API endpoints covered.", "Pipeline integration reduced release cycle by 2 days."], type: "bullets" }, { title: "Recommendations", content: "Extend coverage to contract testing using Pact to catch API breaking changes earlier in the development cycle.", type: "text" }] },
-      { role: "Personal Project", title: "Web Automation Framework", coverImg: "", deckUrl: "#", tags: ["Selenium", "TestNG", "Java"], desc: "Built a Selenium + TestNG page-object-model framework for automated UI testing across 3 browsers.", sections: [{ title: "Project Description", content: "Designed a reusable Selenium WebDriver + TestNG automation framework using the page-object-model design pattern.", type: "text" }, { title: "Objective", content: "Build a scalable, maintainable UI automation framework supporting cross-browser testing.", type: "text" }, { title: "Key Findings", content: ["Cross-browser support: Chrome, Firefox, Edge.", "60+ automated UI test cases.", "HTML reports auto-generated after each run."], type: "bullets" }, { title: "Recommendations", content: "Integrate with Jenkins or GitHub Actions to trigger test runs automatically on code push.", type: "text" }] }
-    ],
+      { 
+        role: "PT. Metrocom Jaddi Technology, Jakarta",
+        title: "Quality Assurance Analyst", 
+        coverImg: "", 
+        tags: ["Nov, 2025", "Jan, 2026"],
+        desc: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).",
+        sections: 
+        [
+          { 
+            title: "Sector", 
+            content: "Banking", 
+            type: "text" 
+          },
+          { title: "Job Description", 
+            content: [
+              "Focused on the development and testing of Contact Center System applications using the Waterfall methodology.",
+              "Collaborated in project management activities using ClickUp and Tricentis throughout the SDLC.",
+              "Participated in Design & Code Reviews (D&CR) to support project objectives and quality standards.",
+              "Collaborated in designing test cases and test scenarios based on D&CR outcomes using Google Sheets.",
+              "Documented all testing results using Tricentis.",
+              "Supported the UAT phase by conducting system demos for end users.",
+              "Prepared formal test completion reports as official documentation for QA phase sign-off."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      },
+      { 
+        role: "PT. Lawencon Internasional, Jakarta",
+        title: "QA Manual", 
+        coverImg: "", 
+        tags: ["Dec, 2021", "Sep, 2025"],
+        desc: "PT. Lawencon Internasional is an IT consulting and outsourcing company. Employed by PT. Lawencon Internasional and assigned as a consultant to Bank Rakyat Indonesia (BRI).",
+        sections: 
+        [
+          { 
+            title: "Sector", 
+            content: "Banking", 
+            type: "text" 
+          },
+          { title: "Job Description", 
+            content: [
+              "Focused on the development and testing of Clearing applications using the Waterfall methodology.",
+              "Ensured debit and credit reconciliation accuracy within Core Banking systems (AS400 and Temenos).",
+              "Collaborated in project management activities using Jira and Confluence throughout the SDLC.",
+              "Participated in Design & Code Reviews (D&CR) to support project objectives and quality standards.",
+              "Collaborated in designing test cases and test scenarios based on D&CR outcomes using Google Sheets.",
+              "Reported defects in Jira with detailed documentation and coordinated with Development teams through resolution.",
+              "Documented all testing results using Confluence and Microsoft Word.",
+              "Performed manual testing on Web and API platforms using Postman during the SIT phase.",
+              "Executed SQL queries for test result validation, test data patching, and identification of pain points during SIT.",
+              "Conducted automated testing on Web platforms using Katalon Studio during the SIT phase.",
+              "Performed stress testing using JMeter during the SIT phase.",
+              "Supported the UAT phase by conducting system demos for end users.",
+              "Prepared formal test completion reports as official documentation for QA phase sign-off.",
+              "Supported Deployment and Piloting phases for production rollout."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      },
+            { 
+        role: "PT. Arranet Indonesia Sejahtera, Jakarta",
+        title: "Quality Assurance Analyst", 
+        coverImg: "", 
+        tags: ["Oct, 2020", "Nov, 2021"],
+        desc: "PT Arranet Indonesia Sejahtera (Arranet) is a financial technology (fintech) company specializing in digital payment systems, including payment gateway, switching services, and Mini ATM EDC agent networks to support banking and digital transactions, particularly in remote and underserved areas.",
+        sections: 
+        [
+          { 
+            title: "Sector", 
+            content: "Fintech (Financial Technology)", 
+            type: "text" 
+          },
+          { title: "Job Description", 
+            content: [
+              "Focused on the development and testing of PPOB applications using the Agile methodology.",
+              "Ensured transaction accuracy and integration consistency with third-party service providers.",
+              "Collaborated in project management activities using Azure DevOps throughout the SDLC.",
+              "Participated in Sprint Planning to support project goals and delivery timelines.",
+              "Collaborated in designing test cases and test scenarios based on Sprint Planning outcomes using Google Sheets and Azure DevOps.",
+              "Reported defects in Azure DevOps with detailed documentation and coordinated with Development teams through resolution.",
+              "Documented all testing results and activities using Azure DevOps.",
+              "Performed manual testing on Web, Mobile, and API platforms using Postman during the SIT phase.",
+              "Executed SQL queries for test result validation, test data patching, and identification of pain points during SIT.",
+              "Supported the UAT phase by conducting system demos for end users.",
+              "Supported Deployment and Piloting phases for production rollout."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      }
+    ]
   },
 
   id: {
@@ -260,7 +358,7 @@ const LANG = {
     qa_contact_title: "Kontak",
     qa_contact: { location: "Tangerang Selatan, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
     qa_tech_title: "Keahlian Teknis",
-    qa_tech: ["Jira", "Postman", "Selenium", "Cypress", "Excel"],
+    qa_tech: ["Jira", "Confluence", "Postman", "AS400", "Katalon Studio"],
     qa_soft_title: "Soft Skill",
     qa_soft: ["Perhatian terhadap Detail", "Berpikir Kritis", "Komunikasi", "Manajemen Waktu", "Adaptabilitas", "Kerja Tim"],
     qa_cert_title: "Sertifikasi",
@@ -272,10 +370,99 @@ const LANG = {
     ],
     qa_proj_title: "Pengalaman Proyek",
     qa_projects: [
-      { role: "Magang", title: "Pengujian Platform E-commerce", coverImg: "", deckUrl: "#", tags: ["Jira", "Manual Testing", "Regression"], desc: "Merancang dan mengeksekusi 200+ test case untuk platform e-commerce B2C.", sections: [{ title: "Deskripsi Proyek", content: "Pengujian QA end-to-end untuk platform e-commerce B2C mencakup pengujian fungsional, regresi, dan UAT.", type: "text" }, { title: "Tujuan", content: "Memastikan stabilitas platform dan nol bug kritis sebelum setiap rilis sprint.", type: "text" }, { title: "Temuan Utama", content: ["200+ test case dieksekusi.", "32 bug kritis teridentifikasi.", "Suite regresi mengurangi waktu pengujian 35%."], type: "bullets" }, { title: "Rekomendasi", content: "Otomatisasi test case regresi berulang menggunakan Selenium.", type: "text" }] },
-      { role: "Freelance", title: "API Testing Aplikasi Fintech", coverImg: "", deckUrl: "#", tags: ["Postman", "Newman", "CI/CD"], desc: "Membuat skrip otomasi API, mengurangi waktu QA manual sebesar 40%.", sections: [{ title: "Deskripsi Proyek", content: "Suite pengujian API otomatis untuk backend aplikasi mobile fintech.", type: "text" }, { title: "Tujuan", content: "Otomatisasi regresi API dan integrasi ke pipeline CI/CD.", type: "text" }, { title: "Temuan Utama", content: ["Pengurangan waktu QA manual 40%.", "120 endpoint API tercakup.", "Siklus rilis berkurang 2 hari."], type: "bullets" }, { title: "Rekomendasi", content: "Perluas ke contract testing menggunakan Pact.", type: "text" }] },
-      { role: "Proyek Pribadi", title: "Framework Otomasi Web", coverImg: "", deckUrl: "#", tags: ["Selenium", "TestNG", "Java"], desc: "Membangun framework Selenium + TestNG dengan page-object-model.", sections: [{ title: "Deskripsi Proyek", content: "Framework otomasi Selenium WebDriver + TestNG dengan pola page-object-model.", type: "text" }, { title: "Tujuan", content: "Framework UI otomatis yang skalabel dengan dukungan lintas-browser.", type: "text" }, { title: "Temuan Utama", content: ["Dukungan: Chrome, Firefox, Edge.", "60+ test case UI terotomasi.", "Laporan HTML dibuat otomatis."], type: "bullets" }, { title: "Rekomendasi", content: "Integrasikan dengan Jenkins atau GitHub Actions.", type: "text" }] }
-    ],
+      { 
+        role: "PT. Metrocom Jaddi Technology, Jakarta",
+        title: "Quality Assurance Analyst", 
+        coverImg: "", 
+        tags: ["Nov, 2025", "Jan, 2026"],
+        desc: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).",
+        sections: 
+        [
+          { 
+            title: "Sektor", 
+            content: "Banking", 
+            type: "text" 
+          },
+          { title: "Deskripsi Pekerjaan", 
+            content: [
+              "Berfokus pada pengembangan dan pengujian aplikasi Contact Center System menggunakan metodologi Waterfall.",
+              "Berkolaborasi dalam aktivitas manajemen proyek menggunakan ClickUp dan Tricentis sepanjang siklus pengembangan perangkat lunak (SDLC).",
+              "Berpartisipasi dalam kegiatan Design & Code Review (D&CR) untuk mendukung pencapaian tujuan proyek dan standar kualitas.",
+              "Berkolaborasi dalam merancang test case dan test scenario berdasarkan hasil D&CR menggunakan Google Sheets.",
+              "Mendokumentasikan seluruh hasil pengujian menggunakan Tricentis.",
+              "Mendukung fase User Acceptance Testing (UAT) dengan melakukan demo sistem kepada end user.",
+              "Menyusun laporan penyelesaian pengujian (test completion report) sebagai dokumentasi resmi untuk proses persetujuan akhir fase QA."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      },
+      { 
+        role: "PT. Lawencon Internasional, Jakarta",
+        title: "QA Manual", 
+        coverImg: "", 
+        tags: ["Des, 2021", "Sep, 2025"],
+        desc: "PT Lawencon Internasional adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Lawencon Internasional dan ditugaskan sebagai konsultan di Bank Rakyat Indonesia (BRI).",
+        sections: 
+        [
+          { 
+            title: "Sektor", 
+            content: "Banking", 
+            type: "text" 
+          },
+          { title: "Deskripsi Pekerjaan", 
+            content: [
+              "Berfokus pada pengembangan dan pengujian aplikasi Clearing menggunakan metodologi Waterfall.",
+              "Memastikan akurasi rekonsiliasi debit dan kredit dalam sistem Core Banking (AS400 dan Temenos).",
+              "Berkolaborasi dalam aktivitas manajemen proyek menggunakan Jira dan Confluence sepanjang siklus pengembangan perangkat lunak (SDLC).",
+              "Berpartisipasi dalam kegiatan Design & Code Review (D&CR) untuk mendukung tujuan proyek dan standar kualitas.",
+              "Berkolaborasi dalam merancang test case dan test scenario berdasarkan hasil D&CR menggunakan Google Sheets.",
+              "Melaporkan defect di Jira dengan dokumentasi yang detail serta berkoordinasi dengan tim Development hingga proses penyelesaian.",
+              "Mendokumentasikan seluruh hasil pengujian menggunakan Confluence dan Microsoft Word.",
+              "Melakukan manual testing pada platform Web dan API menggunakan Postman selama fase System Integration Testing (SIT).",
+              "Menjalankan query SQL untuk validasi hasil pengujian, patching data pengujian, serta mengidentifikasi pain points selama fase SIT.",
+              "Melakukan automated testing pada platform Web menggunakan Katalon Studio selama fase SIT.",
+              "Melakukan stress testing menggunakan JMeter selama fase SIT.",
+              "Mendukung fase User Acceptance Testing (UAT) dengan melakukan demo sistem kepada end user.",
+              "Menyusun laporan penyelesaian pengujian (test completion report) sebagai dokumentasi resmi untuk proses persetujuan akhir fase QA.",
+              "Mendukung fase Deployment dan Piloting untuk proses peluncuran sistem ke produksi."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      },
+            { 
+        role: "PT. Arranet Indonesia Sejahtera, Jakarta",
+        title: "Quality Assurance Analyst", 
+        coverImg: "", 
+        tags: ["Okt, 2020", "Nov, 2021"],
+        desc: "PT Arranet Indonesia Sejahtera (Arranet) adalah perusahaan penyedia jasa dan teknologi sistem pembayaran digital (fintech), yang berfokus pada penyediaan layanan payment gateway, switching, dan agen EDC Mini ATM, terutama untuk memfasilitasi transaksi perbankan dan digital di daerah pelosok.",
+        sections: 
+        [
+          { 
+            title: "Sektor", 
+            content: "Fintech (Financial Technology)", 
+            type: "text" 
+          },
+          { title: "Deskripsi Pekerjaan", 
+            content: [
+              "Berfokus pada pengembangan dan pengujian aplikasi PPOB (Payment Point Online Bank) menggunakan metodologi Agile.",
+              "Memastikan akurasi transaksi dan konsistensi integrasi dengan penyedia layanan pihak ketiga.",
+              "Berkolaborasi dalam aktivitas manajemen proyek menggunakan Azure DevOps sepanjang siklus pengembangan perangkat lunak (SDLC).",
+              "Berpartisipasi dalam kegiatan Sprint Planning untuk mendukung pencapaian target proyek dan jadwal pengiriman.",
+              "Berkolaborasi dalam merancang test case dan test scenario berdasarkan hasil Sprint Planning menggunakan Google Sheets dan Azure DevOps.",
+              "Melaporkan defect di Azure DevOps dengan dokumentasi yang detail serta berkoordinasi dengan tim Development hingga proses penyelesaian.",
+              "Mendokumentasikan seluruh hasil dan aktivitas pengujian menggunakan Azure DevOps.",
+              "Melakukan manual testing pada platform Web, Mobile, dan API menggunakan Postman selama fase System Integration Testing (SIT).",
+              "Menjalankan query SQL untuk validasi hasil pengujian, patching data pengujian, serta mengidentifikasi pain points selama fase SIT.",
+              "Mendukung fase User Acceptance Testing (UAT) dengan melakukan demo sistem kepada end user.",
+              "Mendukung fase Deployment dan Piloting untuk proses peluncuran sistem ke produksi."
+            ], 
+            type: "bullets" 
+          } 
+        ] 
+      }
+    ]
   }
 };
 
@@ -283,19 +470,17 @@ const LANG = {
    TECH SKILL ICON MAP
 ====================================================== */
 const TECH_ICONS = {
-  "Spreadsheet": "https://img.icons8.com/color/48/google-sheets.png",
-  "Excel":       "https://img.icons8.com/color/48/microsoft-excel-2019.png",
-  "SQL":         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-  "Python":      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  "Tableau":     "https://img.icons8.com/color/48/tableau-software.png",
-  "Jira":        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
-  "Postman":     "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
-  "Selenium":    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg",
-  "Cypress":     "https://img.icons8.com/color/48/cypress.png",
-  "Figma":       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  "Canva":       "https://img.icons8.com/color/48/canva.png",
-  "WordPress":   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
-  "Notion":      "https://img.icons8.com/ios-filled/50/notion.png",
+  "Spreadsheet":    "https://img.icons8.com/color/48/google-sheets.png",
+  "Excel":          "https://img.icons8.com/color/48/microsoft-excel-2019.png",
+  "SQL":            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  "Python":         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  "Tableau":        "https://img.icons8.com/color/48/tableau-software.png",
+  "Jira":           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+  "Postman":        "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
+  "Katalon Studio": "img/Katalon-logo-png.png",
+  "AS400":          "https://img.icons8.com/color/48/ibm.png",
+  "Jira":           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+  "Confluence":     "https://img.icons8.com/color/48/confluence.png",
 };
 
 /* ======================================================
@@ -537,8 +722,8 @@ function render() {
 
   // Profile photo
   document.getElementById('profile-photo').src = p === 'da'
-    ? 'img/Pas-Foto.jpg'
-    : 'https://placehold.co/200x300/e6eaf0/192841?text=Photo';
+    ? 'img/Pas-Foto-DA.jpg'
+    : 'img/Pas-Foto-QA.jpg';
 }
 
 /* ======================================================
