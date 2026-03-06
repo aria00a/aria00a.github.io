@@ -130,8 +130,8 @@ const LANG = {
     qa_cv_ats_url: "#",
     qa_edu_title: "Education",
     qa_edu: [
-      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" },
-      { degree: "QA Automation Bootcamp", school: "Bootcamp Institution", year: "2023", logo: "", prodi: "QA Automation Bootcamp", tanggal: "2023", isi: ["Intensive QA automation training covering Selenium WebDriver and TestNG.", "Hands-on experience with Postman API testing and Newman CI/CD integration.", "Built automated test frameworks for web applications using page-object-model design pattern.", "Generated HTML test reports across multiple browser environments."], isiType: "bullets" }
+      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" },
+
     ],
     qa_contact_title: "Contact",
     qa_contact: { location: "South Tangerang, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
@@ -143,14 +143,26 @@ const LANG = {
     qa_certs: [
       { 
         name: "Awareness ISO 29119",
-        issuer: "Narada Code", year: "2023", logo: "",
-        desc: ["Introduction to ISO/IEC 29119 software testing standards", "Software testing principles and lifecycle", "Test documentation and reporting standards", "Test design techniques and defect management", "Test planning and test process management"],
+        issuer: "Narada Code", year: "2023", logo: "img/Narada Code.jpg",
+        desc: [
+          "Introduction to ISO/IEC 29119 software testing standards", 
+          "Software testing principles and lifecycle", 
+          "Test documentation and reporting standards", 
+          "Test design techniques and defect management", 
+          "Test planning and test process management"
+        ],
         descType: "bullets",
         certUrl: "https://drive.google.com/file/d/17SJrjRTacIrCJEk--6gd4rOuUnMVHBgr/view?usp=sharing"
       },
       { name: "Awareness Quality Assurance",
-        issuer: "Postman", year: "2023", logo: "",
-        desc: ["Introduction to software quality assurance concepts", "Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC)", "Types of software testing and testing strategies", "Defect lifecycle and bug tracking process", "QA documentation and reporting practices"],
+        issuer: "Postman", year: "2023", logo: "img/Narada Code.jpg",
+        desc: [
+          "Introduction to software quality assurance concepts", 
+          "Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC)", 
+          "Types of software testing and testing strategies", 
+          "Defect lifecycle and bug tracking process", 
+          "QA documentation and reporting practices"
+        ],
         descType: "bullets",
         certUrl: "https://drive.google.com/file/d/1sdXtgwcy5zAkkJwUqTbi4_JUczAAflFR/view?usp=sharing"
       }
@@ -158,13 +170,23 @@ const LANG = {
     qa_proj_title: "Work Experience",
     qa_projects: [
       { 
-        role: "PT. Metrocom Jaddi Technology, Jakarta",
-        title: "Quality Assurance Analyst", 
+        role: "Quality Assurance Analyst",
+        title: "PT. Metrocom Jaddi Technology, Jakarta", 
         coverImg: "", 
         tags: ["Nov, 2025", "Jan, 2026"],
         desc: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).",
         sections: 
         [
+          { 
+            title: "Company Description", 
+            content: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).", 
+            type: "text" 
+          },
+          { 
+            title: "Role", 
+            content: "Quality Assurance Analyst", 
+            type: "text" 
+          },
           { 
             title: "Sector", 
             content: "Banking", 
@@ -185,13 +207,23 @@ const LANG = {
         ] 
       },
       { 
-        role: "PT. Lawencon Internasional, Jakarta",
-        title: "QA Manual", 
+        role: "QA Manual",
+        title: "PT. Lawencon Internasional, Jakarta", 
         coverImg: "", 
         tags: ["Dec, 2021", "Sep, 2025"],
         desc: "PT. Lawencon Internasional is an IT consulting and outsourcing company. Employed by PT. Lawencon Internasional and assigned as a consultant to Bank Rakyat Indonesia (BRI).",
         sections: 
         [
+          { 
+            title: "Company Description", 
+            content: "PT. Lawencon Internasional is an IT consulting and outsourcing company. Employed by PT. Lawencon Internasional and assigned as a consultant to Bank Rakyat Indonesia (BRI)", 
+            type: "text" 
+          },
+          { 
+            title: "Role", 
+            content: "QA Manual", 
+            type: "text" 
+          },
           { 
             title: "Sector", 
             content: "Banking", 
@@ -219,13 +251,23 @@ const LANG = {
         ] 
       },
             { 
-        role: "PT. Arranet Indonesia Sejahtera, Jakarta",
-        title: "Quality Assurance Analyst", 
+        role: "Software Quality Assurance",
+        title: "PT. Arranet Indonesia Sejahtera, Jakarta", 
         coverImg: "", 
         tags: ["Oct, 2020", "Nov, 2021"],
         desc: "PT Arranet Indonesia Sejahtera (Arranet) is a financial technology (fintech) company specializing in digital payment systems, including payment gateway, switching services, and Mini ATM EDC agent networks to support banking and digital transactions, particularly in remote and underserved areas.",
         sections: 
         [
+          { 
+            title: "Company Description", 
+            content: "PT Arranet Indonesia Sejahtera (Arranet) is a financial technology (fintech) company specializing in digital payment systems, including payment gateway, switching services, and Mini ATM EDC agent networks to support banking and digital transactions, particularly in remote and underserved areas.", 
+            type: "text" 
+          },
+          { 
+            title: "Role", 
+            content: "Software Quality Assurance", 
+            type: "text" 
+          },
           { 
             title: "Sector", 
             content: "Fintech (Financial Technology)", 
@@ -347,13 +389,12 @@ const LANG = {
     qa_about_title: "Tentang Saya",
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
-    qa_about: "QA Engineer yang teliti dengan pengalaman langsung dalam pengujian manual dan otomatis. Berkomitmen menghadirkan perangkat lunak berkualitas tinggi dengan mendeteksi cacat lebih awal dan memastikan cakupan pengujian yang solid di platform web dan mobile.",
+    qa_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di industri perbankan. Saya memiliki spesialisasi dalam validasi sistem core banking, pengujian transaksi keuangan, serta verifikasi data berbasis SQL untuk memastikan integritas data dan keandalan sistem. Tanggung jawab saya meliputi menganalisis kebutuhan, melakukan pengujian aplikasi, mendokumentasikan hasil pengujian, serta melaporkan defect sepanjang siklus pengembangan sistem. Saya berpengalaman menggunakan berbagai tools seperti Jira, Confluence, Postman, Katalon Studio, dan AS400, serta bekerja dalam lingkungan pengembangan Waterfall maupun Agile. Saya memiliki kemampuan analisis yang kuat, pola pikir yang berorientasi pada kualitas, serta komunikasi kolaboratif untuk mendukung rilis sistem yang stabil dan andal.",
     qa_cv_ats: "Unduh CV",
     qa_cv_ats_url: "#",
     qa_edu_title: "Pendidikan",
     qa_edu: [
-      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" },
-      { degree: "Bootcamp QA Automation", school: "Nama Institusi", year: "2023", logo: "", prodi: "QA Automation Bootcamp", tanggal: "2023", isi: ["Pelatihan QA automation intensif mencakup Selenium WebDriver dan TestNG.", "Pengujian API menggunakan Postman dan integrasi CI/CD pipeline dengan Newman.", "Membangun framework pengujian otomatis dengan pola page-object-model.", "Menghasilkan laporan pengujian HTML di berbagai lingkungan browser."], isiType: "bullets" }
+      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" },
     ],
     qa_contact_title: "Kontak",
     qa_contact: { location: "Tangerang Selatan, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
@@ -363,11 +404,32 @@ const LANG = {
     qa_soft: ["Perhatian terhadap Detail", "Berpikir Kritis", "Komunikasi", "Manajemen Waktu", "Adaptabilitas", "Kerja Tim"],
     qa_cert_title: "Sertifikasi",
     qa_certs: [
-      { name: "ISTQB Foundation Level", issuer: "ISTQB", year: "2023", logo: "", desc: ["Dasar-dasar pengujian perangkat lunak", "Teknik desain pengujian", "Prinsip manajemen pengujian", "Static testing & review", "Pengenalan alat pengujian"], descType: "bullets", certUrl: "#" },
-      { name: "Postman API Testing", issuer: "Postman", year: "2023", logo: "", desc: ["Dasar pengujian API", "Penulisan skrip pengujian Postman", "Menjalankan dan mengorganisir koleksi", "Integrasi CI/CD via Newman", "Manajemen environment & variabel"], descType: "bullets", certUrl: "#" },
-      { name: "Selenium WebDriver with Java", issuer: "Udemy", year: "2022", logo: "", desc: ["Setup Selenium WebDriver dengan Java", "Pola desain Page Object Model", "Framework pengujian TestNG", "Eksekusi lintas browser", "Pembuatan laporan pengujian HTML"], descType: "bullets", certUrl: "#" },
-      { name: "Agile Testing Certificate", issuer: "Coursera", year: "2022", logo: "", desc: ["Prinsip pengujian agile", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Integrasi QA dalam siklus sprint", "Praktik continuous testing"], descType: "bullets", certUrl: "#" }
-    ],
+      { 
+        name: "Awareness ISO 29119",
+        issuer: "Narada Code", year: "2023", logo: "img/Narada Code.jpg",
+        desc: [
+          "Introduction to ISO/IEC 29119 software testing standards", 
+          "Software testing principles and lifecycle", 
+          "Test documentation and reporting standards", 
+          "Test design techniques and defect management", 
+          "Test planning and test process management"
+        ],
+        descType: "bullets",
+        certUrl: "https://drive.google.com/file/d/17SJrjRTacIrCJEk--6gd4rOuUnMVHBgr/view?usp=sharing"
+      },
+      { name: "Awareness Quality Assurance",
+        issuer: "Postman", year: "2023", logo: "img/Narada Code.jpg",
+        desc: [
+          "Introduction to software quality assurance concepts", 
+          "Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC)", 
+          "Types of software testing and testing strategies", 
+          "Defect lifecycle and bug tracking process", 
+          "QA documentation and reporting practices"
+        ],
+        descType: "bullets",
+        certUrl: "https://drive.google.com/file/d/1sdXtgwcy5zAkkJwUqTbi4_JUczAAflFR/view?usp=sharing"
+      }
+      ],
     qa_proj_title: "Pengalaman Proyek",
     qa_projects: [
       { 
@@ -378,6 +440,16 @@ const LANG = {
         desc: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).",
         sections: 
         [
+          { 
+            title: "Deskripsi Perusahaan", 
+            content: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).", 
+            type: "text" 
+          },
+          { 
+            title: "Posisi", 
+            content: "Quality Assurance Analyst", 
+            type: "text" 
+          },
           { 
             title: "Sektor", 
             content: "Banking", 
@@ -405,6 +477,16 @@ const LANG = {
         desc: "PT Lawencon Internasional adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Lawencon Internasional dan ditugaskan sebagai konsultan di Bank Rakyat Indonesia (BRI).",
         sections: 
         [
+          { 
+            title: "Deskripsi Perusahaan", 
+            content: "PT Lawencon Internasional adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Lawencon Internasional dan ditugaskan sebagai konsultan di Bank Rakyat Indonesia (BRI).", 
+            type: "text" 
+          },
+          { 
+            title: "Posisi", 
+            content: "QA Manual", 
+            type: "text" 
+          },
           { 
             title: "Sektor", 
             content: "Banking", 
@@ -439,6 +521,16 @@ const LANG = {
         desc: "PT Arranet Indonesia Sejahtera (Arranet) adalah perusahaan penyedia jasa dan teknologi sistem pembayaran digital (fintech), yang berfokus pada penyediaan layanan payment gateway, switching, dan agen EDC Mini ATM, terutama untuk memfasilitasi transaksi perbankan dan digital di daerah pelosok.",
         sections: 
         [
+          { 
+            title: "Deskripsi Perusahaan", 
+            content: "PT Arranet Indonesia Sejahtera (Arranet) adalah perusahaan penyedia jasa dan teknologi sistem pembayaran digital (fintech), yang berfokus pada penyediaan layanan payment gateway, switching, dan agen EDC Mini ATM, terutama untuk memfasilitasi transaksi perbankan dan digital di daerah pelosok.", 
+            type: "text" 
+          },
+          { 
+            title: "Posisi", 
+            content: "Software Quality Assurance", 
+            type: "text" 
+          },
           { 
             title: "Sektor", 
             content: "Fintech (Financial Technology)", 
