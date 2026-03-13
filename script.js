@@ -11,7 +11,7 @@ const LANG = {
     da_about_title: "About Me",
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
+    da_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking sector, currently expanding my expertise into Data Analytics. Through managing testing data and performing in-depth test analysis across multiple system release cycles, I developed a strong interest in uncovering patterns, understanding system behavior, and using data to support better decision-making. Experienced in ensuring compliance with banking standards and identifying risks early to reduce post-release defects and enhance system stability. I am motivated to leverage my analytical mindset and structured problem-solving approach to transform data into meaningful business insights.",
     da_cv_ats: "Download CV",
     da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
     da_edu_title: "Education",
@@ -73,8 +73,8 @@ const LANG = {
     da_proj_title: "Project Experience",
     da_projects: [
       {
-        role: "RevoU (DEEPP)",
-        title: "An Analysis of Hotel Booking Cancellation Behavior",
+        role: "An Analysis of Hotel Booking Cancellation Behavior",
+        title: "",
         coverImg: "img/Banner01.jpg",
         // FIX 3: isi URL yang ada, kosongkan ("") yang tidak ada
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
@@ -86,14 +86,18 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project analyzes hotel booking demand data from July 2015 to August 2017 for Strigiformotel Group, focusing on customer booking behavior and cancellation patterns across City Hotels and Resort Hotels. The analysis aims to uncover key drivers behind booking cancellations and identify actionable opportunities to improve booking retention.", type: "text" },
           { title: "Objective", content: "To identify customer segments and booking characteristics that contribute to high cancellation rates and propose data-driven strategies to reduce the overall hotel cancellation rate from 27.49% to approximately 23% within 6 months.", type: "text" },
-          { title: "Key Metrics", content: ["Overall Cancellation Rate","Cancellation Rate by Hotel Type","Cancellation Rate by Market Segment","Cancellation Rate by Lead Time Bucket","Cancellation Rate by Customer Type (New vs Repeat Guests)"], type: "bullets" },
+          { title: "Key Metrics", content: [
+            "Data Preparation & Cleaning using Google Spreadsheet & Python",
+            "Exploratory Data Analysis using Python",
+            "Data Visualization using Python & Tableau"], 
+            type: "bullets" },
           { title: "Key Findings", content: ["Overall cancellation rate stands at 27.49% from 87,396 bookings.","City Hotels experience higher cancellations (30.0%) than Resort Hotels (23.5%).","Online Travel Agents (OTA) contribute the highest cancellation rate (35.35%) and volume.","Bookings with lead time >180 days show the highest cancellation rate (39.74%).","Repeat guests are significantly more stable, with only 7.64% cancellation rate.","Customer clustering reveals distinct high-risk segments driven by long lead times and OTA bookings."], type: "bullets" },
           { title: "Recommendations", content: "By focusing strategies on long lead time bookings, Online TA channels, and new guests, hotels can directly target the areas with the largest contribution to cancellations. This approach enables a realistic reduction in the cancellation rate toward the 23% target, without requiring extreme operational changes.", type: "text" }
         ]
       },
       {
-        role: "RevoU (Assignment)",
-        title: "RevoGrocers Sales Performance Analysis",
+        role: "RevoGrocers Sales Performance Analysis",
+        title: "",
         coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
@@ -104,7 +108,10 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.", type: "text" },
           { title: "Objective", content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.", type: "text" },
-          { title: "Key Metrics", content: ["Revenue After Discount","Total Units Sold","Unique Customers","Average Price (AVG_Price)","Contribution Percentage","Repeat Purchase Rate"], type: "bullets" },
+          { title: "Key Metrics", content: [
+            "Data Preparation using Google Bigquery",
+            "Exploratory Data Analysis using SQL"], 
+            type: "bullets" },
           { title: "Key Findings", content: ["The 'Confections' category is the most significant contributor, accounting for 12.87% of total revenue and yielding the highest revenue after discounts.","Customer loyalty is exceptionally strong across all categories, with repeat purchase rates ranging between 93% and 99%.","Revenue is primarily driven by high sales volumes and a large customer base rather than high individual product prices.","Categories with higher average prices, such as Grain and Dairy, do not show a significant drop in unique buyers compared to cheaper categories like Produce.","Wayne Chan (Customer ID 94800) was identified as the top user, demonstrating consistent high-value transactions over time."], type: "bullets" },
           { title: "Recommendations", content: "The business should focus its marketing efforts on 'power categories' like Confections, Meat, and Poultry by enhancing stock availability and implementing cross-selling or bundling strategies. For underperforming areas like Shell Fish and Grain, RevoGrocers should evaluate pricing strategies and introduce targeted 'Try Something New' campaigns to boost engagement. Given that volume is the main revenue driver, the company should prioritize quantity-based promotions and personalized loyalty rewards based on purchase history to maintain the current high repeat purchase rates.", type: "text" }
         ]
@@ -190,7 +197,7 @@ const LANG = {
     da_about_title: "Tentang Saya",
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang beralih ke bidang Data Analytics. Selama menjalani berbagai siklus rilis sistem, saya membangun dasar yang kuat dalam menjaga akurasi, melakukan penilaian risiko, serta menyusun dokumentasi secara terstruktur. Berpengalaman dalam mengelola data pengujian dan memastikan kepatuhan terhadap standar perbankan, saya juga melakukan analisis pengujian secara mendalam untuk mengurangi bug setelah rilis dan meningkatkan stabilitas sistem. Dalam bidang analisis data, saya menguasai SQL untuk ekstraksi dan analisis data. Python dan Tableau juga saya gunakan dalam berbagai proyek portofolio untuk menganalisis dataset, mengidentifikasi tren, serta membangun dashboard interaktif. Dengan pendekatan analitis dan komitmen untuk terus belajar, saya berupaya menghasilkan keputusan bisnis yang andal dan berbasis data.",
+    da_about: "Saya adalah seorang Profesional Quality Assurance yang detail-oriented dengan pengalaman lebih dari 5 tahun di sektor perbankan, saat ini mengembangkan keahlian di bidang Data Analytics. Berpengalaman dalam mengelola data pengujian dan melakukan analisis mendalam pada berbagai siklus rilis sistem untuk mengidentifikasi pola, memahami perilaku sistem, serta mendukung pengambilan keputusan berbasis data. Terbiasa memastikan kepatuhan terhadap standar perbankan dan mengidentifikasi risiko sejak dini guna meminimalkan defect pasca-rilis serta meningkatkan stabilitas sistem. Memiliki pola pikir analitis dan pendekatan pemecahan masalah yang terstruktur untuk menghasilkan insight bisnis yang relevan dan bernilai.",
     da_cv_ats: "Unduh CV",
     da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
     da_edu_title: "Pendidikan",
@@ -212,8 +219,8 @@ const LANG = {
     da_proj_title: "Pengalaman Proyek",
     da_projects: [
       {
-        role: "RevoU (DEEPP)",
-        title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
+        role: "Analisis Perilaku Pembatalan Pemesanan Hotel",
+        title: "",
         coverImg: "img/Banner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         codeUrl: "https://colab.research.google.com/drive/1j9h-jJ5hpMeS38i7J94htkYF0he0b7rU?usp=drive_link",
@@ -224,14 +231,18 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.", type: "text" },
           { title: "Tujuan", content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.", type: "text" },
-          { title: "Metrik Utama", content: ["Tingkat Pembatalan Keseluruhan","Tingkat Pembatalan per Tipe Hotel","Tingkat Pembatalan per Segmen Pasar","Tingkat Pembatalan per Bucket Lead Time","Tingkat Pembatalan Berdasarkan Tipe Pelanggan (Tamu Baru vs Tamu Lama)"], type: "bullets" },
+          { title: "Metrik Utama", content: [
+            "Persiapan dan Pembersihan Data menggunakan Google Spreadsheet dan Python",
+            "Analisis Data Eksploratif (EDA) menggunakan Python",
+            "Visualisasi Data menggunakan Python dan Tableau"], 
+            type: "bullets" },
           { title: "Temuan Utama", content: ["Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.","City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).","Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).","Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.","Tamu lama menunjukkan perilaku pemesanan yang jauh lebih stabil, dengan tingkat pembatalan hanya sebesar 7,64%.","Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."], type: "bullets" },
           { title: "Rekomendasi", content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, channel Online TA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
         ]
       },
       {
-        role: "RevoU (Assignment)",
-        title: "Analisis Kinerja Penjualan RevoGrocers",
+        role: "Analisis Kinerja Penjualan RevoGrocers",
+        title: "",
         coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
@@ -242,7 +253,10 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", type: "text" },
           { title: "Tujuan", content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", type: "text" },
-          { title: "Metrik Utama", content: ["Pendapatan Setelah Diskon","Total Unit Terjual","Jumlah Pelanggan Unik","Harga Rata-rata (AVG_Price)","Persentase Kontribusi","Tingkat Pembelian Ulang"], type: "bullets" },
+          { title: "Metrik Utama", content: [
+            "Persiapan Data menggunakan Google Bigquery",
+            "Analisis Data Eksploratif (Exploratory Data Analysis / EDA) menggunakan SQL "], 
+            type: "bullets" },
           { title: "Temuan Utama", content: ["Kategori 'Confections' menjadi kontributor terbesar dengan menyumbang 12,87% dari total pendapatan serta menghasilkan pendapatan setelah diskon tertinggi.","Loyalitas pelanggan tergolong sangat kuat di seluruh kategori produk, dengan tingkat pembelian ulang berkisar antara 93% hingga 99%.","Pendapatan terutama didorong oleh volume penjualan yang tinggi dan jumlah pelanggan yang besar, bukan oleh harga produk yang tinggi.","Kategori dengan harga rata-rata lebih tinggi seperti 'Grain' dan 'Dairy' tidak menunjukkan penurunan signifikan pada jumlah pembeli unik dibandingkan kategori dengan harga lebih rendah seperti 'Produce'.","Wayne Chan (Customer ID 94800) teridentifikasi sebagai pelanggan dengan nilai transaksi tertinggi, yang secara konsisten melakukan transaksi bernilai besar dari waktu ke waktu."], type: "bullets" },
           { title: "Rekomendasi", content: "Perusahaan sebaiknya memfokuskan upaya pemasaran pada kategori utama seperti 'Confections', 'Meat', dan 'Poultry' dengan meningkatkan ketersediaan stok serta menerapkan strategi cross-selling atau bundling produk. Untuk kategori dengan performa yang lebih rendah seperti 'Shell Fish' dan 'Grain', RevoGrocers disarankan mengevaluasi kembali strategi harga serta memperkenalkan kampanye bertema 'Coba Produk Baru' guna meningkatkan minat pelanggan. Mengingat bahwa volume penjualan merupakan penggerak utama pendapatan, perusahaan sebaiknya memprioritaskan promosi berbasis jumlah pembelian serta memberikan program loyalitas yang dipersonalisasi berdasarkan riwayat pembelian pelanggan.", type: "text" }
         ]
