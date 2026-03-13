@@ -78,8 +78,9 @@ const LANG = {
         coverImg: "img/Banner01.jpg",
         // FIX 3: isi URL yang ada, kosongkan ("") yang tidak ada
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
-        codeUrl: "",
-        dashboardUrl: "",
+        codeUrl: "https://colab.research.google.com/drive/1j9h-jJ5hpMeS38i7J94htkYF0he0b7rU?usp=drive_link",
+        dashboardUrl: "https://public.tableau.com/app/profile/aria.bimantara/viz/DEEPP-AnAnalysisofHotelBookingCancellationBehavior/Dashboard1",
+        visibility: "show",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Analyzed hotel booking cancellation patterns to identify high-risk segments and propose data-driven strategies to reduce overall cancellation rate.",
         sections: [
@@ -97,6 +98,7 @@ const LANG = {
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
         dashboardUrl: "",
+        visibility: "show",
         tags: ["SQL", "BigQuery"],
         desc: "Analyzed grocery sales data to identify sales trends, top products, and key revenue drivers to support data-driven decision making.",
         sections: [
@@ -139,6 +141,7 @@ const LANG = {
         title: "PT. Metrocom Jaddi Technology, Jakarta",
         coverImg: "",
         tags: ["Nov, 2025", "Jan, 2026"],
+        visibility: "show",
         desc: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).",
         sections: [
           { title: "Company Description", content: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).", type: "text" },
@@ -152,6 +155,7 @@ const LANG = {
         title: "PT. Lawencon Internasional, Jakarta",
         coverImg: "",
         tags: ["Dec, 2021", "Sep, 2025"],
+        visibility: "show",
         desc: "PT. Lawencon Internasional is an IT consulting and outsourcing company. Employed by PT. Lawencon Internasional and assigned as a consultant to Bank Rakyat Indonesia (BRI).",
         sections: [
           { title: "Company Description", content: "PT. Lawencon Internasional is an IT consulting and outsourcing company. Employed by PT. Lawencon Internasional and assigned as a consultant to Bank Rakyat Indonesia (BRI)", type: "text" },
@@ -165,6 +169,7 @@ const LANG = {
         title: "PT. Arranet Indonesia Sejahtera, Jakarta",
         coverImg: "",
         tags: ["Oct, 2020", "Nov, 2021"],
+        visibility: "show",
         desc: "PT Arranet Indonesia Sejahtera (Arranet) is a financial technology (fintech) company specializing in digital payment systems, including payment gateway, switching services, and Mini ATM EDC agent networks to support banking and digital transactions, particularly in remote and underserved areas.",
         sections: [
           { title: "Company Description", content: "PT Arranet Indonesia Sejahtera (Arranet) is a financial technology (fintech) company specializing in digital payment systems, including payment gateway, switching services, and Mini ATM EDC agent networks to support banking and digital transactions, particularly in remote and underserved areas.", type: "text" },
@@ -211,8 +216,9 @@ const LANG = {
         title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
         coverImg: "img/Banner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
-        codeUrl: "",
-        dashboardUrl: "",
+        codeUrl: "https://colab.research.google.com/drive/1j9h-jJ5hpMeS38i7J94htkYF0he0b7rU?usp=drive_link",
+        dashboardUrl: "https://public.tableau.com/app/profile/aria.bimantara/viz/DEEPP-AnAnalysisofHotelBookingCancellationBehavior/Dashboard1",
+        visibility: "show",
         tags: ["Excel", "Python", "Tableau"],
         desc: "Menganalisis pola pembatalan pemesanan hotel untuk mengidentifikasi segmen berisiko tinggi dan mengusulkan strategi berbasis data.",
         sections: [
@@ -230,6 +236,7 @@ const LANG = {
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
         dashboardUrl: "",
+        visibility: "show",
         tags: ["SQL", "BigQuery"],
         desc: "Menganalisis data penjualan untuk mengidentifikasi tren penjualan, produk terlaris, serta faktor utama yang mendorong pendapatan guna mendukung pengambilan keputusan berbasis data.",
         sections: [
@@ -271,6 +278,7 @@ const LANG = {
         title: "Quality Assurance Analyst",
         coverImg: "",
         tags: ["Nov, 2025", "Jan, 2026"],
+        visibility: "show",
         desc: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).",
         sections: [
           { title: "Deskripsi Perusahaan", content: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).", type: "text" },
@@ -284,6 +292,7 @@ const LANG = {
         title: "QA Manual",
         coverImg: "",
         tags: ["Des, 2021", "Sep, 2025"],
+        visibility: "show",
         desc: "PT Lawencon Internasional adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Lawencon Internasional dan ditugaskan sebagai konsultan di Bank Rakyat Indonesia (BRI).",
         sections: [
           { title: "Deskripsi Perusahaan", content: "PT Lawencon Internasional adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Lawencon Internasional dan ditugaskan sebagai konsultan di Bank Rakyat Indonesia (BRI).", type: "text" },
@@ -297,6 +306,7 @@ const LANG = {
         title: "Software Quality Assurance",
         coverImg: "",
         tags: ["Okt, 2020", "Nov, 2021"],
+        visibility: "show",
         desc: "PT Arranet Indonesia Sejahtera (Arranet) adalah perusahaan penyedia jasa dan teknologi sistem pembayaran digital (fintech), yang berfokus pada penyediaan layanan payment gateway, switching, dan agen EDC Mini ATM, terutama untuk memfasilitasi transaksi perbankan dan digital di daerah pelosok.",
         sections: [
           { title: "Deskripsi Perusahaan", content: "PT Arranet Indonesia Sejahtera (Arranet) adalah perusahaan penyedia jasa dan teknologi sistem pembayaran digital (fintech), yang berfokus pada penyediaan layanan payment gateway, switching, dan agen EDC Mini ATM, terutama untuk memfasilitasi transaksi perbankan dan digital di daerah pelosok.", type: "text" },
@@ -566,7 +576,9 @@ function render() {
   document.getElementById('label-proj').textContent = L[`${p}_proj_title`];
   const projGrid = document.getElementById('project-grid');
   projGrid.innerHTML = '';
-  L[`${p}_projects`].forEach(proj => {
+  L[`${p}_projects`]
+    .filter(proj => proj.visibility !== "hide")
+    .forEach(proj => {
     const btn = document.createElement('button');
     btn.className = 'project-card';
     btn.innerHTML = `

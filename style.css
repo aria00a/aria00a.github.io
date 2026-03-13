@@ -327,11 +327,11 @@ a { color: inherit; text-decoration: none; }
   color: var(--accent); margin-bottom: 4px;
 }
 .proj-section-text {
-  font-size: 13.5px; /* +1 */ color: var(--muted); line-height: 1.65;
+  font-size: 15.5px; /* +1 */ color: var(--muted); line-height: 1.65;
   text-align: justify; /* FIX 2 */
 }
 .proj-section-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3px; }
-.proj-section-list li { display: flex; align-items: flex-start; gap: 6px; font-size: 13.5px; /* +1 */ color: var(--muted); line-height: 1.55; text-align: left; }
+.proj-section-list li { display: flex; align-items: flex-start; gap: 6px; font-size: 15.5px; /* +1 */ color: var(--muted); line-height: 1.55; text-align: left; }
 .proj-section-list li::before { content: "•"; color: var(--accent); font-weight: 700; font-size: 15px; /* +1 */ line-height: 1.4; flex-shrink: 0; }
 
 /* ======================================================
