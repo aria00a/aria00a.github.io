@@ -86,7 +86,7 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project analyzes hotel booking demand data from July 2015 to August 2017 for Strigiformotel Group, focusing on customer booking behavior and cancellation patterns across City Hotels and Resort Hotels. The analysis aims to uncover key drivers behind booking cancellations and identify actionable opportunities to improve booking retention.", type: "text" },
           { title: "Objective", content: "To identify customer segments and booking characteristics that contribute to high cancellation rates and propose data-driven strategies to reduce the overall hotel cancellation rate from 27.49% to approximately 23% within 6 months.", type: "text" },
-          { title: "Key Metrics", content: [
+          { title: "Methodology", content: [
             "Data Preparation & Cleaning using Google Spreadsheet & Python",
             "Exploratory Data Analysis using Python",
             "Data Visualization using Python & Tableau"], 
@@ -108,7 +108,7 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.", type: "text" },
           { title: "Objective", content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.", type: "text" },
-          { title: "Key Metrics", content: [
+          { title: "Methodology", content: [
             "Data Preparation using Google Bigquery",
             "Exploratory Data Analysis using SQL"], 
             type: "bullets" },
@@ -124,7 +124,7 @@ const LANG = {
     qa_name: "Aria Bimantara",
     qa_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking industry. I specialize in core banking system validation, financial transaction testing, and SQL-based data verification to ensure data integrity and system reliability. My responsibilities include analyzing requirements, executing application testing, documenting test results, and reporting defects throughout the development lifecycle. I am experienced with tools such as Jira, Confluence, Postman, Katalon Studio, and AS400, working within both Waterfall and Agile environments. I bring strong analytical thinking, a quality-driven mindset, and collaborative communication to support stable and reliable system releases.",
     qa_cv_ats: "Download CV",
-    qa_cv_ats_url: "#",
+    qa_cv_ats_url: "https://drive.google.com/file/d/11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_/view?usp=sharing",
     qa_edu_title: "Education",
     qa_edu: [
       { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" }
@@ -231,7 +231,7 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.", type: "text" },
           { title: "Tujuan", content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.", type: "text" },
-          { title: "Metrik Utama", content: [
+          { title: "Metodologi", content: [
             "Persiapan dan Pembersihan Data menggunakan Google Spreadsheet dan Python",
             "Analisis Data Eksploratif (EDA) menggunakan Python",
             "Visualisasi Data menggunakan Python dan Tableau"], 
@@ -253,7 +253,7 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", type: "text" },
           { title: "Tujuan", content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", type: "text" },
-          { title: "Metrik Utama", content: [
+          { title: "Metodologi", content: [
             "Persiapan Data menggunakan Google Bigquery",
             "Analisis Data Eksploratif (Exploratory Data Analysis / EDA) menggunakan SQL "], 
             type: "bullets" },
@@ -269,7 +269,7 @@ const LANG = {
     qa_name: "Aria Bimantara",
     qa_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di industri perbankan. Saya memiliki spesialisasi dalam validasi sistem core banking, pengujian transaksi keuangan, serta verifikasi data berbasis SQL untuk memastikan integritas data dan keandalan sistem. Tanggung jawab saya meliputi menganalisis kebutuhan, melakukan pengujian aplikasi, mendokumentasikan hasil pengujian, serta melaporkan defect sepanjang siklus pengembangan sistem. Saya berpengalaman menggunakan berbagai tools seperti Jira, Confluence, Postman, Katalon Studio, dan AS400, serta bekerja dalam lingkungan pengembangan Waterfall maupun Agile. Saya memiliki kemampuan analisis yang kuat, pola pikir yang berorientasi pada kualitas, serta komunikasi kolaboratif untuk mendukung rilis sistem yang stabil dan andal.",
     qa_cv_ats: "Unduh CV",
-    qa_cv_ats_url: "#",
+    qa_cv_ats_url: "https://drive.google.com/file/d/11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_/view?usp=sharing",
     qa_edu_title: "Pendidikan",
     qa_edu: [
       { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" }
