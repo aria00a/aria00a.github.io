@@ -12,7 +12,6 @@ const LANG = {
     da_stats: [
       { num: 5, suffix: "+", label: "Years Experience" },
       { num: 2,  suffix: "",  label: "Projects" },
-      { num: 3,  suffix: "",  label: "Tools Mastered" },
     ],
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",

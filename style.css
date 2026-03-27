@@ -121,8 +121,18 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden; box-shadow: 0 2px 12px var(--shadow); transition: border-color 0.4s;
 }
 .photo-col img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
-.info-col { display: grid; grid-template-rows: 1fr auto; gap: 8px; }
+.info-col { display: grid; grid-template-rows: 58% 42%; gap: 8px; }
 .info-bottom { display: grid; grid-template-columns: 20fr 35fr 45fr; gap: 8px; }
+
+/* ── Point 2: Info-bottom cards stretch to fill height ── */
+.info-bottom .card {
+  display: flex; flex-direction: column;
+}
+/* Contact items fill their card */
+.contact-col { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 0; }
+/* Edu items stretch proportionally */
+.edu-grid { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.edu-item { flex: 1; }
 
 /* ======================================================
    CARD BASE
@@ -180,7 +190,7 @@ a { color: inherit; text-decoration: none; }
 /* ======================================================
    EDUCATION — Button + popup
 ====================================================== */
-.edu-grid { display: flex; flex-direction: column; gap: 6px; }
+/* ── Education card items ── */
 .edu-item {
   display: flex; flex-direction: column; align-items: flex-start; width: 100%;
   background: var(--tag-bg); border: 1px solid var(--border); border-radius: 10px;
@@ -195,7 +205,7 @@ a { color: inherit; text-decoration: none; }
 /* ======================================================
    CERTIFICATION — Button + popup
 ====================================================== */
-.cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+.cert-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 6px; margin-top: 4px; flex: 1; }
 .cert-item {
   display: flex; flex-direction: column; align-items: flex-start; width: 100%;
   background: var(--tag-bg); border: 1px solid var(--border); border-radius: 10px;
@@ -435,4 +445,168 @@ a { color: inherit; text-decoration: none; }
   font-size: 9.5px; color: var(--muted); margin-top: 1px;
   text-transform: uppercase; letter-spacing: 0.06em;
   transition: color 0.4s;
+}
+
+/* ======================================================
+   MOBILE RESPONSIVE — max-width 768px
+====================================================== */
+@media (max-width: 768px) {
+
+  /* Body: allow scroll */
+  html, body {
+    overflow: auto;
+    height: auto;
+  }
+
+  /* Particles canvas: stay fixed */
+  #particles-canvas { position: fixed; }
+
+  /* Portfolio grid: vertical stack, auto height */
+  .portfolio {
+    grid-template-rows: auto auto auto auto auto;
+    height: auto;
+    min-height: 100dvh;
+    padding: 8px 10px 16px;
+    gap: 8px;
+  }
+
+  /* ── NAVBAR ── */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 12px;
+    gap: 6px;
+    border-radius: 12px;
+  }
+  .nav-brand  { font-size: 18px; flex: 1; }
+  .nav-lang   { gap: 4px; }
+  .nav-center { order: 3; width: 100%; justify-content: center; gap: 6px; }
+  .prof-btn   { font-size: 13px; padding: 5px 12px; }
+  .lang-btn   { font-size: 13px; padding: 4px 10px; }
+  .lang-btn .flag { font-size: 16px; }
+
+  /* ── HERO ── */
+  .row-hero {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .photo-col {
+    height: 180px;
+    animation: none; /* disable pulse to avoid flicker */
+  }
+  .info-col {
+    grid-template-rows: auto auto;
+  }
+
+  /* About card */
+  .about-name { font-size: 22px; }
+  .about-role { font-size: 14px; }
+  .about-text { font-size: 14.5px; -webkit-line-clamp: 4; }
+  .about-header { margin-bottom: 6px; }
+  .cv-btn { font-size: 12px; padding: 6px 12px; }
+  .stats-strip { margin-top: 6px; gap: 6px; }
+  .stat-num   { font-size: 17px; }
+  .stat-label { font-size: 8.5px; }
+
+  /* Info bottom: stack vertically */
+  .info-bottom {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  /* Remove flex-fill on mobile — let content determine height */
+  .info-bottom .card { display: block; }
+  .edu-grid { flex: none; }
+  .edu-item { flex: none; }
+  .cert-grid { flex: none; grid-auto-rows: auto; }
+
+  /* Contact items */
+  .contact-item { font-size: 13.5px; }
+
+  /* Education items */
+  .edu-degree { font-size: 13.5px; }
+  .edu-school { font-size: 12.5px; }
+  .edu-year   { font-size: 12px; }
+
+  /* Cert items */
+  .cert-grid  { grid-template-columns: 1fr 1fr; }
+  .cert-name  { font-size: 12.5px; }
+  .cert-issuer{ font-size: 12px; }
+
+  /* ── SKILLS ── */
+  .row-skills {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .skill-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 6px 0 2px;
+  }
+  .skill-logo img { width: 36px; height: 36px; }
+  .skill-logo span { font-size: 11px; }
+
+  .soft-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 6px;
+  }
+  .soft-list li { font-size: 12.5px; padding: 5px 6px; }
+
+  /* ── PROJECTS ── */
+  .row-projects { overflow: visible; }
+  .projects-scroll { overflow: visible; max-height: none; padding-right: 0; }
+  .project-grid { grid-template-columns: 1fr; gap: 8px; }
+  .project-role { font-size: 13px; }
+  .project-title { font-size: 17px; }
+  .project-desc { font-size: 14px; }
+
+  /* ── MODALS ── */
+  .modal-card {
+    min-width: unset !important;
+    max-width: 95vw !important;
+    padding: 20px 18px 22px !important;
+    max-height: 85dvh;
+    overflow-y: auto;
+    border-radius: 14px;
+  }
+  .modal-judul  { font-size: 20px; }
+  .modal-prodi  { font-size: 14px; }
+  .modal-isi    { font-size: 13.5px; }
+
+  .proj-modal-card {
+    max-height: 88dvh;
+    overflow-y: auto;
+    border-radius: 14px;
+  }
+  .proj-sections { columns: 1; }
+  .proj-cover { max-height: 160px; }
+  .proj-modal-title { font-size: 18px; }
+  .proj-modal-meta  { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .proj-modal-tags  { justify-content: flex-start; }
+  .cv-btn           { font-size: 12px; padding: 6px 12px; }
+
+  /* ── COPYRIGHT ── */
+  .copyright {
+    position: static;
+    padding: 14px 0 8px;
+    font-size: 11px;
+  }
+
+  /* ── CARD TITLES ── */
+  .card-title { font-size: 15px; }
+
+  /* ── CARD BASE ── */
+  .card { padding: 10px 12px; }
+
+  /* ── NAVBAR BRAND ── */
+  .nav-brand { font-size: 17px; }
+
+} /* end @media mobile */
+
+/* ── Extra small phones ── */
+@media (max-width: 400px) {
+  .soft-list { grid-template-columns: repeat(2, 1fr); }
+  .cert-grid  { grid-template-columns: 1fr; }
+  .prof-btn   { font-size: 11.5px; padding: 5px 8px; }
 }
