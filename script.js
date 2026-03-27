@@ -9,9 +9,14 @@ const LANG = {
 
     // ── DATA ANALYST ───────────────────────────
     da_about_title: "About Me",
+    da_stats: [
+      { num: 5, suffix: "+", label: "Years Experience" },
+      { num: 2,  suffix: "",  label: "Projects" },
+      { num: 3,  suffix: "",  label: "Tools Mastered" },
+    ],
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking sector, currently expanding my expertise into Data Analytics. Through managing testing data and performing in-depth test analysis across multiple system release cycles, I developed a strong interest in uncovering patterns, understanding system behavior, and using data to support better decision-making. Experienced in ensuring compliance with banking standards and identifying risks early to reduce post-release defects and enhance system stability. I am motivated to leverage my analytical mindset and structured problem-solving approach to transform data into meaningful business insights.",
+    da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
     da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
     da_edu_title: "Education",
@@ -73,8 +78,8 @@ const LANG = {
     da_proj_title: "Project Experience",
     da_projects: [
       {
-        role: "An Analysis of Hotel Booking Cancellation Behavior",
-        title: "",
+        role: "RevoU (DEEPP)",
+        title: "An Analysis of Hotel Booking Cancellation Behavior",
         coverImg: "img/Banner01.jpg",
         // FIX 3: isi URL yang ada, kosongkan ("") yang tidak ada
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
@@ -86,18 +91,14 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project analyzes hotel booking demand data from July 2015 to August 2017 for Strigiformotel Group, focusing on customer booking behavior and cancellation patterns across City Hotels and Resort Hotels. The analysis aims to uncover key drivers behind booking cancellations and identify actionable opportunities to improve booking retention.", type: "text" },
           { title: "Objective", content: "To identify customer segments and booking characteristics that contribute to high cancellation rates and propose data-driven strategies to reduce the overall hotel cancellation rate from 27.49% to approximately 23% within 6 months.", type: "text" },
-          { title: "Methodology", content: [
-            "Data Preparation & Cleaning using Google Spreadsheet & Python",
-            "Exploratory Data Analysis using Python",
-            "Data Visualization using Python & Tableau"], 
-            type: "bullets" },
+          { title: "Key Metrics", content: ["Overall Cancellation Rate","Cancellation Rate by Hotel Type","Cancellation Rate by Market Segment","Cancellation Rate by Lead Time Bucket","Cancellation Rate by Customer Type (New vs Repeat Guests)"], type: "bullets" },
           { title: "Key Findings", content: ["Overall cancellation rate stands at 27.49% from 87,396 bookings.","City Hotels experience higher cancellations (30.0%) than Resort Hotels (23.5%).","Online Travel Agents (OTA) contribute the highest cancellation rate (35.35%) and volume.","Bookings with lead time >180 days show the highest cancellation rate (39.74%).","Repeat guests are significantly more stable, with only 7.64% cancellation rate.","Customer clustering reveals distinct high-risk segments driven by long lead times and OTA bookings."], type: "bullets" },
           { title: "Recommendations", content: "By focusing strategies on long lead time bookings, Online TA channels, and new guests, hotels can directly target the areas with the largest contribution to cancellations. This approach enables a realistic reduction in the cancellation rate toward the 23% target, without requiring extreme operational changes.", type: "text" }
         ]
       },
       {
-        role: "RevoGrocers Sales Performance Analysis",
-        title: "",
+        role: "RevoU (Assignment)",
+        title: "RevoGrocers Sales Performance Analysis",
         coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
@@ -108,10 +109,7 @@ const LANG = {
         sections: [
           { title: "Project Description", content: "This project is a performance analysis of RevoGrocers, a fictional grocery retail business that operates across multiple locations and offers a wide variety of products. Prepared as part of an intermediate SQL assignment, the analysis utilizes a publicly available Kaggle dataset to derive business insights. The methodology involved using Google BigQuery to process large-scale data, designing complex SQL queries, and validating results to understand the retail entity's performance.", type: "text" },
           { title: "Objective", content: "The primary goal of this study is to leverage data-driven decision-making to optimize sales strategies and enhance the customer experience. It aims to identify which product categories drive the most revenue, assess the relationship between pricing and sales volume, and evaluate customer loyalty through repeat purchase patterns.", type: "text" },
-          { title: "Methodology", content: [
-            "Data Preparation using Google Bigquery",
-            "Exploratory Data Analysis using SQL"], 
-            type: "bullets" },
+          { title: "Key Metrics", content: ["Revenue After Discount","Total Units Sold","Unique Customers","Average Price (AVG_Price)","Contribution Percentage","Repeat Purchase Rate"], type: "bullets" },
           { title: "Key Findings", content: ["The 'Confections' category is the most significant contributor, accounting for 12.87% of total revenue and yielding the highest revenue after discounts.","Customer loyalty is exceptionally strong across all categories, with repeat purchase rates ranging between 93% and 99%.","Revenue is primarily driven by high sales volumes and a large customer base rather than high individual product prices.","Categories with higher average prices, such as Grain and Dairy, do not show a significant drop in unique buyers compared to cheaper categories like Produce.","Wayne Chan (Customer ID 94800) was identified as the top user, demonstrating consistent high-value transactions over time."], type: "bullets" },
           { title: "Recommendations", content: "The business should focus its marketing efforts on 'power categories' like Confections, Meat, and Poultry by enhancing stock availability and implementing cross-selling or bundling strategies. For underperforming areas like Shell Fish and Grain, RevoGrocers should evaluate pricing strategies and introduce targeted 'Try Something New' campaigns to boost engagement. Given that volume is the main revenue driver, the company should prioritize quantity-based promotions and personalized loyalty rewards based on purchase history to maintain the current high repeat purchase rates.", type: "text" }
         ]
@@ -120,11 +118,16 @@ const LANG = {
 
     // ── QUALITY ASSURANCE ──────────────────────
     qa_about_title: "About Me",
+    qa_stats: [
+      { num: 5,  suffix: "+", label: "Years Experience" },
+      { num: 3,  suffix: "",  label: "Companies" },
+      { num: 5,  suffix: "",  label: "Tools Mastered" },
+    ],
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
     qa_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking industry. I specialize in core banking system validation, financial transaction testing, and SQL-based data verification to ensure data integrity and system reliability. My responsibilities include analyzing requirements, executing application testing, documenting test results, and reporting defects throughout the development lifecycle. I am experienced with tools such as Jira, Confluence, Postman, Katalon Studio, and AS400, working within both Waterfall and Agile environments. I bring strong analytical thinking, a quality-driven mindset, and collaborative communication to support stable and reliable system releases.",
     qa_cv_ats: "Download CV",
-    qa_cv_ats_url: "https://drive.google.com/file/d/11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_/view?usp=sharing",
+    qa_cv_ats_url: "#",
     qa_edu_title: "Education",
     qa_edu: [
       { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" }
@@ -195,9 +198,14 @@ const LANG = {
 
     // ── DATA ANALYST ───────────────────────────
     da_about_title: "Tentang Saya",
+    da_stats: [
+      { num: 5, suffix: "+", label: "Tahun Pengalaman" },
+      { num: 2,  suffix: "",  label: "Proyek" },
+      { num: 3,  suffix: "",  label: "Tools Dikuasai" },
+    ],
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "Saya adalah seorang Profesional Quality Assurance yang detail-oriented dengan pengalaman lebih dari 5 tahun di sektor perbankan, saat ini mengembangkan keahlian di bidang Data Analytics. Berpengalaman dalam mengelola data pengujian dan melakukan analisis mendalam pada berbagai siklus rilis sistem untuk mengidentifikasi pola, memahami perilaku sistem, serta mendukung pengambilan keputusan berbasis data. Terbiasa memastikan kepatuhan terhadap standar perbankan dan mengidentifikasi risiko sejak dini guna meminimalkan defect pasca-rilis serta meningkatkan stabilitas sistem. Memiliki pola pikir analitis dan pendekatan pemecahan masalah yang terstruktur untuk menghasilkan insight bisnis yang relevan dan bernilai.",
+    da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang beralih ke bidang Data Analytics. Selama menjalani berbagai siklus rilis sistem, saya membangun dasar yang kuat dalam menjaga akurasi, melakukan penilaian risiko, serta menyusun dokumentasi secara terstruktur. Berpengalaman dalam mengelola data pengujian dan memastikan kepatuhan terhadap standar perbankan, saya juga melakukan analisis pengujian secara mendalam untuk mengurangi bug setelah rilis dan meningkatkan stabilitas sistem. Dalam bidang analisis data, saya menguasai SQL untuk ekstraksi dan analisis data. Python dan Tableau juga saya gunakan dalam berbagai proyek portofolio untuk menganalisis dataset, mengidentifikasi tren, serta membangun dashboard interaktif. Dengan pendekatan analitis dan komitmen untuk terus belajar, saya berupaya menghasilkan keputusan bisnis yang andal dan berbasis data.",
     da_cv_ats: "Unduh CV",
     da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
     da_edu_title: "Pendidikan",
@@ -219,8 +227,8 @@ const LANG = {
     da_proj_title: "Pengalaman Proyek",
     da_projects: [
       {
-        role: "Analisis Perilaku Pembatalan Pemesanan Hotel",
-        title: "",
+        role: "RevoU (DEEPP)",
+        title: "Analisis Perilaku Pembatalan Pemesanan Hotel",
         coverImg: "img/Banner01.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1RnhAT6BjbTF1w_Gf_0v3AUGh7nXnaOl2hsLMQ8VQLNg/present?token=AC4w5Vi-k8oA0Sd7TVAJbSh1GAfov4QUUA%3A1772645677394&includes_info_params=1&cros_files=false&nded=false&eisi=CKb3pd_jhpMDFdw7qQEd9dgaRg",
         codeUrl: "https://colab.research.google.com/drive/1j9h-jJ5hpMeS38i7J94htkYF0he0b7rU?usp=drive_link",
@@ -231,18 +239,14 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini menganalisis data permintaan pemesanan hotel dari Juli 2015 hingga Agustus 2017 untuk Strigiformotel Group, yang berfokus pada perilaku pemesanan pelanggan dan pola pembatalan di City Hotels dan Resort Hotels. Analisis ini bertujuan mengidentifikasi faktor utama penyebab pembatalan pemesanan serta menemukan peluang perbaikan untuk meningkatkan tingkat retensi pemesanan.", type: "text" },
           { title: "Tujuan", content: "Mengidentifikasi segmen pelanggan dan karakteristik pemesanan yang berkontribusi pada tingkat pembatalan tinggi, serta mengusulkan strategi berbasis data untuk mengurangi tingkat pembatalan dari 27,49% menjadi sekitar 23% dalam 6 bulan.", type: "text" },
-          { title: "Metodologi", content: [
-            "Persiapan dan Pembersihan Data menggunakan Google Spreadsheet dan Python",
-            "Analisis Data Eksploratif (EDA) menggunakan Python",
-            "Visualisasi Data menggunakan Python dan Tableau"], 
-            type: "bullets" },
+          { title: "Metrik Utama", content: ["Tingkat Pembatalan Keseluruhan","Tingkat Pembatalan per Tipe Hotel","Tingkat Pembatalan per Segmen Pasar","Tingkat Pembatalan per Bucket Lead Time","Tingkat Pembatalan Berdasarkan Tipe Pelanggan (Tamu Baru vs Tamu Lama)"], type: "bullets" },
           { title: "Temuan Utama", content: ["Tingkat pembatalan keseluruhan 27,49% dari 87.396 pemesanan.","City Hotels lebih banyak dibatalkan (30,0%) dibanding Resort Hotels (23,5%).","Online Travel Agent (OTA) berkontribusi pembatalan tertinggi (35,35%).","Pemesanan dengan lead time >180 hari memiliki pembatalan 39,74%.","Tamu lama menunjukkan perilaku pemesanan yang jauh lebih stabil, dengan tingkat pembatalan hanya sebesar 7,64%.","Clustering pelanggan mengungkap segmen risiko tinggi dari lead time panjang dan pemesanan OTA."], type: "bullets" },
           { title: "Rekomendasi", content: "Dengan memfokuskan strategi pada pemesanan lead time panjang, channel Online TA, dan tamu baru, hotel dapat menargetkan area dengan kontribusi pembatalan terbesar dan mencapai target 23% secara realistis.", type: "text" }
         ]
       },
       {
-        role: "Analisis Kinerja Penjualan RevoGrocers",
-        title: "",
+        role: "RevoU (Assignment)",
+        title: "Analisis Kinerja Penjualan RevoGrocers",
         coverImg: "img/Banner02.jpg",
         deckUrl: "https://docs.google.com/presentation/d/1f0zJarOXhduZ8gHUjYgwGwAIJqEiLmIQ04N9ExApUAk/present?token=AC4w5Vi6kW194LRcBUflqCYHqnTFG0dvsA%3A1772701116181&includes_info_params=1&cros_files=false&nded=false&eisi=CNy6yKKyiJMDFZ4XoAAdykop7A&slide=id.g1dc2b6f5be2_3_0",
         codeUrl: "",
@@ -253,10 +257,7 @@ const LANG = {
         sections: [
           { title: "Deskripsi Proyek", content: "Proyek ini merupakan analisis kinerja penjualan dari RevoGrocers, sebuah bisnis ritel bahan makanan fiktif yang beroperasi di berbagai lokasi dan menawarkan beragam jenis produk. Proyek ini disusun sebagai bagian dari tugas SQL tingkat menengah dengan memanfaatkan dataset publik dari Kaggle untuk menghasilkan wawasan bisnis. Metodologi yang digunakan meliputi pemrosesan data berskala besar menggunakan Google BigQuery, perancangan query SQL yang kompleks, serta validasi hasil analisis untuk memahami kinerja bisnis ritel tersebut.", type: "text" },
           { title: "Tujuan", content: "Tujuan utama dari studi ini adalah memanfaatkan pendekatan pengambilan keputusan berbasis data untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan. Analisis ini berupaya mengidentifikasi kategori produk yang memberikan kontribusi pendapatan terbesar, mengevaluasi hubungan antara harga dan volume penjualan, serta menilai loyalitas pelanggan melalui pola pembelian berulang.", type: "text" },
-          { title: "Metodologi", content: [
-            "Persiapan Data menggunakan Google Bigquery",
-            "Analisis Data Eksploratif (Exploratory Data Analysis / EDA) menggunakan SQL "], 
-            type: "bullets" },
+          { title: "Metrik Utama", content: ["Pendapatan Setelah Diskon","Total Unit Terjual","Jumlah Pelanggan Unik","Harga Rata-rata (AVG_Price)","Persentase Kontribusi","Tingkat Pembelian Ulang"], type: "bullets" },
           { title: "Temuan Utama", content: ["Kategori 'Confections' menjadi kontributor terbesar dengan menyumbang 12,87% dari total pendapatan serta menghasilkan pendapatan setelah diskon tertinggi.","Loyalitas pelanggan tergolong sangat kuat di seluruh kategori produk, dengan tingkat pembelian ulang berkisar antara 93% hingga 99%.","Pendapatan terutama didorong oleh volume penjualan yang tinggi dan jumlah pelanggan yang besar, bukan oleh harga produk yang tinggi.","Kategori dengan harga rata-rata lebih tinggi seperti 'Grain' dan 'Dairy' tidak menunjukkan penurunan signifikan pada jumlah pembeli unik dibandingkan kategori dengan harga lebih rendah seperti 'Produce'.","Wayne Chan (Customer ID 94800) teridentifikasi sebagai pelanggan dengan nilai transaksi tertinggi, yang secara konsisten melakukan transaksi bernilai besar dari waktu ke waktu."], type: "bullets" },
           { title: "Rekomendasi", content: "Perusahaan sebaiknya memfokuskan upaya pemasaran pada kategori utama seperti 'Confections', 'Meat', dan 'Poultry' dengan meningkatkan ketersediaan stok serta menerapkan strategi cross-selling atau bundling produk. Untuk kategori dengan performa yang lebih rendah seperti 'Shell Fish' dan 'Grain', RevoGrocers disarankan mengevaluasi kembali strategi harga serta memperkenalkan kampanye bertema 'Coba Produk Baru' guna meningkatkan minat pelanggan. Mengingat bahwa volume penjualan merupakan penggerak utama pendapatan, perusahaan sebaiknya memprioritaskan promosi berbasis jumlah pembelian serta memberikan program loyalitas yang dipersonalisasi berdasarkan riwayat pembelian pelanggan.", type: "text" }
         ]
@@ -265,11 +266,16 @@ const LANG = {
 
     // ── QUALITY ASSURANCE ──────────────────────
     qa_about_title: "Tentang Saya",
+    qa_stats: [
+      { num: 5,  suffix: "+", label: "Tahun Pengalaman" },
+      { num: 3,  suffix: "",  label: "Perusahaan" },
+      { num: 5,  suffix: "",  label: "Tools Dikuasai" },
+    ],
     qa_role: "Quality Assurance Engineer",
     qa_name: "Aria Bimantara",
     qa_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di industri perbankan. Saya memiliki spesialisasi dalam validasi sistem core banking, pengujian transaksi keuangan, serta verifikasi data berbasis SQL untuk memastikan integritas data dan keandalan sistem. Tanggung jawab saya meliputi menganalisis kebutuhan, melakukan pengujian aplikasi, mendokumentasikan hasil pengujian, serta melaporkan defect sepanjang siklus pengembangan sistem. Saya berpengalaman menggunakan berbagai tools seperti Jira, Confluence, Postman, Katalon Studio, dan AS400, serta bekerja dalam lingkungan pengembangan Waterfall maupun Agile. Saya memiliki kemampuan analisis yang kuat, pola pikir yang berorientasi pada kualitas, serta komunikasi kolaboratif untuk mendukung rilis sistem yang stabil dan andal.",
     qa_cv_ats: "Unduh CV",
-    qa_cv_ats_url: "https://drive.google.com/file/d/11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_/view?usp=sharing",
+    qa_cv_ats_url: "#",
     qa_edu_title: "Pendidikan",
     qa_edu: [
       { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" }
@@ -533,6 +539,18 @@ function render() {
   document.getElementById('btn-cv-ats').textContent = L[`${p}_cv_ats`];
   document.getElementById('btn-cv-ats').href = L[`${p}_cv_ats_url`];
 
+  // Stats strip
+  const statsEl = document.getElementById('stats-strip');
+  statsEl.innerHTML = '';
+  (L[`${p}_stats`] || []).forEach(s => {
+    const div = document.createElement('div');
+    div.className = 'stat-item';
+    div.innerHTML = `<div class="stat-num" data-target="${s.num}" data-suffix="${s.suffix}">0${s.suffix}</div><div class="stat-label">${s.label}</div>`;
+    statsEl.appendChild(div);
+  });
+  // Run counter after render
+  requestAnimationFrame(() => animateCounters());
+
   // Education
   document.getElementById('label-edu').textContent = L[`${p}_edu_title`];
   const eduGrid = document.getElementById('edu-grid');
@@ -631,3 +649,100 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 });
 
 render();
+
+/* ======================================================
+   ANIMATION 1: FADE + SLIDE IN ON LOAD
+====================================================== */
+function runEntrance() {
+  const targets = [
+    '.navbar',
+    '.photo-col',
+    '.about-card',
+    '.info-bottom > .card:nth-child(1)',
+    '.info-bottom > .card:nth-child(2)',
+    '.info-bottom > .card:nth-child(3)',
+    '.row-skills > .card:nth-child(1)',
+    '.row-skills > .card:nth-child(2)',
+    '.row-projects',
+  ];
+  targets.forEach((sel, i) => {
+    const el = document.querySelector(sel);
+    if (!el) return;
+    el.classList.add('anim-init');
+    setTimeout(() => {
+      el.classList.remove('anim-init');
+      el.classList.add('anim-in');
+    }, 60 + i * 75);
+  });
+}
+
+/* ======================================================
+   ANIMATION 2: COUNTER
+====================================================== */
+function animateCounters() {
+  document.querySelectorAll('.stat-num').forEach(el => {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 900;
+    const step = 16;
+    const steps = Math.round(duration / step);
+    let current = 0;
+    const inc = target / steps;
+    const timer = setInterval(() => {
+      current = Math.min(current + inc, target);
+      el.textContent = Math.round(current) + suffix;
+      if (current >= target) clearInterval(timer);
+    }, step);
+  });
+}
+
+/* ======================================================
+   ANIMATION 5: PARTICLES
+====================================================== */
+(function initParticles() {
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles;
+  const COUNT = 48;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function makeParticles() {
+    particles = Array.from({ length: COUNT }, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: 1.5 + Math.random() * 2.5,
+      dx: (Math.random() - 0.5) * 0.35,
+      dy: (Math.random() - 0.5) * 0.35,
+      alpha: 0.12 + Math.random() * 0.22,
+    }));
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${p.alpha})`;
+      ctx.fill();
+      p.x += p.dx;
+      p.y += p.dy;
+      if (p.x < 0) p.x = W;
+      if (p.x > W) p.x = 0;
+      if (p.y < 0) p.y = H;
+      if (p.y > H) p.y = 0;
+    });
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', () => { resize(); makeParticles(); });
+  resize();
+  makeParticles();
+  draw();
+})();
+
+// Run entrance animation on first load
+requestAnimationFrame(runEntrance);
