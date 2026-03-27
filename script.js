@@ -10,14 +10,14 @@ const LANG = {
     // ── DATA ANALYST ───────────────────────────
     da_about_title: "About Me",
     da_stats: [
-      { num: 5, suffix: "+", label: "Years Experience" },
-      { num: 2,  suffix: "",  label: "Projects" },
+      { num: 1, suffix: "+", label: "Years Experience" },
+      { num: 3,  suffix: "",  label: "Projects" },
     ],
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "I am a detail-oriented Quality Assurance professional with over 5+ years of experience in the banking sector, currently transitioning into Data Analytics. With strong foundation in accuracy, risk assessment, and structured documentation across multiple system release cycles. Experienced in managing testing data, ensuring compliance with banking standards, and performing in-depth test analysis to reduce post-release defects and enhance system stability. Proficient in SQL for data extraction and analysis, with hands-on experience using Python and Tableau in portfolio projects to analyze datasets, identify trends, and develop interactive dashboards. Committed to applying analytical thinking and continuous learning to deliver reliable, data-driven business decisions.",
+    da_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking sector, currently transitioning into Data Analytics. My experience in analyzing testing data and system behavior sparked a strong curiosity about how data reveals patterns and drives decisions. I developed a genuine interest in exploring datasets, ensuring data completeness, and transforming structured information into meaningful insights. With a solid foundation in accuracy, risk assessment, and problem-solving, I bring a disciplined and analytical approach to delivering reliable, data-driven business decisions.",
     da_cv_ats: "Download CV",
-    da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
+    da_cv_ats_url: "https://drive.usercontent.google.com/uc?id=11CTSevI09iytNUZ6TDBPOcsmAHeILRaE&authuser=0&export=download",
     da_edu_title: "Education",
     da_edu: [
       {
@@ -120,16 +120,31 @@ const LANG = {
     qa_stats: [
       { num: 5,  suffix: "+", label: "Years Experience" },
       { num: 3,  suffix: "",  label: "Companies" },
-      { num: 5,  suffix: "",  label: "Tools Mastered" },
     ],
     qa_role: "Quality Assurance",
     qa_name: "Aria Bimantara",
     qa_about: "I am a detail-oriented Quality Assurance professional with over 5 years of experience in the banking industry. I specialize in core banking system validation, financial transaction testing, and SQL-based data verification to ensure data integrity and system reliability. My responsibilities include analyzing requirements, executing application testing, documenting test results, and reporting defects throughout the development lifecycle. I am experienced with tools such as Jira, Confluence, Postman, Katalon Studio, and AS400, working within both Waterfall and Agile environments. I bring strong analytical thinking, a quality-driven mindset, and collaborative communication to support stable and reliable system releases.",
     qa_cv_ats: "Download CV",
-    qa_cv_ats_url: "#",
+    qa_cv_ats_url: "https://drive.usercontent.google.com/uc?id=11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_&authuser=0&export=download",
     qa_edu_title: "Education",
     qa_edu: [
-      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" }
+      { degree: "Bachelor of Informatics", school: "Pamulang University", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Bachelor of Informatics Engineering, GPA 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Thesis: Design and Implementation of an Information System Dashboard Using the Scrum Framework with Azure Boards (Case Study: PT Arranet Indonesia Sejahtera)", isiType: "text" },
+      {
+        degree: "Full-stack Data Analytics",
+        school: "RevoU",
+        year: "Oct, 2025 – Feb, 2026",
+        logo: "img/RevoU.png",
+        prodi: "Full-stack Data Analytics",
+        tanggal: "Oct, 2025 – Feb, 2026",
+        isi: [
+          "Analyzed datasets using SQL (BigQuery) to extract, clean, and transform data for business analysis.",
+          "Performed exploratory data analysis and data processing using Python (Google Colab) and relevant libraries.",
+          "Developed interactive dashboards in Tableau tailored to stakeholder needs.",
+          "Structured business problems into analytical frameworks to guide data-driven decision making.",
+          "Delivered end-to-end Data End-to-End Portfolio Project (DEEPP), translating raw data into actionable insights and recommendations."
+        ],
+        isiType: "bullets"
+      }
     ],
     qa_contact_title: "Contact",
     qa_contact: { location: "South Tangerang, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
@@ -198,15 +213,14 @@ const LANG = {
     // ── DATA ANALYST ───────────────────────────
     da_about_title: "Tentang Saya",
     da_stats: [
-      { num: 5, suffix: "+", label: "Tahun Pengalaman" },
-      { num: 2,  suffix: "",  label: "Proyek" },
-      { num: 3,  suffix: "",  label: "Tools Dikuasai" },
+      { num: 1, suffix: "+", label: "Tahun Pengalaman" },
+      { num: 3,  suffix: "",  label: "Proyek" },
     ],
     da_role: "Data Analyst",
     da_name: "Aria Bimantara",
-    da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang beralih ke bidang Data Analytics. Selama menjalani berbagai siklus rilis sistem, saya membangun dasar yang kuat dalam menjaga akurasi, melakukan penilaian risiko, serta menyusun dokumentasi secara terstruktur. Berpengalaman dalam mengelola data pengujian dan memastikan kepatuhan terhadap standar perbankan, saya juga melakukan analisis pengujian secara mendalam untuk mengurangi bug setelah rilis dan meningkatkan stabilitas sistem. Dalam bidang analisis data, saya menguasai SQL untuk ekstraksi dan analisis data. Python dan Tableau juga saya gunakan dalam berbagai proyek portofolio untuk menganalisis dataset, mengidentifikasi tren, serta membangun dashboard interaktif. Dengan pendekatan analitis dan komitmen untuk terus belajar, saya berupaya menghasilkan keputusan bisnis yang andal dan berbasis data.",
+    da_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di sektor perbankan, dan saat ini sedang bertransisi ke bidang Data Analytics. Selama bekerja, saya terbiasa menganalisis data testing dan memahami perilaku sistem, yang kemudian menumbuhkan ketertarikan saya terhadap bagaimana data dapat mengungkap pola dan membantu pengambilan keputusan. Saya juga memiliki minat yang kuat dalam mengolah data, mulai dari mengeksplorasi dataset, memastikan kelengkapan data, hingga mengubah data yang terstruktur menjadi insight yang bermakna. Dengan dasar yang kuat dalam ketelitian, manajemen risiko, dan pemecahan masalah, saya terbiasa bekerja secara disiplin dan analitis untuk menghasilkan keputusan bisnis yang lebih akurat dan berbasis data.",
     da_cv_ats: "Unduh CV",
-    da_cv_ats_url: "https://drive.usercontent.google.com/u/0/uc?id=112ZK_ry7gHnTywV19FBgFqjMhl8-mIRw&export=download",
+    da_cv_ats_url: "https://drive.usercontent.google.com/uc?id=11CTSevI09iytNUZ6TDBPOcsmAHeILRaE&authuser=0&export=download",
     da_edu_title: "Pendidikan",
     da_edu: [
       { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "Sarjana Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan Dashboard Sistem Informasi Dengan Metode Scrum Menggunakan Azure Board (Studi Kasus : PT. Arranet Indonesia Sejahtera)", isiType: "text" },
@@ -268,16 +282,16 @@ const LANG = {
     qa_stats: [
       { num: 5,  suffix: "+", label: "Tahun Pengalaman" },
       { num: 3,  suffix: "",  label: "Perusahaan" },
-      { num: 5,  suffix: "",  label: "Tools Dikuasai" },
     ],
     qa_role: "Quality Assurance",
     qa_name: "Aria Bimantara",
     qa_about: "Saya adalah seorang profesional Quality Assurance yang berorientasi pada detail dengan pengalaman lebih dari 5 tahun di industri perbankan. Saya memiliki spesialisasi dalam validasi sistem core banking, pengujian transaksi keuangan, serta verifikasi data berbasis SQL untuk memastikan integritas data dan keandalan sistem. Tanggung jawab saya meliputi menganalisis kebutuhan, melakukan pengujian aplikasi, mendokumentasikan hasil pengujian, serta melaporkan defect sepanjang siklus pengembangan sistem. Saya berpengalaman menggunakan berbagai tools seperti Jira, Confluence, Postman, Katalon Studio, dan AS400, serta bekerja dalam lingkungan pengembangan Waterfall maupun Agile. Saya memiliki kemampuan analisis yang kuat, pola pikir yang berorientasi pada kualitas, serta komunikasi kolaboratif untuk mendukung rilis sistem yang stabil dan andal.",
     qa_cv_ats: "Unduh CV",
-    qa_cv_ats_url: "#",
+    qa_cv_ats_url: "https://drive.usercontent.google.com/uc?id=11G7tPVLxGeOoc8CZuRcD7z3MysOB2fj_&authuser=0&export=download",
     qa_edu_title: "Pendidikan",
     qa_edu: [
-      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" }
+      { degree: "S1 Teknik Informatika", school: "Universitas Pamulang", year: "Sep, 2016 – Apr, 2023", logo: "img/Unpam.png", prodi: "S1 Teknik Informatika, IPK 3.34 / 4.00", tanggal: "Sep, 2016 – Apr, 2023", isi: "Skripsi: Perancangan dan Implementasi Dashboard Sistem Informasi Menggunakan Kerangka Kerja Scrum dengan Azure Boards (Studi Kasus: PT Arranet Indonesia Sejahtera)", isiType: "text" },
+      { degree: "Full-stack Data Analytics", school: "RevoU", year: "Okt, 2025 – Feb, 2026", logo: "img/RevoU.png", prodi: "Full-stack Data Analytics", tanggal: "Okt, 2025 – Feb, 2026", isi: ["Menganalisis dataset menggunakan SQL (BigQuery) untuk mengekstrak, membersihkan, dan mentransformasi data untuk analisis bisnis.","Melakukan eksplorasi data dan pemrosesan menggunakan Python (Google Colab) dan library terkait.","Membangun dashboard interaktif di Tableau sesuai kebutuhan stakeholder.","Menyusun masalah bisnis dalam kerangka analitik untuk mendukung pengambilan keputusan berbasis data.","Menyelesaikan Data End-to-End Portfolio Project (DEEPP), mengubah data mentah menjadi wawasan dan rekomendasi yang dapat ditindaklanjuti."], isiType: "bullets" }
     ],
     qa_contact_title: "Kontak",
     qa_contact: { location: "Tangerang Selatan, Banten", linkedin: "https://www.linkedin.com/in/aria-bimantara00a/", email: "aria.00a@gmail.com" },
