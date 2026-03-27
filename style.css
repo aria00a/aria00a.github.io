@@ -491,7 +491,7 @@ a { color: inherit; text-decoration: none; }
     gap: 8px;
   }
   .photo-col {
-    height: 180px;
+    height: 200px;
     animation: none; /* disable pulse to avoid flicker */
   }
   .info-col {
@@ -501,7 +501,12 @@ a { color: inherit; text-decoration: none; }
   /* About card */
   .about-name { font-size: 22px; }
   .about-role { font-size: 14px; }
-  .about-text { font-size: 14.5px; -webkit-line-clamp: 4; }
+  .about-text {
+    font-size: 14.5px;
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
   .about-header { margin-bottom: 6px; }
   .cv-btn { font-size: 12px; padding: 6px 12px; }
   .stats-strip { margin-top: 6px; gap: 6px; }
@@ -610,3 +615,177 @@ a { color: inherit; text-decoration: none; }
   .cert-grid  { grid-template-columns: 1fr; }
   .prof-btn   { font-size: 11.5px; padding: 5px 8px; }
 }
+
+/* ======================================================
+   SURFACE DUO FIX — narrow/tall phone (481px–540px)
+   Photo shows only mouth → cap height proportionally
+====================================================== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .photo-col {
+    height: min(200px, 38vw);
+  }
+}
+
+/* ======================================================
+   TABLET PORTRAIT — 769px to 1023px
+   (iPad Mini 820px, Asus Zenbook Fold 853px)
+   Layout: 3-column grid A | B | C
+   A1+A2 = Photo | B1 = About | C1 = Contact
+              | B2 = Edu   | C2 = Cert
+   A3 = Tech Skills | B3+C3 = Soft Skills
+====================================================== */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  html, body { overflow: auto; height: auto; }
+  #particles-canvas { position: fixed; }
+
+  .portfolio {
+    grid-template-rows: auto auto auto auto 0;
+    height: auto;
+    min-height: 100dvh;
+    padding: 10px 12px 16px;
+    gap: 8px;
+  }
+
+  /* ── HERO: 3-column, 2-row grid ── */
+  .row-hero {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px;
+  }
+
+  /* Photo: col A, spans rows 1+2 */
+  .photo-col {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: auto;
+    min-height: 320px;
+    animation: photoPulse 3s ease-in-out infinite;
+  }
+
+  /* info-col: cols B+C, rows 1+2, internal 2x2 grid */
+  .info-col {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px;
+  }
+
+  /* Dissolve info-bottom wrapper → children join info-col grid */
+  .info-bottom { display: contents; }
+
+  /* Explicit placement: B1 B2 C1 C2 */
+  .about-card   { grid-column: 1; grid-row: 1; }
+  .card-contact { grid-column: 2; grid-row: 1; }
+  .card-edu     { grid-column: 1; grid-row: 2; }
+  .card-cert    { grid-column: 2; grid-row: 2; }
+
+  /* Restore flex on cards (info-bottom rule still cascades) */
+  .card-contact,
+  .card-edu,
+  .card-cert { display: flex; flex-direction: column; }
+
+  /* About Me: show full text, no clamp */
+  .about-text {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .about-name { font-size: 24px; }
+  .about-role { font-size: 15px; }
+
+  /* ── SKILLS: same column ratio as hero ── */
+  .row-skills {
+    grid-template-columns: 30% 1fr;
+  }
+
+  /* Tech skills: wrap if needed */
+  .skill-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 0;
+  }
+  .skill-logo img  { width: 36px; height: 36px; }
+  .skill-logo span { font-size: 11px; }
+
+  /* Soft skills: 3 cols × 2 rows (2×3 grid as requested) */
+  .soft-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .soft-list li { font-size: 13px; }
+
+  /* ── PROJECTS: 2 columns on tablet ── */
+  .row-projects { overflow: visible; }
+  .projects-scroll { overflow: visible; max-height: none; }
+  .project-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── MODALS ── */
+  .modal-card {
+    min-width: unset !important;
+    max-width: 88vw !important;
+  }
+  .proj-sections { columns: 2; }
+
+} /* end @media tablet */
+
+/* ======================================================
+   LARGE TABLET / SMALL LAPTOP PORTRAIT — 1024px to 1279px
+   (Surface Pro 7 912px→portrait, iPad Pro 1024px→portrait)
+   Keep 2-col desktop layout but allow scroll + show full About
+====================================================== */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  html, body { overflow: auto; height: auto; }
+
+  .portfolio {
+    height: auto;
+    min-height: 100dvh;
+    grid-template-rows: 52px auto 130px auto 5px;
+  }
+
+  /* Remove about-text clamp */
+  .about-text {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
+
+  /* Projects scrollable */
+  .row-projects { overflow: visible; }
+  .projects-scroll { overflow: visible; max-height: none; }
+
+} /* end @media large-tablet */
+
+/* ======================================================
+   LANDSCAPE SHORT-HEIGHT — Nest Hub (1024×600) & Nest Hub Max (1280×800)
+   Desktop width but not enough height → enable scroll
+====================================================== */
+@media (min-width: 769px) and (max-height: 820px) {
+
+  html, body { overflow: auto; height: auto; }
+
+  .portfolio {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  /* Remove clamp so About text shows fully when scrolled */
+  .about-text {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
+
+  /* Projects must be scrollable */
+  .row-projects { overflow: visible; }
+  .projects-scroll { overflow: visible; max-height: none; padding-right: 0; }
+
+} /* end @media landscape short-height */
