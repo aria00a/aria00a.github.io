@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Petals &amp; Poetry | Boutique Florist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary": "#6c586d",
+                "tertiary": "#675c53",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed": "#f5daf4",
+                "surface-container-highest": "#e3e2e0",
+                "error-container": "#ffdad6",
+                "surface-dim": "#dbdad7",
+                "on-secondary-container": "#725e73",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed-variant": "#4f453c",
+                "secondary-fixed-dim": "#d8bfd8",
+                "primary-container": "#f4d7d4",
+                "on-tertiary-fixed": "#221a13",
+                "on-background": "#1a1c1a",
+                "tertiary-container": "#eadbcf",
+                "inverse-surface": "#2f312f",
+                "on-surface": "#1a1c1a",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "surface": "#faf9f6",
+                "surface-container": "#efeeeb",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#564240",
+                "surface-tint": "#6f5957",
+                "primary-fixed": "#f9dcd9",
+                "on-tertiary-container": "#6a5f56",
+                "on-primary-container": "#725c5a",
+                "on-primary-fixed": "#271816",
+                "tertiary-fixed": "#efe0d4",
+                "error": "#ba1a1a",
+                "surface-variant": "#e3e2e0",
+                "outline": "#817473",
+                "secondary-container": "#f5daf4",
+                "on-secondary-fixed": "#251628",
+                "on-surface-variant": "#4f4443",
+                "outline-variant": "#d2c3c1",
+                "primary-fixed-dim": "#dcc0bd",
+                "on-error-container": "#93000a",
+                "inverse-on-surface": "#f2f1ee",
+                "background": "#faf9f6",
+                "surface-container-high": "#e9e8e5",
+                "surface-bright": "#faf9f6",
+                "surface-container-low": "#f4f3f1",
+                "tertiary-fixed-dim": "#d2c4b8",
+                "inverse-primary": "#dcc0bd",
+                "on-secondary-fixed-variant": "#534155",
+                "primary": "#6f5957"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "stack-sm": "16px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "stack-md": "32px",
+                "stack-lg": "64px",
+                "unit": "8px"
+            },
+            "fontFamily": {
+                "label-caps": ["Montserrat"],
+                "headline-lg": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "body-md": ["Montserrat"],
+                "display-lg": ["Playfair Display"],
+                "quote-italic": ["Playfair Display"],
+                "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "quote-italic": ["20px", {"lineHeight": "30px", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .bouquet-frame {
+            border-radius: 9999px 9999px 0 0;
+            overflow: hidden;
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(111, 89, 87, 0.04);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<a class="font-headline-md text-headline-md text-primary italic" href="#">Petals &amp; Poetry</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#shop">Shop All</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Occasions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Bespoke</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">The Journal</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">shopping_bag</button>
+<a class="hidden md:block bg-primary text-on-primary px-6 py-3 rounded-xl font-label-caps text-label-caps transition-transform active:scale-95" href="https://wa.me/6285612345678" target="_blank">Order Now</a>
+<button class="md:hidden material-symbols-outlined text-primary">menu</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-32 pb-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 items-center gap-12">
+<div class="md:col-span-6 space-y-6" data-aos="fade-up">
+<p class="font-label-caps text-label-caps text-primary tracking-[0.2em]">Elegance in Bloom</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                    Petals &amp; Poetry
+                </h1>
+<h2 class="font-headline-md text-headline-md text-tertiary">
+                    Florist Elegan untuk Momen Spesial Anda
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Kami menghadirkan rangkaian bunga pilihan dengan sentuhan seni yang mendalam, menciptakan keindahan abadi untuk setiap momen berharga Anda.
+                </p>
+<div class="pt-4 flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-10 py-4 rounded-xl font-label-caps text-label-caps hover:bg-opacity-90 transition-all shadow-lg shadow-primary/10" href="https://wa.me/6285612345678" target="_blank">
+                        Chat Admin
+                    </a>
+<a class="inline-flex items-center justify-center border border-tertiary/30 text-tertiary px-10 py-4 rounded-xl font-label-caps text-label-caps hover:bg-tertiary/5 transition-all" href="#shop">
+                        Explore Collection
+                    </a>
+</div>
+</div>
+<div class="md:col-span-6 flex justify-center md:justify-end">
+<div class="relative w-full max-w-[480px]">
+<div class="bouquet-frame w-full h-[600px] ambient-shadow bg-surface-container overflow-hidden">
+<img alt="Luxury Bouquet" class="w-full h-full object-cover" data-alt="A lush, romantic bouquet of roses and peonies in soft blush pink, cream, and dusty lavender tones. The flowers are arranged in an organic, airy style within a tall, arch-shaped composition. High-key natural window light illuminates the petals, creating a soft, ethereal atmosphere typical of a premium florist boutique. The background is a clean, minimalist alabaster wall, emphasizing the vibrant yet gentle pastel color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2SZmNzSaNU5ycHT2OY-vQwqfWgDxMxtxKiNp1mwPH-jqUYcebvnXCCODxk_evHLASveTmiNyRgzGq5hRSp4nLx1nSP8MUr6_SXPHZo527XwGakwykdNXUOrmZ0xItWIbeRDmXvmC1gyeD_vZBL_hwomxkJ_g-LvKqQPFutNMbnf9lzwjck6veD238gOrHORyndw8PykQxVyes1M5Mjr2NdOKM-40Tbg5npoTU-T9CF7ifQNx1_tfbZkhaO-rDdNimOjLCfrA2_k8"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 bg-secondary-container text-on-secondary-container p-8 rounded-xl ambient-shadow hidden sm:block">
+<span class="material-symbols-outlined text-4xl block mb-2" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+<p class="font-label-caps text-[10px] tracking-widest uppercase">Signature Collection</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Produk Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface" id="shop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-md gap-4">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2">Our Curated Selection</p>
+<h2 class="font-headline-lg text-headline-lg text-primary">Koleksi Signature</h2>
+</div>
+<div class="flex gap-2">
+<button class="p-2 border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="p-2 border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<!-- Bento-inspired Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl ambient-shadow transition-transform duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Bouquet Plastik" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An elegant arrangement of high-quality artificial silk flowers featuring white lilies and pale pink roses. The bouquet is wrapped in sophisticated cream-colored textured paper with a satin ribbon. The lighting is soft and ambient, highlighting the realistic textures of the petals. The scene is captured in a bright, modern studio setting with a clean, airy aesthetic consistent with the Petals and Poetry brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMf8Amnc7GOUdFeYAO8mDmK73wwhH6yssAEt7tCnJ7HjFqZ-NObMNI1_4GUcFsb_-czp3DefBSP5PKWzkEfy1gUVajHqk8bN9i-58m5VITzmZjUQwtWe_DFqdWW_1uaoJxuruh_ep-7-hlIph2Qv0eicFy7DduuRzx4yQmu0oF7yNONccChsbtb3DtgBt25xII3oTayeQYTLEQcjvuHrAwSbVZqyB58etdGoD-o9joErXc9nj0c7OnG9sQNTbGXSI8Zw36-BTTfpE"/>
+</div>
+<p class="font-label-caps text-[10px] text-tertiary mb-1">BOUQUET ARTIFICIAL</p>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Bouquet Bunga Plastik</h3>
+<p class="font-label-caps text-label-caps text-primary">Rp 450.000</p>
+</div>
+<!-- Product 2 -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl ambient-shadow transition-transform duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Hampers Eksklusif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxury gift hamper presented in a refined wooden box, containing premium chocolates, aromatic candles, and a small posy of dried lavender and eucalyptus. The arrangement is nestled in soft neutral-toned tissue paper. The lighting is warm and directional, creating gentle shadows that emphasize the high-end textures of the gift items. The overall mood is one of curated luxury and thoughtful celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8_JPynP5qvM6UioL99w-6Uc0MKrlOMRi0udeC8M6f6fVvs7-R94Yxf4LBb2TfomfdybmKTo2p2dVSUsc5o1nPL_ZTFkQByuKhZ8qD66pNEdv0WUWJSoIA_Je8lxloikg1qAWobVqkn87Eff_HqawtOamBTyNFecX6kGEzy6bRtFK_R57aEQmx_XyqRBF1yuk0qxmqI7pq_Tmy7imD5TA1cNGXQHkRxGtePeG76RxP-c0ARNV1QssngcEkKIP3qZaQKib0mz-CJkk"/>
+</div>
+<p class="font-label-caps text-[10px] text-tertiary mb-1">GIFT SETS</p>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Hampers lebaran dan lain-lain</h3>
+<p class="font-label-caps text-label-caps text-primary">Rp 850.000</p>
+</div>
+<!-- Product 3 -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl ambient-shadow transition-transform duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Papan Bunga" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A grand premium floral board for a celebratory occasion, adorned with a lush border of vibrant orchids, hydrangeas, and greenery. The typography on the board is elegant and minimalist, set against a soft cream background. The design follows a modern editorial layout rather than traditional commercial styles. The lighting is bright and clear, showcasing the fresh, vivid colors of the tropical blooms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC36xRS8WCPYyI9JE09KJKNSFDoRU2lM4tfuJA6fdM79HESwisxIAnot8N0BIF9O6l9p7IOKK1uO7DZ_ckLT78ia96EHZnzgnfqG9R30gqAEkH5-mywn6IUCXH5XoXlYs1SAcnGF4sQwBobSVVADLyTyQlpmmDnHCj6uZiw2oxuYdYg4uMf8o5Ff-Q49TpbiI_PdpGApK8mgbpmR41yHezNKFNaV_AJI1Nxm31dTKZEDSf8Uv4KgcX0bakjkN7H2C7Sp7JXGZ-X2lg"/>
+</div>
+<p class="font-label-caps text-[10px] text-tertiary mb-1">GRAND CELEBRATION</p>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Papan bunga mantap</h3>
+<p class="font-label-caps text-label-caps text-primary">Rp 1.200.000</p>
+</div>
+<!-- Product 4 -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl ambient-shadow transition-transform duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Dekorasi Meja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A chic centerpiece featuring a variety of seasonal wildflowers arranged in a minimalist ceramic vase. The composition is asymmetrical and poetic, incorporating wild grasses and delicate stems. The vase sits on a light oak table in a sun-drenched room, with soft morning light casting long, gentle shadows. The palette consists of soft purple, nude, and sage green, evoking a serene and organic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB66B3v-Nant3WA6f4Q3SeiFRE4Lu9MdGv5Mlhaotn7It6RU4-8V9pn8JnbAORbiRpnSg4rv8v_GkPbEvmoji7sTXyxMtXCrFKYu_PVX7WoM7U1ElEs53vZF9YTreRev13FS8tQ48diGBO7SK8Kx3f_Pno7ZN4bkH_XgTZpeMofiSOLX4b0FbC9m-RA8PdcChcU0S5a43vG6I2FLQaUMV3V53cHbCgfSGsao3WiWf5SDE3qkL2rSLAmmmHKyCa_6m3UMcCK7cHWhmU"/>
+</div>
+<p class="font-label-caps text-[10px] text-tertiary mb-1">INTERIOR DECOR</p>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Bunga yang bisa diletakkan di vas</h3>
+<p class="font-label-caps text-label-caps text-primary">Rp 350.000</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontaks Section (CTA Grid) -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Contact Card -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl ambient-shadow flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-container text-primary mb-6">
+<span class="material-symbols-outlined">chat_bubble</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Konsultasi Gratis</h2>
+<p class="font-body-md text-on-surface-variant mb-8">Punya permintaan khusus atau ingin memesan untuk acara besar? Tim admin kami siap membantu mewujudkan ide Anda.</p>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="font-body-lg font-bold">0856 1234 5678</span>
+</div>
+</div>
+<a class="w-full text-center bg-primary text-on-primary py-4 rounded-xl font-label-caps text-label-caps hover:bg-opacity-90 transition-all" href="https://wa.me/6285612345678" target="_blank">
+                        Chat Admin
+                    </a>
+</div>
+<!-- Find Us Card -->
+<div class="relative bg-tertiary text-on-tertiary p-8 md:p-12 rounded-xl ambient-shadow overflow-hidden">
+<!-- Background Illustration -->
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[160px]">location_on</span>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-white mb-6">
+<span class="material-symbols-outlined">map</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-4 text-surface">Kunjungi Galeri Kami</h2>
+<p class="font-body-md text-surface-container-highest mb-8">Rasakan langsung kesegaran dan keindahan bunga-bunga kami di studio fisik kami yang nyaman dan penuh inspirasi.</p>
+</div>
+<a class="w-full text-center bg-white text-tertiary py-4 rounded-xl font-label-caps text-label-caps hover:bg-surface transition-all" href="https://maps.app.goo.gl/4BYeCJgnqjVKymGh6" target="_blank">
+                            Find Us
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low py-stack-md px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto border-t border-outline-variant pt-stack-md flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<a class="font-headline-md text-headline-md text-primary italic" href="#">Petals &amp; Poetry</a>
+<p class="font-body-md text-body-md text-secondary">© 2024 Petals &amp; Poetry. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.063-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and smooth reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('[data-aos="fade-up"]').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Sticky Header Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('h-16');
+                    nav.classList.remove('h-20');
+                } else {
+                    nav.classList.add('h-20');
+                    nav.classList.remove('h-16');
+                }
+            });
+        });
+    </script>
+</body></html>

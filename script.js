@@ -637,7 +637,7 @@ function render() {
 
   // Profile photo
   document.getElementById('profile-photo').src = p === 'da'
-    ? 'img/Pas-Foto-QA.jpg'
+    ? 'img/Pas-Foto-DA.jpg'
     : 'img/Pas-Foto-QA.jpg';
 }
 
