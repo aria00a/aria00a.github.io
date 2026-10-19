@@ -4,7 +4,7 @@
 const LANG = {
   en: {
     brand: "My Portfolio",
-    btn_da: "Data Analystxx",
+    btn_da: "Data Analyst",
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
