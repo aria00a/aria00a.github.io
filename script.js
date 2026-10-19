@@ -4,7 +4,7 @@
 const LANG = {
   en: {
     brand: "My Portfolio",
-    btn_da: "Data Analyst",
+    btn_da: "Data Analystxx",
     btn_qa: "Quality Assurance",
 
     // ── DATA ANALYST ───────────────────────────
@@ -165,7 +165,7 @@ const LANG = {
         title: "PT. Metrocom Jaddi Technology, Jakarta",
         coverImg: "",
         tags: ["Nov, 2025", "Jan, 2026"],
-        visibility: "show",
+        visibility: "hide",
         desc: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).",
         sections: [
           { title: "Company Description", content: "PT Metrocom Jaddi Technology is an IT consulting and outsourcing company. Employed by PT Metrocom Jaddi Technology and assigned as a consultant to Bank Tabungan Negara (BTN).", type: "text" },
@@ -311,7 +311,7 @@ const LANG = {
         title: "Quality Assurance Analyst",
         coverImg: "",
         tags: ["Nov, 2025", "Jan, 2026"],
-        visibility: "show",
+        visibility: "hide",
         desc: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).",
         sections: [
           { title: "Deskripsi Perusahaan", content: "PT Metrocom Jaddi Technology adalah perusahaan konsultan dan outsourcing di bidang teknologi informasi. Bekerja di bawah PT Metrocom Jaddi Technology dan ditugaskan sebagai konsultan di Bank Tabungan Negara (BTN).", type: "text" },
